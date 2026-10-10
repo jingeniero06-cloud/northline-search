@@ -82,7 +82,7 @@
       setField("Lead source", via);
       try {
         const ctrl = new AbortController();
-        const timer = setTimeout(() => ctrl.abort(), 12000);
+        const timer = setTimeout(() => ctrl.abort(), 9000);
         const res = await fetch(`${form.dataset.leadApi}/lead`, {
           method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(payload), signal: ctrl.signal,
         });
@@ -104,6 +104,7 @@
           method: "POST",
           headers: { "content-type": "application/json", accept: "application/json" },
           body: JSON.stringify(fields),
+          signal: AbortSignal.timeout(15000),
         });
         const out = await res.json();
         if (!res.ok || String(out.success) !== "true") throw new Error(out.message || "FormSubmit error");
