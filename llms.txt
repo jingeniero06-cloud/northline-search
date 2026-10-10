@@ -1,0 +1,16 @@
+# Northline Search
+
+> Evidence-based SEO audits and full-service SEO: full-site crawls, Core Web Vitals, schema, content and E-E-A-T, local SEO and AI search (GEO) readiness, delivered as a prioritized fix plan.
+
+## Services
+- [Full SEO Audit](https://jingeniero06-cloud.github.io/northline-search/#services): full-site crawl, speed tests, schema, content, E-E-A-T and AI search review with PDF report, action plan and CSV issue lists.
+- [Audit + Implementation](https://jingeniero06-cloud.github.io/northline-search/#packages): the audit plus hands-on fixes and a re-crawl to verify them.
+- [Ongoing SEO](https://jingeniero06-cloud.github.io/northline-search/#packages): monthly crawls, Search Console monitoring, content and AI visibility work.
+
+## Proof
+- [Case study: multi-state property manager](https://jingeniero06-cloud.github.io/northline-search/case-study/): 4,758 URLs crawled; found pricing placeholders, a sitewide broken phone link, a 15.1 s mobile LCP and AI crawlers blocked at the origin.
+
+## Contact
+- [Request an audit](https://jingeniero06-cloud.github.io/northline-search/#contact)
+- Email: jingeniero.06@gmail.com
+- [Privacy policy](https://jingeniero06-cloud.github.io/northline-search/privacy/)

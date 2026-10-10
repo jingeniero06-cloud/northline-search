@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jingeniero06-cloud.github.io/northline-search/sitemap.xml
