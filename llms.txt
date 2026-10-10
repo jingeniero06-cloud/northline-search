@@ -10,6 +10,14 @@
 ## Proof
 - [Case study: Bay Property Management Group (baymgmtgroup.com)](https://jingeniero06-cloud.github.io/northline-search/case-study/): 4,758 URLs crawled; found pricing placeholders, a sitewide broken phone link, a 15.1 s mobile LCP and AI crawlers blocked at the origin.
 
+## Free tool
+- [AI Crawler Checker](https://jingeniero06-cloud.github.io/northline-search/tools/ai-crawler-checker/): checks robots.txt rules and live access for GPTBot, OAI-SearchBot, ClaudeBot, PerplexityBot, Googlebot, Bingbot and others, plus llms.txt.
+
+## Insights
+- [Why your SEO report says "zero errors" when there are hundreds](https://jingeniero06-cloud.github.io/northline-search/insights/zero-errors-seo-report/)
+- [Is your caching plugin delaying your mobile LCP?](https://jingeniero06-cloud.github.io/northline-search/insights/lazy-loaded-hero-lcp/)
+- [How to check whether AI crawlers can read your site](https://jingeniero06-cloud.github.io/northline-search/insights/check-ai-crawler-access/)
+
 ## Contact
 - [Request an audit](https://jingeniero06-cloud.github.io/northline-search/#contact)
 - Email: jingeniero.06@gmail.com

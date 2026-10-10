@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Why your SEO report says &quot;zero errors&quot; when there are hundreds | Northline Search</title>
+  <meta name="description" content="Sampled crawls, sitemap-only checks and CDN caching hide real problems. Here is what a full crawl with live re-checks finds that automated reports miss.">
+  <link rel="canonical" href="https://jingeniero06-cloud.github.io/northline-search/insights/zero-errors-seo-report/">
+  <meta name="theme-color" content="#0b1220">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Northline Search">
+  <meta property="og:title" content="Why your SEO report says &quot;zero errors&quot; when there are hundreds | Northline Search">
+  <meta property="og:description" content="Sampled crawls, sitemap-only checks and CDN caching hide real problems. Here is what a full crawl with live re-checks finds that automated reports miss.">
+  <meta property="og:url" content="https://jingeniero06-cloud.github.io/northline-search/insights/zero-errors-seo-report/">
+  <meta property="og:image" content="https://jingeniero06-cloud.github.io/northline-search/assets/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="../../assets/styles.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Why your SEO report says \"zero errors\" when there are hundreds",
+      "description": "Sampled crawls, sitemap-only checks and CDN caching hide real problems. Here is what a full crawl with live re-checks finds that automated reports miss.",
+      "datePublished": "2026-10-10",
+      "dateModified": "2026-10-10",
+      "image": "https://jingeniero06-cloud.github.io/northline-search/assets/og.png",
+      "mainEntityOfPage": "https://jingeniero06-cloud.github.io/northline-search/insights/zero-errors-seo-report/",
+      "author": {
+        "@type": "Organization",
+        "@id": "https://jingeniero06-cloud.github.io/northline-search/#org",
+        "name": "Northline Search",
+        "url": "https://jingeniero06-cloud.github.io/northline-search/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://jingeniero06-cloud.github.io/northline-search/#org",
+        "name": "Northline Search",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://jingeniero06-cloud.github.io/northline-search/assets/favicon.svg"
+        }
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://jingeniero06-cloud.github.io/northline-search/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Insights",
+          "item": "https://jingeniero06-cloud.github.io/northline-search/insights/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Why your SEO report says \"zero errors\" when there are hundreds",
+          "item": "https://jingeniero06-cloud.github.io/northline-search/insights/zero-errors-seo-report/"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="logo" href="../../" aria-label="Northline Search home"><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect x="1" y="1" width="30" height="30" rx="9" stroke="#c9a35b" stroke-width="1.5"/><path d="M9 22V10l14 12V10" stroke="#e3c48a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Northline</a>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="../../#services">Services</a></li>
+      <li><a href="../../case-study/">Case study</a></li>
+      <li><a href="../../insights/">Insights</a></li>
+      <li><a href="../../tools/ai-crawler-checker/">Free tool</a></li>
+      <li><a class="btn btn-gold" href="../../#contact">Request an audit</a></li>
+    </ul>
+  </div>
+</header>
+<main id="main">
+  <div class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">Technical SEO</span>
+      <h1>Why your SEO report says &quot;zero errors&quot; when there are hundreds</h1>
+      <p class="lead">Sampled crawls, sitemap-only checks and CDN caching hide real problems. Here is what a full crawl with live re-checks finds that automated reports miss.</p>
+      <p class="article-meta">Northline Search · <time datetime="2026-10-10">10 October 2026</time> · 7 min read</p>
+    </div>
+  </div>
+  <section>
+    <article class="wrap prose">
+
+<p>An automated report recently scored a client site 86 out of 100 and stated it had zero errors and zero redirects. A full crawl of the same site, a few hours later, reached 4,758 URLs and found broken links, five two-hop redirect chains, contact buttons returning 404, and placeholder text live on the pricing page.</p>
+<p>Neither report was lying. They were measuring different things. Here is where the gap comes from, and how to close it.</p>
+
+<h2>1. Sampling is not crawling</h2>
+<p>Many tools cap a crawl at 25, 100 or 500 pages. On a site with thousands of URLs, that sample is usually the homepage, the main navigation and the newest posts: the best-maintained pages on the site. Problems live in the long tail: old location pages, county resources, archived posts and the links between them.</p>
+<blockquote>If a report doesn't tell you how many URLs it crawled and how many it found, you can't tell what it missed.</blockquote>
+
+<h2>2. Sitemap URLs are not the whole site</h2>
+<p>Fetching every URL in the XML sitemap is a good start, and it will catch sitemap entries that redirect or are marked noindex. But a sitemap only lists the pages you meant to publish. Broken internal links, redirect chains and query-string variants only show up when you follow links from page to page.</p>
+<p>On the site above, every one of the 2,120 sitemap URLs returned 200. The problems were in the links: a footer phone button pointing to a broken web address on every page, two county contact buttons whose <code>?location=</code> parameters produced a 404, and discontinued location pages redirecting to the homepage.</p>
+
+<h2>3. Tooling bugs create false positives and false negatives</h2>
+<p>Crawlers are software, and they have bugs. Two we have hit in practice:</p>
+<ul>
+  <li><b>robots.txt fetched with the wrong client.</b> A 403 on <code>robots.txt</code> made one crawler conclude the whole site was blocked. The site was fine; the request library was being rejected.</li>
+  <li><b>URL rebuilding errors.</b> Putting a query string into the wrong slot when rebuilding a URL produced hundreds of fake 404s and fake duplicate pages.</li>
+</ul>
+<p>Any finding that would change a client's priorities should be re-checked live, by hand or with a second tool, before it goes in a report.</p>
+
+<h2>4. CDN caching hides origin problems</h2>
+<p>When pages are served from a CDN cache, every request gets a fast, clean 200. Requests that reach the origin server (uncached pages, query strings, new posts) can behave very differently. We have seen origins return 403 to specific crawlers and serve a "One moment, please..." interstitial under load, while the cached homepage looked perfect.</p>
+
+<h2>5. Content errors are invisible to status codes</h2>
+<p>A page that says "Confirm before publish" where a price should be returns HTTP 200. So does a legal guide quoting a law that changed two years ago. No crawler flags these on its own; you have to read the pages that matter most to customers: pricing, services, locations and legal content.</p>
+
+<h2>A checklist for a report you can trust</h2>
+<ul>
+  <li>The crawl covers every sitemap URL <em>and</em> follows internal links, with the URL counts stated.</li>
+  <li>Redirects are reported with hop counts and final destinations, not just "301".</li>
+  <li>Query-string and tracking-parameter variants are tested, not ignored.</li>
+  <li>Critical findings are re-checked live, with the date.</li>
+  <li>Pricing, service and legal pages are read by a person.</li>
+  <li>Speed is tested on mobile, on more than one template.</li>
+</ul>
+<p>Read the <a href="../../case-study/">full case study</a> for the numbers behind this article.</p>
+
+      <div class="callout cta-callout"><div><b>Want this checked on your site?</b> Every Northline audit includes a full crawl, mobile speed tests and AI crawler access.</div><a class="btn btn-dark" href="../../#contact">Request an audit</a></div>
+    </article>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <a class="logo" href="../../">Northline Search</a>
+      <nav aria-label="Footer"><a href="../../#services">Services</a><a href="../../case-study/">Case study</a><a href="../../insights/">Insights</a><a href="../../tools/ai-crawler-checker/">Free tool</a><a href="../../privacy/">Privacy</a></nav>
+    </div>
+    <div class="foot-bottom"><span>&copy; <span data-year>2026</span> Northline Search</span><span>Evidence-based SEO &amp; AI search</span></div>
+  </div>
+</footer>
+<script src="../../assets/main.js" defer></script>
+</body>
+</html>

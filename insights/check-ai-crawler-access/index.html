@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How to check whether AI crawlers can read your site | Northline Search</title>
+  <meta name="description" content="robots.txt rules, CDN bot settings and origin firewalls can each block ChatGPT, Claude or Perplexity. A practical way to test all three layers.">
+  <link rel="canonical" href="https://jingeniero06-cloud.github.io/northline-search/insights/check-ai-crawler-access/">
+  <meta name="theme-color" content="#0b1220">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Northline Search">
+  <meta property="og:title" content="How to check whether AI crawlers can read your site | Northline Search">
+  <meta property="og:description" content="robots.txt rules, CDN bot settings and origin firewalls can each block ChatGPT, Claude or Perplexity. A practical way to test all three layers.">
+  <meta property="og:url" content="https://jingeniero06-cloud.github.io/northline-search/insights/check-ai-crawler-access/">
+  <meta property="og:image" content="https://jingeniero06-cloud.github.io/northline-search/assets/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="../../assets/styles.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "How to check whether AI crawlers can read your site",
+      "description": "robots.txt rules, CDN bot settings and origin firewalls can each block ChatGPT, Claude or Perplexity. A practical way to test all three layers.",
+      "datePublished": "2026-10-10",
+      "dateModified": "2026-10-10",
+      "image": "https://jingeniero06-cloud.github.io/northline-search/assets/og.png",
+      "mainEntityOfPage": "https://jingeniero06-cloud.github.io/northline-search/insights/check-ai-crawler-access/",
+      "author": {
+        "@type": "Organization",
+        "@id": "https://jingeniero06-cloud.github.io/northline-search/#org",
+        "name": "Northline Search",
+        "url": "https://jingeniero06-cloud.github.io/northline-search/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://jingeniero06-cloud.github.io/northline-search/#org",
+        "name": "Northline Search",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://jingeniero06-cloud.github.io/northline-search/assets/favicon.svg"
+        }
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://jingeniero06-cloud.github.io/northline-search/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Insights",
+          "item": "https://jingeniero06-cloud.github.io/northline-search/insights/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "How to check whether AI crawlers can read your site",
+          "item": "https://jingeniero06-cloud.github.io/northline-search/insights/check-ai-crawler-access/"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="logo" href="../../" aria-label="Northline Search home"><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect x="1" y="1" width="30" height="30" rx="9" stroke="#c9a35b" stroke-width="1.5"/><path d="M9 22V10l14 12V10" stroke="#e3c48a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Northline</a>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="../../#services">Services</a></li>
+      <li><a href="../../case-study/">Case study</a></li>
+      <li><a href="../../insights/">Insights</a></li>
+      <li><a href="../../tools/ai-crawler-checker/">Free tool</a></li>
+      <li><a class="btn btn-gold" href="../../#contact">Request an audit</a></li>
+    </ul>
+  </div>
+</header>
+<main id="main">
+  <div class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">AI search</span>
+      <h1>How to check whether AI crawlers can read your site</h1>
+      <p class="lead">robots.txt rules, CDN bot settings and origin firewalls can each block ChatGPT, Claude or Perplexity. A practical way to test all three layers.</p>
+      <p class="article-meta">Northline Search · <time datetime="2026-10-10">10 October 2026</time> · 6 min read</p>
+    </div>
+  </div>
+  <section>
+    <article class="wrap prose">
+
+<p>If ChatGPT, Claude, Perplexity or Google's AI features can't fetch your pages, they can't quote them. Access can be blocked at three different layers, and a site can pass one test while failing another.</p>
+<p>You can run all three checks at once with our <a href="../../tools/ai-crawler-checker/">free AI crawler checker</a>. Here is what it does and how to do it by hand.</p>
+
+<h2>Layer 1: robots.txt</h2>
+<p>Each AI company publishes the user-agent tokens its crawlers obey. The main ones:</p>
+<ul>
+  <li><b>OpenAI:</b> <code>GPTBot</code> (training), <code>OAI-SearchBot</code> (ChatGPT search), <code>ChatGPT-User</code> (user-triggered fetches)</li>
+  <li><b>Anthropic:</b> <code>ClaudeBot</code> (training), <code>Claude-SearchBot</code> (search), <code>Claude-User</code> (user-triggered)</li>
+  <li><b>Perplexity:</b> <code>PerplexityBot</code>, <code>Perplexity-User</code></li>
+  <li><b>Google:</b> <code>Googlebot</code> for Search and AI Overviews; <code>Google-Extended</code> controls use for Gemini training</li>
+  <li><b>Others:</b> <code>bingbot</code> (Bing and Copilot), <code>Applebot-Extended</code>, <code>CCBot</code> (Common Crawl), <code>meta-externalagent</code></li>
+</ul>
+<p>A crawler follows the group that names it; if none does, it follows <code>User-agent: *</code>. Within the group, the most specific (longest) matching rule wins. Blocking training crawlers while allowing search crawlers is a legitimate choice; just make it on purpose.</p>
+
+<h2>Layer 2: your CDN's bot settings</h2>
+<p>CDNs such as Cloudflare offer one-click AI bot blocking and bot-management rules. These act before robots.txt is ever consulted. If someone enabled them, crawlers get a 403 or a challenge page no matter what robots.txt says.</p>
+
+<h2>Layer 3: the origin server</h2>
+<p>This is the one most audits miss. Hosting firewalls and security plugins often block user-agents they don't recognize. If your CDN caches the homepage, crawlers hitting it get a clean 200, while uncached pages (blog posts, new pages, URLs with query strings) go to the origin and get blocked.</p>
+<p>On one site we audited, the cached homepage returned 200 to every crawler, but every blog post, the sitemaps and <code>llms.txt</code> returned 403 to ClaudeBot from the origin.</p>
+
+<h2>Testing by hand</h2>
+<p>Send a request with the crawler's user-agent, once to a cached page and once with a cache-busting query string:</p>
+<pre><code>curl -s -o /dev/null -w "%{http_code}\n" -A "Mozilla/5.0 (compatible; ClaudeBot/1.0; +claudebot@anthropic.com)" https://example.com/
+curl -s -o /dev/null -w "%{http_code}\n" -A "Mozilla/5.0 (compatible; ClaudeBot/1.0; +claudebot@anthropic.com)" "https://example.com/?nocache=1"</code></pre>
+<p>A 403, 429 or 503, or an HTML page saying "Just a moment" or "One moment, please", means that crawler is blocked or challenged.</p>
+<p><b>One caveat:</b> these tests use the crawler's name, not its real IP addresses. Firewalls that verify crawler IPs may let the real bot through. Treat a block as a strong signal and confirm it in your server or CDN logs.</p>
+
+<h2>Then help them understand you</h2>
+<p>Access is step one. An <code>llms.txt</code> file at your site root, a short Markdown summary linking to your key services, pricing and location pages, helps language models find what matters. Keep it curated: an auto-generated list of recent posts is not much help.</p>
+
+      <div class="callout cta-callout"><div><b>Want this checked on your site?</b> Every Northline audit includes a full crawl, mobile speed tests and AI crawler access.</div><a class="btn btn-dark" href="../../#contact">Request an audit</a></div>
+    </article>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <a class="logo" href="../../">Northline Search</a>
+      <nav aria-label="Footer"><a href="../../#services">Services</a><a href="../../case-study/">Case study</a><a href="../../insights/">Insights</a><a href="../../tools/ai-crawler-checker/">Free tool</a><a href="../../privacy/">Privacy</a></nav>
+    </div>
+    <div class="foot-bottom"><span>&copy; <span data-year>2026</span> Northline Search</span><span>Evidence-based SEO &amp; AI search</span></div>
+  </div>
+</footer>
+<script src="../../assets/main.js" defer></script>
+</body>
+</html>

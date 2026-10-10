@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Free AI Crawler Checker: Can ChatGPT, Claude &amp; Perplexity Read Your Site? | Northline Search</title>
+  <meta name="description" content="Free tool: check whether GPTBot, ClaudeBot, PerplexityBot, Googlebot and other AI crawlers are allowed by robots.txt and actually reach your pages, plus llms.txt detection.">
+  <link rel="canonical" href="https://jingeniero06-cloud.github.io/northline-search/tools/ai-crawler-checker/">
+  <meta name="theme-color" content="#0b1220">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Northline Search">
+  <meta property="og:title" content="Free AI Crawler Checker">
+  <meta property="og:description" content="See which AI crawlers can read your site: robots.txt rules, live access tests and llms.txt in one check.">
+  <meta property="og:url" content="https://jingeniero06-cloud.github.io/northline-search/tools/ai-crawler-checker/">
+  <meta property="og:image" content="https://jingeniero06-cloud.github.io/northline-search/assets/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="../../assets/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "name": "AI Crawler Checker",
+        "url": "https://jingeniero06-cloud.github.io/northline-search/tools/ai-crawler-checker/",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Any",
+        "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
+        "description": "Checks robots.txt rules and live access for GPTBot, OAI-SearchBot, ClaudeBot, PerplexityBot, Googlebot, Bingbot and other AI crawlers, and detects llms.txt.",
+        "provider": {"@id": "https://jingeniero06-cloud.github.io/northline-search/#org"}
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://jingeniero06-cloud.github.io/northline-search/"},
+          {"@type": "ListItem", "position": 2, "name": "AI Crawler Checker", "item": "https://jingeniero06-cloud.github.io/northline-search/tools/ai-crawler-checker/"}
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="logo" href="../../" aria-label="Northline Search home">
+      <svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect x="1" y="1" width="30" height="30" rx="9" stroke="#c9a35b" stroke-width="1.5"/><path d="M9 22V10l14 12V10" stroke="#e3c48a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Northline
+    </a>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="../../#services">Services</a></li>
+      <li><a href="../../case-study/">Case study</a></li>
+      <li><a href="../../insights/">Insights</a></li>
+      <li><a href="./">Free tool</a></li>
+      <li><a class="btn btn-gold" href="../../#contact">Request an audit</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+  <div class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">Free tool</span>
+      <h1>Can AI search read your site?</h1>
+      <p class="lead">Check robots.txt rules and live access for ChatGPT, Claude, Perplexity, Google and Bing crawlers, plus llms.txt, in about 15 seconds.</p>
+      <form class="checker" id="checker" data-api="https://northline-ai-checker.john-20b.workers.dev">
+        <label for="url" class="sr">Website address</label>
+        <input id="url" name="url" placeholder="yourdomain.com" required autocomplete="url" inputmode="url">
+        <button class="btn btn-gold" type="submit">Check site</button>
+      </form>
+      <p class="checker-status" id="status" role="status" aria-live="polite"></p>
+    </div>
+  </div>
+
+  <section id="results" hidden>
+    <div class="wrap">
+      <div class="result-head">
+        <div class="gauge on" id="gauge" style="--v:0">
+          <svg viewBox="0 0 112 112" width="112" height="112" aria-hidden="true">
+            <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#e3c48a"/><stop offset="1" stop-color="#c9a35b"/></linearGradient></defs>
+            <circle class="track" cx="56" cy="56" r="48" fill="none" stroke-width="9" style="stroke:#e6e2d8"/>
+            <circle class="fill" cx="56" cy="56" r="48" fill="none" stroke-width="9"/>
+          </svg>
+          <span id="score" style="color:var(--text)">0</span>
+        </div>
+        <div>
+          <h2 id="target" style="margin-bottom:.2em"></h2>
+          <p class="muted-sm" id="summary"></p>
+          <div class="chips" id="chips"></div>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table class="bot-table">
+          <thead><tr><th>Crawler</th><th>Used for</th><th>robots.txt</th><th>Live access</th></tr></thead>
+          <tbody id="rows"></tbody>
+        </table>
+      </div>
+      <p class="muted-sm" id="note"></p>
+      <div class="callout cta-callout">
+        <div><b>Want the full picture?</b> Crawler access is one of 30+ AI search checks in our audit, alongside citability, entity signals and schema.</div>
+        <a class="btn btn-dark" href="../../#contact">Request an audit</a>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:#fff">
+    <div class="wrap prose">
+      <h2>What this checks</h2>
+      <p><b>robots.txt rules.</b> For each crawler we find the user-agent group that applies (its own name, or <code>*</code>) and the longest matching Allow or Disallow rule for the page you entered.</p>
+      <p><b>Live access.</b> We request the page with each crawler's user-agent, once normally and once with a cache-busting parameter so the request reaches your server rather than a CDN cache. A 403, 429, 503 or a challenge page counts as blocked or challenged. Many sites look fine on cached pages but block bots at the origin.</p>
+      <p><b>llms.txt.</b> We look for a plain-text <code>/llms.txt</code> file that summarizes your key pages for language models.</p>
+      <h3>Limits</h3>
+      <p>Tests are sent from Cloudflare's network, not from each crawler's real IP addresses. Firewalls that verify crawler IPs may treat the real bots differently. Google-Extended and Applebot-Extended are robots.txt tokens only, so they have no live test.</p>
+      <p>Read more: <a href="../../insights/check-ai-crawler-access/">How to check whether AI crawlers can read your site</a>.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <a class="logo" href="../../">Northline Search</a>
+      <nav aria-label="Footer"><a href="../../#services">Services</a><a href="../../case-study/">Case study</a><a href="../../insights/">Insights</a><a href="../../privacy/">Privacy</a></nav>
+    </div>
+    <div class="foot-bottom"><span>&copy; <span data-year>2026</span> Northline Search</span><span>Evidence-based SEO &amp; AI search</span></div>
+  </div>
+</footer>
+<script src="../../assets/main.js" defer></script>
+<script src="../../assets/checker.js" defer></script>
+</body>
+</html>
