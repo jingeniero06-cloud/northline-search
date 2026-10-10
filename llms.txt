@@ -8,7 +8,7 @@
 - [Ongoing SEO](https://jingeniero06-cloud.github.io/northline-search/#packages): monthly crawls, Search Console monitoring, content and AI visibility work.
 
 ## Proof
-- [Case study: multi-state property manager](https://jingeniero06-cloud.github.io/northline-search/case-study/): 4,758 URLs crawled; found pricing placeholders, a sitewide broken phone link, a 15.1 s mobile LCP and AI crawlers blocked at the origin.
+- [Case study: Bay Property Management Group (baymgmtgroup.com)](https://jingeniero06-cloud.github.io/northline-search/case-study/): 4,758 URLs crawled; found pricing placeholders, a sitewide broken phone link, a 15.1 s mobile LCP and AI crawlers blocked at the origin.
 
 ## Contact
 - [Request an audit](https://jingeniero06-cloud.github.io/northline-search/#contact)
