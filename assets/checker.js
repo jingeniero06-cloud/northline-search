@@ -51,6 +51,7 @@
     e.preventDefault();
     const url = $("url").value.trim();
     if (!url) return;
+    try { localStorage.setItem("nl_used_tool", "1"); } catch {}
     const btn = form.querySelector("button");
     btn.disabled = true;
     $("status").textContent = "Checking robots.txt, llms.txt and 10 crawlers. This takes about 15 seconds...";

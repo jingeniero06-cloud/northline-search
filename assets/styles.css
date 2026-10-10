@@ -109,6 +109,11 @@ p { margin: 0 0 1em; }
 .hero h1 em { font-style: italic; color: var(--gold-2); }
 .hero .lead { color: rgba(255, 255, 255, .72); }
 .hero-ctas { display: flex; flex-wrap: wrap; gap: 14px; margin: 34px 0 40px; }
+.hero-ctas + .book-line { margin: -24px 0 36px; }
+.book-line { font-size: .95rem; color: rgba(255, 255, 255, .7); }
+.book-line a { color: var(--gold-2); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+.book-line-dark { text-align: center; margin: 34px 0 0; color: var(--muted); }
+.book-line-dark a { color: var(--ink); text-decoration-color: var(--gold); }
 .hero-proof { display: flex; flex-wrap: wrap; gap: 28px; color: rgba(255, 255, 255, .6); font-size: .9rem; }
 .hero-proof b { display: block; color: #fff; font-family: var(--serif); font-size: 1.7rem; font-weight: 500; }
 
