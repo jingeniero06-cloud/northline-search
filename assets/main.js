@@ -98,7 +98,19 @@
       const auto = form.querySelector('input[name="_autoresponse"]');
       if (auto && form.dataset.calendly) auto.value += `\n\nWant to talk sooner? Book a 30-minute call: ${form.dataset.calendly}`;
       form.dataset.sent = "1";
-      form.submit();
+      try {
+        const fields = Object.fromEntries(new FormData(form).entries());
+        const res = await fetch(form.action.replace("formsubmit.co/", "formsubmit.co/ajax/"), {
+          method: "POST",
+          headers: { "content-type": "application/json", accept: "application/json" },
+          body: JSON.stringify(fields),
+        });
+        const out = await res.json();
+        if (!res.ok || String(out.success) !== "true") throw new Error(out.message || "FormSubmit error");
+        location.href = fields._next;
+      } catch {
+        form.submit();
+      }
     });
   }
 })();
