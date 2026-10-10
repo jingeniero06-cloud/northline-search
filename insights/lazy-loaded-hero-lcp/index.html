@@ -13,12 +13,13 @@
   <meta property="og:title" content="Is your caching plugin delaying your mobile LCP? | Northline Search">
   <meta property="og:description" content="Lazy-loading a hero background image can push Largest Contentful Paint past 15 seconds on mobile. How to spot it in Lighthouse and fix it in WordPress.">
   <meta property="og:url" content="https://jingeniero06-cloud.github.io/northline-search/insights/lazy-loaded-hero-lcp/">
-  <meta property="og:image" content="https://jingeniero06-cloud.github.io/northline-search/assets/og.png">
+  <meta property="og:image" content="https://jingeniero06-cloud.github.io/northline-search/assets/img/article-lcp.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap">
   <link rel="stylesheet" href="../../assets/styles.css">
+  <link rel="preload" as="image" href="../../assets/img/article-lcp.webp" type="image/webp" fetchpriority="high">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -29,7 +30,12 @@
       "description": "Lazy-loading a hero background image can push Largest Contentful Paint past 15 seconds on mobile. How to spot it in Lighthouse and fix it in WordPress.",
       "datePublished": "2026-10-10",
       "dateModified": "2026-10-10",
-      "image": "https://jingeniero06-cloud.github.io/northline-search/assets/og.png",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://jingeniero06-cloud.github.io/northline-search/assets/img/article-lcp.jpg",
+        "width": 1280,
+        "height": 720
+      },
       "mainEntityOfPage": "https://jingeniero06-cloud.github.io/northline-search/insights/lazy-loaded-hero-lcp/",
       "author": {
         "@type": "Organization",
@@ -100,8 +106,14 @@
       <p class="article-meta">Northline Search · <time datetime="2026-10-10">10 October 2026</time> · 6 min read</p>
     </div>
   </div>
-  <section>
+  <section class="article-section">
     <article class="wrap prose">
+      <figure class="feature-img">
+        <picture>
+          <source srcset="../../assets/img/article-lcp.webp" type="image/webp">
+          <img src="../../assets/img/article-lcp.jpg" alt="A smartphone whose hero image is still loading, with gold light trails and a stopwatch ring behind it" width="1280" height="720" fetchpriority="high" decoding="async">
+        </picture>
+      </figure>
 
 <p>On a recent audit, a WordPress homepage scored 96 for desktop performance and 33 on mobile. Mobile Largest Contentful Paint (LCP) was 15.1 seconds. Google's "good" threshold is 2.5 seconds.</p>
 <p>The server was not the problem: HTML arrived from the CDN in 30 to 50 milliseconds. The problem was that the biggest thing on the screen, the hero image, was deliberately loaded last.</p>

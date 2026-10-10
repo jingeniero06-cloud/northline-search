@@ -13,12 +13,13 @@
   <meta property="og:title" content="Why your SEO report says &quot;zero errors&quot; when there are hundreds | Northline Search">
   <meta property="og:description" content="Sampled crawls, sitemap-only checks and CDN caching hide real problems. Here is what a full crawl with live re-checks finds that automated reports miss.">
   <meta property="og:url" content="https://jingeniero06-cloud.github.io/northline-search/insights/zero-errors-seo-report/">
-  <meta property="og:image" content="https://jingeniero06-cloud.github.io/northline-search/assets/og.png">
+  <meta property="og:image" content="https://jingeniero06-cloud.github.io/northline-search/assets/img/article-zero-errors.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap">
   <link rel="stylesheet" href="../../assets/styles.css">
+  <link rel="preload" as="image" href="../../assets/img/article-zero-errors.webp" type="image/webp" fetchpriority="high">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -29,7 +30,12 @@
       "description": "Sampled crawls, sitemap-only checks and CDN caching hide real problems. Here is what a full crawl with live re-checks finds that automated reports miss.",
       "datePublished": "2026-10-10",
       "dateModified": "2026-10-10",
-      "image": "https://jingeniero06-cloud.github.io/northline-search/assets/og.png",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://jingeniero06-cloud.github.io/northline-search/assets/img/article-zero-errors.jpg",
+        "width": 1280,
+        "height": 720
+      },
       "mainEntityOfPage": "https://jingeniero06-cloud.github.io/northline-search/insights/zero-errors-seo-report/",
       "author": {
         "@type": "Organization",
@@ -100,8 +106,14 @@
       <p class="article-meta">Northline Search · <time datetime="2026-10-10">10 October 2026</time> · 7 min read</p>
     </div>
   </div>
-  <section>
+  <section class="article-section">
     <article class="wrap prose">
+      <figure class="feature-img">
+        <picture>
+          <source srcset="../../assets/img/article-zero-errors.webp" type="image/webp">
+          <img src="../../assets/img/article-zero-errors.jpg" alt="A brass magnifying lens over a grid of page tiles, revealing cracked red tiles hidden beneath a calm surface" width="1280" height="720" fetchpriority="high" decoding="async">
+        </picture>
+      </figure>
 
 <p>An automated report recently scored a client site 86 out of 100 and stated it had zero errors and zero redirects. A full crawl of the same site, a few hours later, reached 4,758 URLs and found broken links, five two-hop redirect chains, contact buttons returning 404, and placeholder text live on the pricing page.</p>
 <p>Neither report was lying. They were measuring different things. Here is where the gap comes from, and how to close it.</p>
