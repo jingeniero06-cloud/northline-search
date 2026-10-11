@@ -14,6 +14,7 @@
 - [AI Crawler Checker](https://jingeniero06-cloud.github.io/northline-search/tools/ai-crawler-checker/): checks robots.txt rules and live access for GPTBot, OAI-SearchBot, ClaudeBot, PerplexityBot, Googlebot, Bingbot and others, plus llms.txt.
 
 ## Insights
+- [AEO explained: the 5 parts of answer engine optimization](https://jingeniero06-cloud.github.io/northline-search/insights/aeo-answer-engine-optimization/)
 - [Why your SEO report says "zero errors" when there are hundreds](https://jingeniero06-cloud.github.io/northline-search/insights/zero-errors-seo-report/)
 - [Is your caching plugin delaying your mobile LCP?](https://jingeniero06-cloud.github.io/northline-search/insights/lazy-loaded-hero-lcp/)
 - [How to check whether AI crawlers can read your site](https://jingeniero06-cloud.github.io/northline-search/insights/check-ai-crawler-access/)
