@@ -19,6 +19,9 @@
 - [Is your caching plugin delaying your mobile LCP?](https://jingeniero06-cloud.github.io/northline-search/insights/lazy-loaded-hero-lcp/)
 - [How to check whether AI crawlers can read your site](https://jingeniero06-cloud.github.io/northline-search/insights/check-ai-crawler-access/)
 
+## About
+- Founded by John Lester Ingeniero, SEO strategist (technical, local, AEO and GEO): [LinkedIn](https://www.linkedin.com/in/engr-john/)
+
 ## Contact
 - [Request an audit](https://jingeniero06-cloud.github.io/northline-search/#contact)
 - Email: jingeniero.06@gmail.com
