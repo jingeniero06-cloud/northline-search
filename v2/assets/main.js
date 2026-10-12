@@ -95,6 +95,32 @@
     run();
   }
 
+  let calendly;
+  const loadCalendly = () => calendly || (calendly = new Promise((resolve, reject) => {
+    const css = document.createElement("link");
+    css.rel = "stylesheet";
+    css.href = "https://assets.calendly.com/assets/external/widget.css";
+    document.head.appendChild(css);
+    const js = document.createElement("script");
+    js.src = "https://assets.calendly.com/assets/external/widget.js";
+    js.async = true;
+    js.onload = () => (window.Calendly ? resolve(window.Calendly) : reject());
+    js.onerror = () => { calendly = null; reject(); };
+    document.head.appendChild(js);
+  }));
+  document.querySelectorAll('a[href^="https://calendly.com/"]').forEach((a) => {
+    ["pointerenter", "focus", "touchstart"].forEach((ev) => a.addEventListener(ev, () => loadCalendly().catch(() => {}), { once: true, passive: true }));
+    a.addEventListener("click", async (e) => {
+      if (e.ctrlKey || e.metaKey || e.shiftKey) return;
+      e.preventDefault();
+      try {
+        (await loadCalendly()).initPopupWidget({ url: a.href });
+      } catch {
+        window.open(a.href, "_blank", "noopener");
+      }
+    });
+  });
+
   document.querySelectorAll("[data-year]").forEach((el) => { el.textContent = new Date().getFullYear(); });
 
   const store = {
