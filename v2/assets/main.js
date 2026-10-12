@@ -46,6 +46,55 @@
     }, 2200);
   }
 
+  const tocLinks = [...document.querySelectorAll(".toc a")];
+  const progress = document.querySelector(".read-progress");
+  const body = document.querySelector(".cs-body");
+  if (tocLinks.length && body) {
+    const targets = tocLinks.map((a) => document.querySelector(a.getAttribute("href")));
+    const update = () => {
+      let current = 0;
+      targets.forEach((t, i) => { if (t && t.getBoundingClientRect().top < 140) current = i; });
+      tocLinks.forEach((a, i) => a.classList.toggle("active", i === current));
+      if (progress) {
+        const r = body.getBoundingClientRect();
+        const pct = Math.min(1, Math.max(0, -r.top / (r.height - innerHeight * 0.6)));
+        progress.style.width = (pct * 100).toFixed(1) + "%";
+      }
+    };
+    update();
+    window.addEventListener("scroll", update, { passive: true });
+  }
+
+  const copy = document.querySelector("[data-copy-link]");
+  if (copy) {
+    copy.addEventListener("click", async () => {
+      try { await navigator.clipboard.writeText(location.href.split("#")[0]); copy.title = "Link copied"; copy.setAttribute("aria-label", "Link copied"); } catch {}
+    });
+  }
+
+  const filter = document.querySelector(".cs-filters form");
+  if (filter) {
+    const q = filter.querySelector("input");
+    const cat = filter.querySelector("select");
+    const cards = [...document.querySelectorAll(".cs-list .cs-card")];
+    const count = filter.querySelector(".cs-count");
+    const empty = document.querySelector(".cs-empty");
+    const run = () => {
+      const term = q.value.trim().toLowerCase();
+      let shown = 0;
+      cards.forEach((c) => {
+        const ok = (!cat.value || c.dataset.category === cat.value) && (!term || c.textContent.toLowerCase().includes(term));
+        c.hidden = !ok;
+        if (ok) shown++;
+      });
+      count.textContent = shown + (shown === 1 ? " case study" : " case studies");
+      if (empty) empty.hidden = shown > 0;
+    };
+    filter.addEventListener("input", run);
+    filter.addEventListener("submit", (e) => e.preventDefault());
+    run();
+  }
+
   document.querySelectorAll("[data-year]").forEach((el) => { el.textContent = new Date().getFullYear(); });
 
   const store = {
