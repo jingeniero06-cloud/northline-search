@@ -205,7 +205,7 @@ section { padding: 110px 0; }
 .flag { display: flex; gap: 10px; align-items: center; font-size: .84rem; padding: 9px 12px; border-radius: 10px; background: var(--cream); }
 .sev { font-size: .68rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 3px 8px; border-radius: 5px; flex: none; }
 .sev.c, .sev.c2 { background: #fde8e6; color: #b4332b; }
-.sev.h, .sev.h2 { background: var(--orange-soft); color: #b84a00; }
+.sev.h, .sev.h2 { background: #fdf1dc; color: #94570a; }
 .sev.m, .sev.m2 { background: #e8f4ec; color: #17663e; }
 
 /* Case study */

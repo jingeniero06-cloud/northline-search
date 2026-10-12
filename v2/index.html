@@ -126,15 +126,30 @@
         </div>
       </div>
 
-      <div class="flow reveal" aria-label="How an audit runs">
-        <div class="flow-head">How an audit runs</div>
-        <div class="flow-sub">From first crawl to fix plan</div>
-        <ol>
-          <li class="on"><i>01</i><div><b>Crawl every page</b><small>Sitemap + every reachable link</small></div></li>
-          <li><i>02</i><div><b>Test what matters</b><small>Speed · schema · content · AI access</small></div></li>
-          <li><i>03</i><div><b>Verify live</b><small>Each critical finding re-checked</small></div></li>
-          <li><i>04</i><div><b>Ship the plan</b><small>Report, priorities and fix files</small></div></li>
-        </ol>
+      <div class="report reveal" aria-label="Example audit scorecard">
+        <div class="report-top"><span><span class="dot"></span>Audit complete</span><span>Example scorecard</span></div>
+        <div class="gauge-row">
+          <div class="gauge" style="--v:67">
+            <svg viewBox="0 0 112 112" width="112" height="112" aria-hidden="true">
+              <circle class="track" cx="56" cy="56" r="48" fill="none" stroke-width="9"/>
+              <circle class="fill" cx="56" cy="56" r="48" fill="none" stroke-width="9"/>
+            </svg>
+            <span>67</span>
+          </div>
+          <div class="gauge-copy"><b>SEO health score</b><small>Weighted across 7 categories</small></div>
+        </div>
+        <ul class="bars">
+          <li>Schema<span class="bar"><i style="--w:85%;background:var(--green)"></i></span><span class="n">85</span></li>
+          <li>On-page<span class="bar"><i style="--w:78%;background:var(--green)"></i></span><span class="n">78</span></li>
+          <li>Technical<span class="bar"><i style="--w:68%;background:var(--amber)"></i></span><span class="n">68</span></li>
+          <li>AI search<span class="bar"><i style="--w:55%;background:var(--amber)"></i></span><span class="n">55</span></li>
+          <li>Performance<span class="bar"><i style="--w:42%;background:var(--red)"></i></span><span class="n">42</span></li>
+        </ul>
+        <div class="flags">
+          <div class="flag"><span class="sev c">Critical</span>Placeholder text live on the pricing page</div>
+          <div class="flag"><span class="sev h">High</span>Mobile LCP 15.1 s: hero image lazy-loaded</div>
+          <div class="flag"><span class="sev m">Medium</span>14 redirecting URLs in the XML sitemap</div>
+        </div>
       </div>
     </div>
   </section>
