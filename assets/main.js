@@ -36,6 +36,91 @@
     a.addEventListener("click", () => { if (pkg) pkg.value = a.dataset.pkg; })
   );
 
+  const steps = document.querySelectorAll(".flow li");
+  if (steps.length && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    let i = 0;
+    setInterval(() => {
+      steps[i].classList.remove("on");
+      i = (i + 1) % steps.length;
+      steps[i].classList.add("on");
+    }, 2200);
+  }
+
+  const tocLinks = [...document.querySelectorAll(".toc a")];
+  const progress = document.querySelector(".read-progress");
+  const body = document.querySelector(".cs-body");
+  if (tocLinks.length && body) {
+    const targets = tocLinks.map((a) => document.querySelector(a.getAttribute("href")));
+    const update = () => {
+      let current = 0;
+      targets.forEach((t, i) => { if (t && t.getBoundingClientRect().top < 140) current = i; });
+      tocLinks.forEach((a, i) => a.classList.toggle("active", i === current));
+      if (progress) {
+        const r = body.getBoundingClientRect();
+        const pct = Math.min(1, Math.max(0, -r.top / (r.height - innerHeight * 0.6)));
+        progress.style.width = (pct * 100).toFixed(1) + "%";
+      }
+    };
+    update();
+    window.addEventListener("scroll", update, { passive: true });
+  }
+
+  const copy = document.querySelector("[data-copy-link]");
+  if (copy) {
+    copy.addEventListener("click", async () => {
+      try { await navigator.clipboard.writeText(location.href.split("#")[0]); copy.title = "Link copied"; copy.setAttribute("aria-label", "Link copied"); } catch {}
+    });
+  }
+
+  const filter = document.querySelector(".cs-filters form");
+  if (filter) {
+    const q = filter.querySelector("input");
+    const cat = filter.querySelector("select");
+    const cards = [...document.querySelectorAll(".cs-list .cs-card")];
+    const count = filter.querySelector(".cs-count");
+    const empty = document.querySelector(".cs-empty");
+    const run = () => {
+      const term = q.value.trim().toLowerCase();
+      let shown = 0;
+      cards.forEach((c) => {
+        const ok = (!cat.value || c.dataset.category === cat.value) && (!term || c.textContent.toLowerCase().includes(term));
+        c.hidden = !ok;
+        if (ok) shown++;
+      });
+      count.textContent = shown + (shown === 1 ? " case study" : " case studies");
+      if (empty) empty.hidden = shown > 0;
+    };
+    filter.addEventListener("input", run);
+    filter.addEventListener("submit", (e) => e.preventDefault());
+    run();
+  }
+
+  let calendly;
+  const loadCalendly = () => calendly || (calendly = new Promise((resolve, reject) => {
+    const css = document.createElement("link");
+    css.rel = "stylesheet";
+    css.href = "https://assets.calendly.com/assets/external/widget.css";
+    document.head.appendChild(css);
+    const js = document.createElement("script");
+    js.src = "https://assets.calendly.com/assets/external/widget.js";
+    js.async = true;
+    js.onload = () => (window.Calendly ? resolve(window.Calendly) : reject());
+    js.onerror = () => { calendly = null; reject(); };
+    document.head.appendChild(js);
+  }));
+  document.querySelectorAll('a[href^="https://calendly.com/"]').forEach((a) => {
+    ["pointerenter", "focus", "touchstart"].forEach((ev) => a.addEventListener(ev, () => loadCalendly().catch(() => {}), { once: true, passive: true }));
+    a.addEventListener("click", async (e) => {
+      if (e.ctrlKey || e.metaKey || e.shiftKey) return;
+      e.preventDefault();
+      try {
+        (await loadCalendly()).initPopupWidget({ url: a.href });
+      } catch {
+        window.open(a.href, "_blank", "noopener");
+      }
+    });
+  });
+
   document.querySelectorAll("[data-year]").forEach((el) => { el.textContent = new Date().getFullYear(); });
 
   const store = {
