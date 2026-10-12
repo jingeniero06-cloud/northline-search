@@ -92,7 +92,7 @@ p { margin: 0 0 1em; }
   background: var(--orange-soft); border: 1px solid #c5e3e6; border-radius: 99px; font-size: .92rem; font-weight: 600;
 }
 .hero-pill .av { width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; background: var(--orange); color: #fff; font-family: var(--display); font-size: .9rem; }
-.hero-pill span { color: var(--muted); font-weight: 500; }
+.hero-pill span:not(.av) { color: var(--muted); font-weight: 500; }
 .hero-ctas { display: flex; flex-wrap: wrap; gap: 16px; margin: 34px 0 14px; }
 .hero-ctas + .book-line { margin: 0 0 36px; }
 .book-line { font-size: .88rem; color: var(--muted-light); }
@@ -384,7 +384,6 @@ footer .logo { color: #fff; }
 }
 @media (max-width: 760px) {
   body { font-size: 16px; }
-  .hero-pill span { display: none; }
   section { padding: 80px 0; }
   .hero { padding: 120px 0 70px; }
   .nav { height: 72px; }
