@@ -1,3 +1,11 @@
+@font-face { font-family: "Manrope"; src: url("fonts/manrope-latin.woff2") format("woff2"); font-weight: 200 800; font-style: normal; font-display: optional; }
+@font-face { font-family: "Clash Grotesk"; src: url("fonts/clash-grotesk-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: optional; }
+@font-face { font-family: "Clash Grotesk"; src: url("fonts/clash-grotesk-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: optional; }
+@font-face { font-family: "Clash Grotesk"; src: url("fonts/clash-grotesk-600.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: optional; }
+/* Fallbacks sized to match the web fonts so text doesn't shift when they load */
+@font-face { font-family: "Manrope Fallback"; src: local("Arial"), local("ArialMT"), local("Liberation Sans"), local("Arimo"), local("Helvetica"); size-adjust: 100.5%; ascent-override: 106.1%; descent-override: 29.9%; line-gap-override: 0%; }
+@font-face { font-family: "Clash Fallback"; src: local("Arial"), local("ArialMT"), local("Liberation Sans"), local("Arimo"), local("Helvetica"); size-adjust: 100.9%; ascent-override: 88.2%; descent-override: 24.8%; line-gap-override: 8.9%; }
+
 :root {
   --ink: #1d1d1d;
   --ink-2: #2c2c2c;
@@ -17,8 +25,8 @@
   --red: #e5484d;
   --radius: 16px;
   --shadow: 0 24px 60px -28px rgba(29, 29, 29, .28);
-  --display: "Clash Grotesk", "Manrope", system-ui, sans-serif;
-  --sans: "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --display: "Clash Grotesk", "Clash Fallback", system-ui, sans-serif;
+  --sans: "Manrope", "Manrope Fallback", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --max: 1200px;
 }
 
