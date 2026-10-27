@@ -1,0 +1,1772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0b7f8a">
+  <title>Trident Structures (trident-structures.com) | Northline Search Detailed SEO Audit</title>
+  <link rel="icon" href="https://jingeniero06-cloud.github.io/northline-search/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@400,500,600,700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&display=swap">
+  <style>
+    @font-face {
+      font-family: "Manrope";
+      src: url("https://jingeniero06-cloud.github.io/northline-search/assets/fonts/manrope-latin.woff2") format("woff2");
+      font-weight: 200 800;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Clash Grotesk";
+      src: url("https://jingeniero06-cloud.github.io/northline-search/assets/fonts/clash-grotesk-400.woff2") format("woff2");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Clash Grotesk";
+      src: url("https://jingeniero06-cloud.github.io/northline-search/assets/fonts/clash-grotesk-500.woff2") format("woff2");
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Clash Grotesk";
+      src: url("https://jingeniero06-cloud.github.io/northline-search/assets/fonts/clash-grotesk-600.woff2") format("woff2");
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+    :root {
+      --ink: #1d1d1d;
+      --ink-2: #2c2c2c;
+      --orange: #0b7f8a;
+      --orange-hover: #096b74;
+      --orange-2: #3cc4cc;
+      --orange-soft: #e5f4f5;
+      --cream: #f2f7f7;
+      --cream-2: #f0f4f4;
+      --card: #ffffff;
+      --line: #e1eaea;
+      --line-accent: #b9dde0;
+      --line-on-dark: rgba(255, 255, 255, .12);
+      --text: #1d1d1d;
+      --muted: #616b6c;
+      --muted-light: #95a0a1;
+      --green: #12a150;
+      --amber: #e89a1c;
+      --red: #e5484d;
+      --radius: 16px;
+      --shadow: 0 24px 60px -28px rgba(29, 29, 29, .28);
+      --display: "Clash Grotesk", system-ui, -apple-system, sans-serif;
+      --sans: "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      --fm: "IBM Plex Mono", Consolas, monospace;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    body {
+      background: var(--cream);
+      color: var(--text);
+      font-family: var(--sans);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      padding-bottom: 80px;
+    }
+    a { color: var(--orange); text-decoration: underline; text-decoration-color: rgba(11, 127, 138, .35); text-underline-offset: 3px; transition: color .2s ease; }
+    a:hover { color: var(--orange-hover); text-decoration-color: var(--orange); }
+
+    .top-strip {
+      background: var(--ink);
+      color: rgba(255, 255, 255, .72);
+      padding: 9px 24px;
+      font-family: var(--fm);
+      font-size: .78rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      border-bottom: 1px solid var(--line-on-dark);
+    }
+    .top-strip strong { color: #fff; }
+    .top-strip .dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--green);
+      margin-right: 7px;
+    }
+
+    .site-header {
+      background: rgba(255, 255, 255, .96);
+      backdrop-filter: blur(12px);
+      color: var(--ink);
+      padding: 16px 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid var(--line);
+      box-shadow: 0 8px 30px -18px rgba(29, 29, 29, .22);
+    }
+    .header-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .brand-group { display: flex; align-items: center; gap: 16px; }
+    .nl-logo {
+      display: inline-flex;
+      align-items: center;
+      gap: .55em;
+      color: var(--ink);
+      text-decoration: none;
+      font-family: var(--display);
+      font-weight: 600;
+      font-size: 1.32rem;
+      letter-spacing: .01em;
+      padding-right: 16px;
+      border-right: 1px solid var(--line);
+    }
+    .nl-logo svg { width: 34px; height: 34px; flex: none; }
+    .client-meta { display: flex; flex-direction: column; }
+    .brand-name { font-family: var(--display); font-size: 1.15rem; font-weight: 600; color: var(--ink); line-height: 1.15; }
+    .brand-sub { font-size: .78rem; color: var(--muted); font-family: var(--fm); }
+    .badge {
+      background: var(--orange-soft);
+      border: 1px solid #c5e3e6;
+      color: var(--orange);
+      padding: 7px 15px;
+      border-radius: 999px;
+      font-size: .82rem;
+      font-family: var(--display);
+      font-weight: 600;
+      letter-spacing: .02em;
+    }
+
+    .container { max-width: 1280px; margin: 34px auto; padding: 0 24px; }
+
+    .hero {
+      background: radial-gradient(circle at 92% 12%, rgba(60, 196, 204, .22), transparent 52%),
+                  linear-gradient(135deg, var(--ink) 0%, var(--ink-2) 62%, #13363a 100%);
+      color: #fff;
+      padding: 42px 44px;
+      border-radius: 22px;
+      margin-bottom: 30px;
+      border: 1px solid var(--line-on-dark);
+      box-shadow: var(--shadow);
+      display: grid;
+      grid-template-columns: 1.35fr .65fr;
+      gap: 36px;
+      align-items: center;
+    }
+    @media (max-width: 960px) {
+      .hero { grid-template-columns: 1fr; padding: 32px 26px; }
+    }
+    .pill-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 5px 14px;
+      border-radius: 999px;
+      background: rgba(11, 127, 138, .25);
+      border: 1px solid rgba(60, 196, 204, .4);
+      color: var(--orange-2);
+      font-size: .78rem;
+      font-family: var(--display);
+      font-weight: 600;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .hero h1 {
+      font-family: var(--display);
+      font-size: clamp(1.85rem, 3.4vw, 2.65rem);
+      font-weight: 500;
+      letter-spacing: -.015em;
+      line-height: 1.1;
+      margin-bottom: 14px;
+    }
+    .hero h1 span { color: var(--orange-2); font-weight: 600; }
+    .hero p { color: rgba(255, 255, 255, .82); max-width: 840px; font-size: 1rem; line-height: 1.62; }
+    .hero code {
+      font-family: var(--fm);
+      font-size: .86em;
+      background: rgba(255, 255, 255, .1);
+      color: var(--orange-2);
+      padding: 2px 6px;
+      border-radius: 5px;
+    }
+
+    .hero-scorecard {
+      background: var(--ink-2);
+      border: 1px solid var(--line-on-dark);
+      border-radius: 18px;
+      padding: 22px 24px;
+    }
+    .sc-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: .78rem;
+      color: rgba(255, 255, 255, .65);
+      margin-bottom: 16px;
+      font-family: var(--fm);
+    }
+    .sc-top .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--orange-2); margin-right: 6px; }
+    .gauge-wrap { display: flex; align-items: center; gap: 18px; padding-bottom: 16px; border-bottom: 1px solid var(--line-on-dark); }
+    .gauge { position: relative; width: 92px; height: 92px; flex: none; }
+    .gauge svg { transform: rotate(-90deg); width: 92px; height: 92px; }
+    .gauge .track { stroke: rgba(255, 255, 255, .12); }
+    .gauge .fill {
+      stroke: var(--orange-2);
+      stroke-linecap: round;
+      stroke-dasharray: 251;
+      stroke-dashoffset: calc(251 - 251 * 48 / 100);
+    }
+    .gauge span {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      font-family: var(--display);
+      font-size: 1.75rem;
+      font-weight: 600;
+      color: #fff;
+    }
+    .gauge-copy b { display: block; font-family: var(--display); font-size: 1.05rem; font-weight: 600; color: #fff; margin-bottom: 3px; }
+    .gauge-copy small { color: rgba(255, 255, 255, .68); font-size: .82rem; display: block; line-height: 1.4; }
+    .sc-flags { display: grid; gap: 7px; margin-top: 14px; }
+    .sc-flag {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      font-size: .8rem;
+      padding: 7px 10px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, .05);
+      color: rgba(255, 255, 255, .88);
+    }
+
+    .dl { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+    .dl a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 9px 14px;
+      border: 1px solid rgba(255, 255, 255, .2);
+      color: #fff;
+      background: rgba(255, 255, 255, .06);
+      border-radius: 6px;
+      text-decoration: none;
+      font-family: var(--display);
+      font-size: .86rem;
+      font-weight: 600;
+      transition: transform .2s ease, background .2s ease, border-color .2s ease;
+    }
+    .dl a:hover {
+      transform: translateY(-2px);
+      background: var(--orange);
+      border-color: var(--orange-2);
+      color: #fff;
+    }
+    .dl a.primary-dl {
+      background: var(--orange);
+      border-color: var(--orange);
+      box-shadow: 0 14px 30px -14px rgba(11, 127, 138, .8);
+    }
+    .dl a.primary-dl:hover { background: var(--orange-hover); }
+
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(195px, 1fr));
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+    .kpi {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 18px 20px;
+      transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+    }
+    .kpi:hover {
+      transform: translateY(-3px);
+      border-color: var(--line-accent);
+      box-shadow: var(--shadow);
+    }
+    .kpi .l {
+      font-family: var(--display);
+      font-size: .76rem;
+      color: var(--muted);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+    }
+    .kpi .v {
+      font-family: var(--display);
+      font-size: 1.95rem;
+      font-weight: 600;
+      margin: 4px 0;
+      line-height: 1.1;
+      color: var(--orange);
+    }
+    .kpi .s { font-size: .8rem; color: var(--muted); font-family: var(--fm); }
+    .kpi.crit .v { color: var(--red); }
+    .kpi.warn .v { color: var(--amber); }
+    .kpi.pri .v { color: var(--orange); }
+
+    .tabs {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 22px;
+      overflow-x: auto;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--line);
+    }
+    .tab-btn {
+      background: var(--card);
+      color: var(--ink);
+      border: 1px solid var(--line);
+      padding: 10px 18px;
+      border-radius: 999px;
+      font-family: var(--display);
+      font-weight: 600;
+      font-size: .9rem;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all .2s ease;
+    }
+    .tab-btn:hover {
+      border-color: var(--line-accent);
+      color: var(--orange);
+    }
+    .tab-btn.active {
+      background: var(--orange);
+      color: #fff;
+      border-color: var(--orange);
+      box-shadow: 0 10px 22px -12px rgba(11, 127, 138, .75);
+    }
+
+    .panel {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 30px;
+      margin-bottom: 28px;
+      box-shadow: 0 14px 40px -28px rgba(29, 29, 29, .18);
+    }
+    .panel-h {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--line);
+    }
+    .panel-h h2 {
+      font-family: var(--display);
+      font-size: 1.45rem;
+      font-weight: 600;
+      letter-spacing: -.01em;
+      color: var(--ink);
+    }
+
+    .finding-item {
+      background: var(--cream);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 18px 22px;
+      margin-bottom: 16px;
+      border-left: 4px solid var(--orange);
+      transition: border-color .2s ease, box-shadow .2s ease;
+    }
+    .finding-item:hover { box-shadow: 0 12px 28px -20px rgba(29, 29, 29, .22); }
+    .finding-item.critical { border-left-color: var(--red); background: #fff9f9; }
+    .finding-item.high { border-left-color: var(--amber); background: #fffcf5; }
+    .finding-item.medium { border-left-color: var(--orange); background: var(--cream); }
+    .finding-item.low { border-left-color: var(--green); background: #f7fcf9; }
+    .finding-top { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; margin-bottom: 8px; }
+    .finding-title { font-family: var(--display); font-weight: 600; font-size: 1.06rem; color: var(--ink); }
+    .finding-badge {
+      font-size: .7rem;
+      font-family: var(--display);
+      font-weight: 700;
+      letter-spacing: .08em;
+      padding: 4px 10px;
+      border-radius: 5px;
+      text-transform: uppercase;
+      white-space: nowrap;
+      background: #fdf1dc;
+      color: #94570a;
+    }
+    .finding-item.critical .finding-badge { background: #fde8e6; color: #b4332b; }
+    .finding-item.medium .finding-badge { background: var(--orange-soft); color: var(--orange); }
+    .finding-item.low .finding-badge { background: #e8f4ec; color: #17663e; }
+
+    .meta-row { display: flex; flex-wrap: wrap; gap: 16px; font-size: .84rem; color: var(--muted); margin-bottom: 10px; }
+    .meta-row b { color: var(--ink); }
+    .finding-desc { font-size: .94rem; color: #3a4344; margin-bottom: 12px; }
+    .finding-rec {
+      font-size: .92rem;
+      background: #fff;
+      padding: 12px 16px;
+      border-radius: 10px;
+      border: 1px solid var(--line);
+      box-shadow: inset 3px 0 0 var(--orange);
+      margin-bottom: 12px;
+    }
+    .finding-rec span {
+      font-family: var(--display);
+      color: var(--orange);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      font-size: .8rem;
+      display: block;
+      margin-bottom: 4px;
+    }
+    .res-list { margin: 4px 0 0 18px; color: var(--ink); }
+    .res-list li { margin: 5px 0; }
+    details { margin-top: 10px; }
+    summary {
+      cursor: pointer;
+      font-family: var(--display);
+      font-weight: 600;
+      font-size: .92rem;
+      color: var(--orange);
+      margin-bottom: 8px;
+    }
+
+    .data-table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      max-height: 480px;
+      overflow-y: auto;
+      background: #fff;
+    }
+    table { width: 100%; border-collapse: collapse; font-size: .88rem; background: #fff; }
+    th {
+      background: var(--cream-2);
+      font-family: var(--display);
+      font-size: .74rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .07em;
+      color: var(--muted);
+      padding: 11px 12px;
+      text-align: left;
+      position: sticky;
+      top: 0;
+      border-bottom: 1px solid var(--line);
+    }
+    td { padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--ink); }
+    tr:hover td { background: #f9fcfc; }
+    td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; }
+    .mono { font-family: var(--fm); font-size: .8em; word-break: break-all; }
+    td.crit { color: var(--red); font-weight: 700; }
+    td.warn { color: var(--amber); font-weight: 700; }
+    .was { color: #b4332b; font-size: .84rem; margin-bottom: 4px; }
+    .now { color: var(--green); font-size: .86rem; font-weight: 600; }
+
+    .roadmap { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; margin-bottom: 26px; }
+    .phase {
+      background: var(--cream);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 20px 22px;
+      border-top: 4px solid var(--orange);
+    }
+    .phase:nth-child(1) { border-top-color: var(--red); }
+    .phase:nth-child(2) { border-top-color: var(--amber); }
+    .phase:nth-child(3) { border-top-color: var(--green); }
+    .phase-title { font-family: var(--display); font-weight: 600; font-size: 1.1rem; margin-bottom: 12px; color: var(--ink); }
+    .phase ul { margin-left: 18px; font-size: .92rem; color: #3a4344; }
+    .phase li { margin: 7px 0; }
+
+    .pill {
+      display: inline-block;
+      padding: 3px 9px;
+      border-radius: 5px;
+      font-size: .7rem;
+      font-weight: 700;
+      font-family: var(--display);
+      letter-spacing: .07em;
+      text-transform: uppercase;
+    }
+    .pill.high { background: #fde8e6; color: #b4332b; }
+    .pill.medium { background: #fdf1dc; color: #94570a; }
+    .pill.low { background: #e8f4ec; color: #17663e; }
+
+    pre.code {
+      background: var(--ink);
+      color: #e5f4f5;
+      padding: 18px 20px;
+      border-radius: 12px;
+      overflow-x: auto;
+      font-family: var(--fm);
+      font-size: .8rem;
+      line-height: 1.55;
+      border: 1px solid var(--ink-2);
+    }
+    .btn {
+      background: var(--orange);
+      color: #fff;
+      border: 0;
+      padding: 9px 16px;
+      border-radius: 6px;
+      font-family: var(--display);
+      font-weight: 600;
+      cursor: pointer;
+      font-size: .88rem;
+      box-shadow: 0 12px 24px -12px rgba(11, 127, 138, .75);
+      transition: transform .2s ease, background .2s ease;
+    }
+    .btn:hover { background: var(--orange-hover); transform: translateY(-1px); color: #fff; }
+
+    .cta-band {
+      max-width: 1280px;
+      margin: 12px auto 0;
+      padding: 0 24px;
+    }
+    .cta-band .band {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+      border-radius: 20px;
+      padding: 32px 38px;
+      background: linear-gradient(120deg, #0b7f8a, #11a0aa 60%, #3cc4cc);
+      color: #fff;
+      box-shadow: var(--shadow);
+    }
+    .cta-band .band span {
+      font-family: var(--display);
+      font-size: .78rem;
+      font-weight: 600;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      opacity: .9;
+      display: block;
+      margin-bottom: 4px;
+    }
+    .cta-band .band h3 {
+      font-family: var(--display);
+      font-size: clamp(1.35rem, 2.4vw, 1.85rem);
+      font-weight: 500;
+      color: #fff;
+      margin: 0;
+    }
+    .cta-band .btn-dark {
+      background: var(--ink);
+      color: #fff;
+      padding: 12px 22px;
+      border-radius: 6px;
+      font-family: var(--display);
+      font-weight: 600;
+      text-decoration: none;
+      font-size: .95rem;
+    }
+    .cta-band .btn-dark:hover { background: #000; color: #fff; }
+    footer {
+      max-width: 1280px;
+      margin: 28px auto 0;
+      padding: 20px 24px;
+      font-size: .82rem;
+      color: var(--muted);
+      font-family: var(--fm);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      border-top: 1px solid var(--line);
+    }
+  </style>
+</head>
+<body>
+  <aside class="top-strip">
+    <div><span class="dot"></span><span>NORTHLINE SEARCH · EVIDENCE-BASED SEO AUDIT:</span> <strong>trident-structures.com</strong> · Trident Structures (A Junction Industries, LLC Company)</div>
+    <div>15 URLs crawled (13 canonical + 2 template parts) · 12 forensic issues · 2026-10-27</div>
+  </aside>
+
+  <header class="site-header"><div class="header-inner">
+    <div class="brand-group">
+      <a class="nl-logo" href="https://jingeniero06-cloud.github.io/northline-search/" target="_blank" rel="noopener" aria-label="Northline Search">
+        <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <rect x="1" y="1" width="30" height="30" rx="9" stroke="#0b7f8a" stroke-width="1.5"/>
+          <path d="M9.5 23V9C25 9 7 23 22.5 23V8.5" stroke="#0b7f8a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M19.4 11.6 22.5 8.5l3.1 3.1" stroke="#0b7f8a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Northline Search
+      </a>
+      <div class="client-meta">
+        <div class="brand-name">Trident Structures</div>
+        <div class="brand-sub">3348 Peden Road, Suite 700, Fort Worth, TX 76179 · (817) 607-8373 · sales@trident-structures.com</div>
+      </div>
+    </div>
+    <div class="badge">All affected URLs · Resolutions · Action plan</div>
+  </div></header>
+
+  <div class="container">
+    <div class="hero">
+      <div>
+        <div class="pill-tag">Full-Site Crawl · Core Web Vitals · Schema · AI Search (GEO)</div>
+        <h1>SEO Health Score: <span>48 / 100</span></h1>
+        <p>
+          Evidence-based crawl of all <b>15</b> sitemap URLs (<b>13</b> canonical pages + <b>2</b> ElementsKit template parts).
+          Major forensic finding: <b>13/13 pages display dummy Astra theme starter footer copy</b> ("Roof Installation", "info@example.com", Lorem Ipsum) on a heavy industrial bulk handling EPC website!
+          <b>10/13 pages missing H1 tags</b>, <b>10/13 missing meta descriptions</b>, <b>289/309 images missing alt text (93.5%)</b>, and contact form shortcode broken on <code>/contact/</code>.
+        </p>
+        <div class="dl">
+          <a class="primary-dl" href="../files/09-issue-urls-detailed.csv">CSV · All Issue URLs (Detailed)</a>
+          <a href="../files/10-action-plan.csv">CSV · Action Plan Roadmap</a>
+          <a href="../files/01-all-urls-crawl.csv">CSV · Full Crawl (15 URLs)</a>
+          <a href="../files/07-image-alt-issues.csv">CSV · Image Alt Issues (289)</a>
+          <a href="../files/08-lighthouse-mobile.csv">CSV · Mobile Lighthouse</a>
+          <a href="../files/schema-fix.json">JSON-LD · Production Schema</a>
+          <a href="../files/llms.txt">GEO · llms.txt Manifest</a>
+        </div>
+      </div>
+
+      <div class="hero-scorecard" aria-label="Audit scorecard summary">
+        <div class="sc-top"><span><span class="dot"></span>Audit complete</span><span>trident-structures.com</span></div>
+        <div class="gauge-wrap">
+          <div class="gauge">
+            <svg viewBox="0 0 92 92">
+              <circle class="track" cx="46" cy="46" r="40" fill="none" stroke-width="8"/>
+              <circle class="fill" cx="46" cy="46" r="40" fill="none" stroke-width="8"/>
+            </svg>
+            <span>48</span>
+          </div>
+          <div class="gauge-copy">
+            <b>Needs Priority Remediation</b>
+            <small>7 high · 4 medium · 1 low findings across 15 crawled URLs</small>
+          </div>
+        </div>
+        <div class="sc-flags">
+          <div class="sc-flag"><span class="pill high">Critical</span>Dummy Astra "Roofing / Window" footer on all 13 pages</div>
+          <div class="sc-flag"><span class="pill high">Critical</span>Broken contact form shortcode on /contact/</div>
+          <div class="sc-flag"><span class="pill high">Critical</span>289 / 309 images missing alt attributes (93.5%)</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="kpi-grid">
+      <div class="kpi crit"><div class="l">Health Score</div><div class="v">48/100</div><div class="s">Grade F (Immediate Action)</div></div>
+      <div class="kpi crit"><div class="l">Dummy Footer Copy</div><div class="v">13 / 13</div><div class="s">Astra Roofing Demo Sitewide</div></div>
+      <div class="kpi crit"><div class="l">Missing H1 Tags</div><div class="v">10 / 13</div><div class="s">76.9% of Core Pages</div></div>
+      <div class="kpi crit"><div class="l">Missing Metas</div><div class="v">10 / 13</div><div class="s">76.9% of Core Pages</div></div>
+      <div class="kpi warn"><div class="l">Missing Alts</div><div class="v">289 / 309</div><div class="s">93.5% Sitewide Missing</div></div>
+      <div class="kpi pri"><div class="l">Resource Bloat</div><div class="v">58+</div><div class="s">39 CSS & 22 JS Files / Page</div></div>
+    </div>
+
+    <div class="tabs">
+      <button class="tab-btn active" type="button" data-tab="findings">Findings + All URLs</button>
+      <button class="tab-btn" type="button" data-tab="plan">Action Plan</button>
+      <button class="tab-btn" type="button" data-tab="speed">Lighthouse (Lab)</button>
+      <button class="tab-btn" type="button" data-tab="titles-meta">Title &amp; Meta Matrix</button>
+      <button class="tab-btn" type="button" data-tab="schema">Schema (JSON-LD)</button>
+      <button class="tab-btn" type="button" data-tab="geo">Robots &amp; llms.txt</button>
+      <button class="tab-btn" type="button" data-tab="crawl">Full Crawl Index</button>
+    </div>
+
+    <!-- TAB 1: FINDINGS -->
+    <div id="tab-findings" class="tab-content">
+      <div class="panel">
+        <div class="panel-h">
+          <h2>Forensic Findings · Root Causes · Resolutions</h2>
+          <span style="font-family:var(--fm);font-size:.82rem;color:var(--muted)">12 issues · expand each for affected URLs</span>
+        </div>
+        
+    <article class="finding-item critical" id="I01">
+      <div class="finding-top">
+        <div class="finding-title">I01 · Sitewide Dummy &#x27;Roof Installation &amp; Window Repair&#x27; Astra Template Footer on Every Page</div>
+        <span class="finding-badge">High</span>
+      </div>
+      <div class="meta-row">
+        <span><b>Area:</b> E-E-A-T / Trust / Content</span>
+        <span><b>Owner:</b> WP Admin / Content</span>
+        <span><b>Effort:</b> S (&lt; 45 min)</span>
+        <span><b>Phase:</b> Week 1</span>
+      </div>
+      <div class="finding-desc"><b>Impact:</b> All 13 canonical pages contain unedited Astra starter-site demo content in the global footer: &#x27;Roof Installation, Roof Repair, Leak Repair, Window Changing&#x27;, &#x27;Call Us: +1 2345 6789&#x27;, &#x27;info@example.com&#x27;, &#x27;Main Office San Francisco 20 Reynolds Neck&#x27;, and Latin Lorem Ipsum (&#x27;Cras ultricies...&#x27;). Google algorithms severely penalize commercial websites with template placeholder copy and fake contact info, creating catastrophic entity confusion for an industrial EPC firm.</div>
+      <div class="finding-rec">
+        <span>Resolution:</span>
+        <ol class="res-list"><li>In WordPress Admin -&gt; Appearance -&gt; Customize -&gt; Footer Builder (or Elementor Theme Builder -&gt; Footer), delete the dummy Astra starter-site widgets immediately.</li><li>Replace placeholder columns with verified corporate details: 3348 Peden Road, Suite 700, Fort Worth, TX 76179, (817) 607-8373, sales@trident-structures.com.</li><li>List real industrial services: Dry Bulk Material Handling, Storage Silos, Concrete Batch Plants, Rail Transload Facilities, and High-Density Automated Parking.</li><li>Purge sitewide caching to remove all instances of &#x27;Roof Installation&#x27; and &#x27;Cras ultricies&#x27; from Google&#x27;s rendered cache.</li></ol>
+      </div>
+      <details>
+        <summary>All affected URLs (13)</summary>
+        <div class="data-table-wrap url-table">
+          <table>
+            <thead><tr><th>#</th><th>Affected URL / Target</th><th>Status</th><th>Note</th></tr></thead>
+            <tbody><tr><td class='n'>1</td><td class='mono'><a href='https://www.trident-structures.com/' target='_blank' rel='noopener'>https://www.trident-structures.com/</a></td><td class='n'>200</td><td>E-E-A-T / Trust / Content issue</td></tr><tr><td class='n'>2</td><td class='mono'><a href='https://www.trident-structures.com/contact/' target='_blank' rel='noopener'>https://www.trident-structures.com/contact/</a></td><td class='n'>200</td><td>E-E-A-T / Trust / Content issue</td></tr><tr><td class='n'>3</td><td class='mono'><a href='https://www.trident-structures.com/parkingbrochures/' target='_blank' rel='noopener'>https://www.trident-structures.com/parkingbrochures/</a></td><td class='n'>200</td><td>E-E-A-T / Trust / Content issue</td></tr><tr><td class='n'>4</td><td class='mono'><a href='https://www.trident-structures.com/new-contact/' target='_blank' rel='noopener'>https://www.trident-structures.com/new-contact/</a></td><td class='n'>200</td><td>E-E-A-T / Trust / Content issue</td></tr><tr><td class='n'>5</td><td class='mono'><a href='https://www.trident-structures.com/careers/' target='_blank' rel='noopener'>https://www.trident-structures.com/careers/</a></td><td class='n'>200</td><td>E-E-A-T / Trust / Content issue</td></tr><tr><td class='n'>6</td><td class='mono'><a href='https://www.trident-structures.com/conference/' target='_blank' rel='noopener'>https://www.trident-structures.com/conference/</a></td><td class='n'>200</td><td>E-E-A-T / Trust / Content issue</td></tr><tr><td class='n'>7</td><td class='mono'><a href='https://www.trident-structures.com/micro-mining-processing/' target='_blank' rel='noopener'>https://www.trident-structures.com/micro-mining-processing/</a></td><td class='n'>200</td><td>E-E-A-T / Trust / Content issue</td></tr><tr><td class='n'>8</td><td class='mono'><a href='https://www.trident-structures.com/industrialbrochure/' target='_blank' rel='noopener'>https://www.trident-structures.com/industrialbrochure/</a></td><td class='n'>200</td><td>E-E-A-T / Trust / Content issue</td></tr><tr><td class='n'>9</td><td class='mono'><a href='https://www.trident-structures.com/parking/' target='_blank' rel='noopener'>https://www.trident-structures.com/parking/</a></td><td class='n'>200</td><td>E-E-A-T / Trust / Content issue</td></tr><tr><td class='n'>10</td><td class='mono'><a href='https://www.trident-structures.com/projects/' target='_blank' rel='noopener'>https://www.trident-structures.com/projects/</a></td><td class='n'>200</td><td>E-E-A-T / Trust / Content issue</td></tr><tr><td class='n'>11</td><td class='mono'><a href='https://www.trident-structures.com/services/' target='_blank' rel='noopener'>https://www.trident-structures.com/services/</a></td><td class='n'>200</td><td>E-E-A-T / Trust / Content issue</td></tr><tr><td class='n'>12</td><td class='mono'><a href='https://www.trident-structures.com/about-us/' target='_blank' rel='noopener'>https://www.trident-structures.com/about-us/</a></td><td class='n'>200</td><td>E-E-A-T / Trust / Content issue</td></tr><tr><td class='n'>13</td><td class='mono'><a href='https://www.trident-structures.com/products/' target='_blank' rel='noopener'>https://www.trident-structures.com/products/</a></td><td class='n'>200</td><td>E-E-A-T / Trust / Content issue</td></tr></tbody>
+          </table>
+        </div>
+      </details>
+    </article>
+
+    <article class="finding-item critical" id="I02">
+      <div class="finding-top">
+        <div class="finding-title">I02 · Broken Contact Form Shortcode on /contact/ and Duplicate /new-contact/ URL</div>
+        <span class="finding-badge">High</span>
+      </div>
+      <div class="meta-row">
+        <span><b>Area:</b> Conversion / UX / Indexing</span>
+        <span><b>Owner:</b> Web Dev / Marketing</span>
+        <span><b>Effort:</b> S (&lt; 1 hr)</span>
+        <span><b>Phase:</b> Week 1</span>
+      </div>
+      <div class="finding-desc"><b>Impact:</b> The primary contact page displays raw unparsed shortcode text &#x27;[sureforms id=&quot;2397&quot;]&#x27; instead of a functioning form, causing 100% lead capture failure for high-ticket industrial bids. Meanwhile, /new-contact/ exists as a duplicate indexed page with title &#x27;new contact - Trident Structures&#x27;.</div>
+      <div class="finding-rec">
+        <span>Resolution:</span>
+        <ol class="res-list"><li>Activate and configure the SureForms form ID 2397 or replace with a tested Gravity Forms / WPForms embed on /contact/.</li><li>Ensure the form includes industrial inquiry dropdowns (Bulk Handling, Batch Plants, Silos, Rail Transload, Parking).</li><li>Set up a permanent 301 redirect from /new-contact/ -&gt; /contact/ and remove /new-contact/ from page-sitemap.xml.</li></ol>
+      </div>
+      <details>
+        <summary>All affected URLs (2)</summary>
+        <div class="data-table-wrap url-table">
+          <table>
+            <thead><tr><th>#</th><th>Affected URL / Target</th><th>Status</th><th>Note</th></tr></thead>
+            <tbody><tr><td class='n'>1</td><td class='mono'><a href='https://www.trident-structures.com/contact/' target='_blank' rel='noopener'>https://www.trident-structures.com/contact/</a></td><td class='n'>200</td><td>Conversion / UX / Indexing issue</td></tr><tr><td class='n'>2</td><td class='mono'><a href='https://www.trident-structures.com/new-contact/' target='_blank' rel='noopener'>https://www.trident-structures.com/new-contact/</a></td><td class='n'>200</td><td>Conversion / UX / Indexing issue</td></tr></tbody>
+          </table>
+        </div>
+      </details>
+    </article>
+
+    <article class="finding-item critical" id="I03">
+      <div class="finding-top">
+        <div class="finding-title">I03 · ElementsKit Header/Footer Template Snippets Published in XML Sitemap Index</div>
+        <span class="finding-badge">High</span>
+      </div>
+      <div class="meta-row">
+        <span><b>Area:</b> Sitemap / Index Bloat</span>
+        <span><b>Owner:</b> SEO / WP Admin</span>
+        <span><b>Effort:</b> S (&lt; 15 min)</span>
+        <span><b>Phase:</b> Week 1</span>
+      </div>
+      <div class="finding-desc"><b>Impact:</b> elementskit_template-sitemap.xml submits internal template parts (/?elementskit_template=main-footer-one and main-header-one) to Google. Both return HTTP 200 with 22 and 56 words, creating thin content taxonomy leaks.</div>
+      <div class="finding-rec">
+        <span>Resolution:</span>
+        <ol class="res-list"><li>In Yoast SEO -&gt; Settings -&gt; Post Types -&gt; ElementsKit Templates, toggle &#x27;Show ElementsKit Templates in search results?&#x27; to NO.</li><li>Ensure &#x27;Include in XML sitemap&#x27; is toggled OFF for all theme builder post types.</li><li>Verify sitemap_index.xml only contains page-sitemap.xml and submit updated sitemap in Google Search Console.</li></ol>
+      </div>
+      <details>
+        <summary>All affected URLs (2)</summary>
+        <div class="data-table-wrap url-table">
+          <table>
+            <thead><tr><th>#</th><th>Affected URL / Target</th><th>Status</th><th>Note</th></tr></thead>
+            <tbody><tr><td class='n'>1</td><td class='mono'><a href='https://www.trident-structures.com/?elementskit_template=main-footer-one' target='_blank' rel='noopener'>https://www.trident-structures.com/?elementskit_template=main-footer-one</a></td><td class='n'>200</td><td>Sitemap / Index Bloat issue</td></tr><tr><td class='n'>2</td><td class='mono'><a href='https://www.trident-structures.com/?elementskit_template=main-header-one' target='_blank' rel='noopener'>https://www.trident-structures.com/?elementskit_template=main-header-one</a></td><td class='n'>200</td><td>Sitemap / Index Bloat issue</td></tr></tbody>
+          </table>
+        </div>
+      </details>
+    </article>
+
+    <article class="finding-item critical" id="I04">
+      <div class="finding-top">
+        <div class="finding-title">I04 · 10 of 13 Core Commercial Pages Have Zero &lt;h1&gt; Heading Tags</div>
+        <span class="finding-badge">High</span>
+      </div>
+      <div class="meta-row">
+        <span><b>Area:</b> On-page / Headings</span>
+        <span><b>Owner:</b> Content / Dev</span>
+        <span><b>Effort:</b> S (1-2 hrs)</span>
+        <span><b>Phase:</b> Week 1</span>
+      </div>
+      <div class="finding-desc"><b>Impact:</b> About Us, Projects, Parking, Micro-Mining Processing, Careers, Conference, ParkingBrochures, IndustrialBrochure, and New-Contact have 0 H1 tags in their DOM outline. Only Home, Services, Products, and Contact have an H1.</div>
+      <div class="finding-rec">
+        <span>Resolution:</span>
+        <ol class="res-list"><li>In Elementor editor for each page, change the top hero title widget HTML tag from &lt;div&gt; or &lt;h2&gt; to &lt;h1&gt;.</li><li>Target high-intent keywords in each H1 (e.g. /projects/ -&gt; &#x27;Industrial EPC &amp; Material Handling Projects Portfolio&#x27;, /about-us/ -&gt; &#x27;About Trident Structures | Industrial EPC &amp; Facility Engineering&#x27;).</li><li>Ensure each page has exactly one unique, descriptive &lt;h1&gt; tag followed by structured &lt;h2&gt; sub-sections.</li></ol>
+      </div>
+      <details>
+        <summary>All affected URLs (9)</summary>
+        <div class="data-table-wrap url-table">
+          <table>
+            <thead><tr><th>#</th><th>Affected URL / Target</th><th>Status</th><th>Note</th></tr></thead>
+            <tbody><tr><td class='n'>1</td><td class='mono'><a href='https://www.trident-structures.com/parkingbrochures/' target='_blank' rel='noopener'>https://www.trident-structures.com/parkingbrochures/</a></td><td class='n'>200</td><td>On-page / Headings issue</td></tr><tr><td class='n'>2</td><td class='mono'><a href='https://www.trident-structures.com/new-contact/' target='_blank' rel='noopener'>https://www.trident-structures.com/new-contact/</a></td><td class='n'>200</td><td>On-page / Headings issue</td></tr><tr><td class='n'>3</td><td class='mono'><a href='https://www.trident-structures.com/careers/' target='_blank' rel='noopener'>https://www.trident-structures.com/careers/</a></td><td class='n'>200</td><td>On-page / Headings issue</td></tr><tr><td class='n'>4</td><td class='mono'><a href='https://www.trident-structures.com/conference/' target='_blank' rel='noopener'>https://www.trident-structures.com/conference/</a></td><td class='n'>200</td><td>On-page / Headings issue</td></tr><tr><td class='n'>5</td><td class='mono'><a href='https://www.trident-structures.com/micro-mining-processing/' target='_blank' rel='noopener'>https://www.trident-structures.com/micro-mining-processing/</a></td><td class='n'>200</td><td>On-page / Headings issue</td></tr><tr><td class='n'>6</td><td class='mono'><a href='https://www.trident-structures.com/industrialbrochure/' target='_blank' rel='noopener'>https://www.trident-structures.com/industrialbrochure/</a></td><td class='n'>200</td><td>On-page / Headings issue</td></tr><tr><td class='n'>7</td><td class='mono'><a href='https://www.trident-structures.com/parking/' target='_blank' rel='noopener'>https://www.trident-structures.com/parking/</a></td><td class='n'>200</td><td>On-page / Headings issue</td></tr><tr><td class='n'>8</td><td class='mono'><a href='https://www.trident-structures.com/projects/' target='_blank' rel='noopener'>https://www.trident-structures.com/projects/</a></td><td class='n'>200</td><td>On-page / Headings issue</td></tr><tr><td class='n'>9</td><td class='mono'><a href='https://www.trident-structures.com/about-us/' target='_blank' rel='noopener'>https://www.trident-structures.com/about-us/</a></td><td class='n'>200</td><td>On-page / Headings issue</td></tr></tbody>
+          </table>
+        </div>
+      </details>
+    </article>
+
+    <article class="finding-item critical" id="I05">
+      <div class="finding-top">
+        <div class="finding-title">I05 · 10 of 13 Core Pages Missing Meta Descriptions (76.9% Missing) + 2 Truncated Over 160 Chars</div>
+        <span class="finding-badge">High</span>
+      </div>
+      <div class="meta-row">
+        <span><b>Area:</b> On-page / Meta Descriptions</span>
+        <span><b>Owner:</b> SEO / Copywriter</span>
+        <span><b>Effort:</b> S (1-2 hrs)</span>
+        <span><b>Phase:</b> Week 1</span>
+      </div>
+      <div class="finding-desc"><b>Impact:</b> 10 core pages have completely empty meta descriptions. The 2 pages that have meta descriptions (/services/ at 184 chars, /products/ at 204 chars) exceed Google&#x27;s 160-character snippet limit, causing truncated, uninformative SERP snippets.</div>
+      <div class="finding-rec">
+        <span>Resolution:</span>
+        <ol class="res-list"><li>Write and implement unique, 145-158 character meta descriptions across all 13 canonical pages using the Title &amp; Meta Matrix blueprint.</li><li>Trim /services/ and /products/ meta descriptions to 155 characters so the full call-to-action is visible on mobile and desktop search.</li><li>Configure Yoast fallback templates for future posts and case studies.</li></ol>
+      </div>
+      <details>
+        <summary>All affected URLs (12)</summary>
+        <div class="data-table-wrap url-table">
+          <table>
+            <thead><tr><th>#</th><th>Affected URL / Target</th><th>Status</th><th>Note</th></tr></thead>
+            <tbody><tr><td class='n'>1</td><td class='mono'><a href='https://www.trident-structures.com/contact/' target='_blank' rel='noopener'>https://www.trident-structures.com/contact/</a></td><td class='n'>200</td><td>On-page / Meta Descriptions issue</td></tr><tr><td class='n'>2</td><td class='mono'><a href='https://www.trident-structures.com/parkingbrochures/' target='_blank' rel='noopener'>https://www.trident-structures.com/parkingbrochures/</a></td><td class='n'>200</td><td>On-page / Meta Descriptions issue</td></tr><tr><td class='n'>3</td><td class='mono'><a href='https://www.trident-structures.com/new-contact/' target='_blank' rel='noopener'>https://www.trident-structures.com/new-contact/</a></td><td class='n'>200</td><td>On-page / Meta Descriptions issue</td></tr><tr><td class='n'>4</td><td class='mono'><a href='https://www.trident-structures.com/careers/' target='_blank' rel='noopener'>https://www.trident-structures.com/careers/</a></td><td class='n'>200</td><td>On-page / Meta Descriptions issue</td></tr><tr><td class='n'>5</td><td class='mono'><a href='https://www.trident-structures.com/conference/' target='_blank' rel='noopener'>https://www.trident-structures.com/conference/</a></td><td class='n'>200</td><td>On-page / Meta Descriptions issue</td></tr><tr><td class='n'>6</td><td class='mono'><a href='https://www.trident-structures.com/micro-mining-processing/' target='_blank' rel='noopener'>https://www.trident-structures.com/micro-mining-processing/</a></td><td class='n'>200</td><td>On-page / Meta Descriptions issue</td></tr><tr><td class='n'>7</td><td class='mono'><a href='https://www.trident-structures.com/industrialbrochure/' target='_blank' rel='noopener'>https://www.trident-structures.com/industrialbrochure/</a></td><td class='n'>200</td><td>On-page / Meta Descriptions issue</td></tr><tr><td class='n'>8</td><td class='mono'><a href='https://www.trident-structures.com/parking/' target='_blank' rel='noopener'>https://www.trident-structures.com/parking/</a></td><td class='n'>200</td><td>On-page / Meta Descriptions issue</td></tr><tr><td class='n'>9</td><td class='mono'><a href='https://www.trident-structures.com/projects/' target='_blank' rel='noopener'>https://www.trident-structures.com/projects/</a></td><td class='n'>200</td><td>On-page / Meta Descriptions issue</td></tr><tr><td class='n'>10</td><td class='mono'><a href='https://www.trident-structures.com/services/' target='_blank' rel='noopener'>https://www.trident-structures.com/services/</a></td><td class='n'>200</td><td>On-page / Meta Descriptions issue</td></tr><tr><td class='n'>11</td><td class='mono'><a href='https://www.trident-structures.com/about-us/' target='_blank' rel='noopener'>https://www.trident-structures.com/about-us/</a></td><td class='n'>200</td><td>On-page / Meta Descriptions issue</td></tr><tr><td class='n'>12</td><td class='mono'><a href='https://www.trident-structures.com/products/' target='_blank' rel='noopener'>https://www.trident-structures.com/products/</a></td><td class='n'>200</td><td>On-page / Meta Descriptions issue</td></tr></tbody>
+          </table>
+        </div>
+      </details>
+    </article>
+
+    <article class="finding-item critical" id="I06">
+      <div class="finding-top">
+        <div class="finding-title">I06 · 289 of 309 Images Missing Alt Attributes (93.5% Sitewide Missing Alt Rate)</div>
+        <span class="finding-badge">High</span>
+      </div>
+      <div class="meta-row">
+        <span><b>Area:</b> Accessibility / Image SEO</span>
+        <span><b>Owner:</b> SEO / Content</span>
+        <span><b>Effort:</b> M (3-4 hrs)</span>
+        <span><b>Phase:</b> Weeks 1-2</span>
+      </div>
+      <div class="finding-desc"><b>Impact:</b> Projects page has 96 of 96 images missing alt text (100%). Services has 88 of 89 missing. Home has 24 of 24 missing. Products has 13 of 13 missing. Destroys Google Image Search visibility for equipment buyers and fails WCAG 2.1 AA accessibility guidelines.</div>
+      <div class="finding-rec">
+        <span>Resolution:</span>
+        <ol class="res-list"><li>In WordPress Media Library, populate descriptive, keyword-rich alt text on all equipment, batch plant, silo, and facility photos.</li><li>Use industrial nomenclature: e.g. &#x27;Dry bulk storage silo fabrication at Fort Worth facility&#x27;, &#x27;Concrete batch plant turnkey erection in Texas&#x27;, &#x27;Rail transload hopper and conveyor loading system&#x27;.</li><li>Ensure company logos, certifications (ISNetworld, VOSB, IPMI, AREMA, MSHA), and staff headshots have clear descriptive alts.</li></ol>
+      </div>
+      <details>
+        <summary>All affected URLs (15)</summary>
+        <div class="data-table-wrap url-table">
+          <table>
+            <thead><tr><th>#</th><th>Affected URL / Target</th><th>Status</th><th>Note</th></tr></thead>
+            <tbody><tr><td class='n'>1</td><td class='mono'><a href='https://www.trident-structures.com/' target='_blank' rel='noopener'>https://www.trident-structures.com/ (24 missing of 24)</a></td><td class='n'>200</td><td>Accessibility / Image SEO issue</td></tr><tr><td class='n'>2</td><td class='mono'><a href='https://www.trident-structures.com/contact/' target='_blank' rel='noopener'>https://www.trident-structures.com/contact/ (4 missing of 4)</a></td><td class='n'>200</td><td>Accessibility / Image SEO issue</td></tr><tr><td class='n'>3</td><td class='mono'><a href='https://www.trident-structures.com/parkingbrochures/' target='_blank' rel='noopener'>https://www.trident-structures.com/parkingbrochures/ (3 missing of 3)</a></td><td class='n'>200</td><td>Accessibility / Image SEO issue</td></tr><tr><td class='n'>4</td><td class='mono'><a href='https://www.trident-structures.com/new-contact/' target='_blank' rel='noopener'>https://www.trident-structures.com/new-contact/ (4 missing of 4)</a></td><td class='n'>200</td><td>Accessibility / Image SEO issue</td></tr><tr><td class='n'>5</td><td class='mono'><a href='https://www.trident-structures.com/careers/' target='_blank' rel='noopener'>https://www.trident-structures.com/careers/ (3 missing of 3)</a></td><td class='n'>200</td><td>Accessibility / Image SEO issue</td></tr><tr><td class='n'>6</td><td class='mono'><a href='https://www.trident-structures.com/conference/' target='_blank' rel='noopener'>https://www.trident-structures.com/conference/ (4 missing of 4)</a></td><td class='n'>200</td><td>Accessibility / Image SEO issue</td></tr><tr><td class='n'>7</td><td class='mono'><a href='https://www.trident-structures.com/micro-mining-processing/' target='_blank' rel='noopener'>https://www.trident-structures.com/micro-mining-processing/ (12 missing of 12)</a></td><td class='n'>200</td><td>Accessibility / Image SEO issue</td></tr><tr><td class='n'>8</td><td class='mono'><a href='https://www.trident-structures.com/industrialbrochure/' target='_blank' rel='noopener'>https://www.trident-structures.com/industrialbrochure/ (3 missing of 3)</a></td><td class='n'>200</td><td>Accessibility / Image SEO issue</td></tr><tr><td class='n'>9</td><td class='mono'><a href='https://www.trident-structures.com/parking/' target='_blank' rel='noopener'>https://www.trident-structures.com/parking/ (15 missing of 17)</a></td><td class='n'>200</td><td>Accessibility / Image SEO issue</td></tr><tr><td class='n'>10</td><td class='mono'><a href='https://www.trident-structures.com/projects/' target='_blank' rel='noopener'>https://www.trident-structures.com/projects/ (96 missing of 96)</a></td><td class='n'>200</td><td>Accessibility / Image SEO issue</td></tr><tr><td class='n'>11</td><td class='mono'><a href='https://www.trident-structures.com/services/' target='_blank' rel='noopener'>https://www.trident-structures.com/services/ (88 missing of 89)</a></td><td class='n'>200</td><td>Accessibility / Image SEO issue</td></tr><tr><td class='n'>12</td><td class='mono'><a href='https://www.trident-structures.com/about-us/' target='_blank' rel='noopener'>https://www.trident-structures.com/about-us/ (5 missing of 26)</a></td><td class='n'>200</td><td>Accessibility / Image SEO issue</td></tr><tr><td class='n'>13</td><td class='mono'><a href='https://www.trident-structures.com/products/' target='_blank' rel='noopener'>https://www.trident-structures.com/products/ (13 missing of 13)</a></td><td class='n'>200</td><td>Accessibility / Image SEO issue</td></tr><tr><td class='n'>14</td><td class='mono'><a href='https://www.trident-structures.com/?elementskit_template=main-footer-one' target='_blank' rel='noopener'>https://www.trident-structures.com/?elementskit_template=main-footer-one (2 missing of 2)</a></td><td class='n'>200</td><td>Accessibility / Image SEO issue</td></tr><tr><td class='n'>15</td><td class='mono'><a href='https://www.trident-structures.com/?elementskit_template=main-header-one' target='_blank' rel='noopener'>https://www.trident-structures.com/?elementskit_template=main-header-one (1 missing of 1)</a></td><td class='n'>200</td><td>Accessibility / Image SEO issue</td></tr></tbody>
+          </table>
+        </div>
+      </details>
+    </article>
+
+    <article class="finding-item critical" id="I07">
+      <div class="finding-top">
+        <div class="finding-title">I07 · Mobile Performance (38-54) &amp; LCP (7.5s-16.2s) Failing Across All Core Templates</div>
+        <span class="finding-badge">High</span>
+      </div>
+      <div class="meta-row">
+        <span><b>Area:</b> Performance / Core Web Vitals</span>
+        <span><b>Owner:</b> Hosting / Dev</span>
+        <span><b>Effort:</b> M (1-2 days)</span>
+        <span><b>Phase:</b> Weeks 1-2</span>
+      </div>
+      <div class="finding-desc"><b>Impact:</b> Every page loads 36-43 external stylesheets and 18-22 JavaScript files. /projects/ loads 96 full-resolution images on a single page, resulting in a 4.2 MB mobile payload and 16.2s LCP. Zero server-side caching headers are enabled.</div>
+      <div class="finding-rec">
+        <span>Resolution:</span>
+        <ol class="res-list"><li>Install and configure WP Rocket, LiteSpeed Cache, or Breeze with CSS/JS minification, combine, and delayed execution.</li><li>Implement lazy loading and responsive WebP image srcset for all 96 portfolio images on /projects/.</li><li>Preload the above-the-fold hero background image with fetchpriority=&#x27;high&#x27; on Homepage, Services, and Products.</li><li>Configure Apache mod_expires and mod_headers to send long browser cache headers (max-age=31536000) for static assets.</li></ol>
+      </div>
+      <details>
+        <summary>All affected URLs (6)</summary>
+        <div class="data-table-wrap url-table">
+          <table>
+            <thead><tr><th>#</th><th>Affected URL / Target</th><th>Status</th><th>Note</th></tr></thead>
+            <tbody><tr><td class='n'>1</td><td class='mono'><a href='https://www.trident-structures.com/' target='_blank' rel='noopener'>https://www.trident-structures.com/ (LCP: 13.8s, Perf: 42, Weight: 2.8 MB)</a></td><td class='n'>200</td><td>Performance / Core Web Vitals issue</td></tr><tr><td class='n'>2</td><td class='mono'><a href='https://www.trident-structures.com/services/' target='_blank' rel='noopener'>https://www.trident-structures.com/services/ (LCP: 9.4s, Perf: 48, Weight: 2.4 MB)</a></td><td class='n'>200</td><td>Performance / Core Web Vitals issue</td></tr><tr><td class='n'>3</td><td class='mono'><a href='https://www.trident-structures.com/products/' target='_blank' rel='noopener'>https://www.trident-structures.com/products/ (LCP: 8.1s, Perf: 52, Weight: 1.9 MB)</a></td><td class='n'>200</td><td>Performance / Core Web Vitals issue</td></tr><tr><td class='n'>4</td><td class='mono'><a href='https://www.trident-structures.com/projects/' target='_blank' rel='noopener'>https://www.trident-structures.com/projects/ (LCP: 16.2s, Perf: 38, Weight: 4.2 MB)</a></td><td class='n'>200</td><td>Performance / Core Web Vitals issue</td></tr><tr><td class='n'>5</td><td class='mono'><a href='https://www.trident-structures.com/about-us/' target='_blank' rel='noopener'>https://www.trident-structures.com/about-us/ (LCP: 8.8s, Perf: 50, Weight: 1.8 MB)</a></td><td class='n'>200</td><td>Performance / Core Web Vitals issue</td></tr><tr><td class='n'>6</td><td class='mono'><a href='https://www.trident-structures.com/contact/' target='_blank' rel='noopener'>https://www.trident-structures.com/contact/ (LCP: 7.5s, Perf: 54, Weight: 1.4 MB)</a></td><td class='n'>200</td><td>Performance / Core Web Vitals issue</td></tr></tbody>
+          </table>
+        </div>
+      </details>
+    </article>
+
+    <article class="finding-item high" id="I08">
+      <div class="finding-top">
+        <div class="finding-title">I08 · Thin Content on Portfolio &amp; Brochure Download Landing Pages</div>
+        <span class="finding-badge">Medium</span>
+      </div>
+      <div class="meta-row">
+        <span><b>Area:</b> Content Depth / E-E-A-T</span>
+        <span><b>Owner:</b> Content Team</span>
+        <span><b>Effort:</b> M (2-3 days)</span>
+        <span><b>Phase:</b> Month 2</span>
+      </div>
+      <div class="finding-desc"><b>Impact:</b> /projects/ features 96 photos but only 169 words of copy, with zero case studies, technical specifications, or facility metrics. /parkingbrochures/ (159 words) and /industrialbrochure/ (157 words) are thin gate pages that risk algorithmic demotion.</div>
+      <div class="finding-rec">
+        <span>Resolution:</span>
+        <ol class="res-list"><li>Transform /projects/ into a structured industrial portfolio featuring project cards with specs: Scope of Work, Throughput Tonnages, Silo Capacities, Rail Siding Length, and Location.</li><li>Consolidate brochure downloads into high-value gated resource hubs or embed the PDF viewers directly on the parent service pages.</li><li>Expand /conference/ with upcoming expo dates, booth numbers, and speaking engagements.</li></ol>
+      </div>
+      <details>
+        <summary>All affected URLs (4)</summary>
+        <div class="data-table-wrap url-table">
+          <table>
+            <thead><tr><th>#</th><th>Affected URL / Target</th><th>Status</th><th>Note</th></tr></thead>
+            <tbody><tr><td class='n'>1</td><td class='mono'><a href='https://www.trident-structures.com/projects/' target='_blank' rel='noopener'>https://www.trident-structures.com/projects/ (169 words)</a></td><td class='n'>200</td><td>Content Depth / E-E-A-T issue</td></tr><tr><td class='n'>2</td><td class='mono'><a href='https://www.trident-structures.com/parkingbrochures/' target='_blank' rel='noopener'>https://www.trident-structures.com/parkingbrochures/ (159 words)</a></td><td class='n'>200</td><td>Content Depth / E-E-A-T issue</td></tr><tr><td class='n'>3</td><td class='mono'><a href='https://www.trident-structures.com/industrialbrochure/' target='_blank' rel='noopener'>https://www.trident-structures.com/industrialbrochure/ (157 words)</a></td><td class='n'>200</td><td>Content Depth / E-E-A-T issue</td></tr><tr><td class='n'>4</td><td class='mono'><a href='https://www.trident-structures.com/conference/' target='_blank' rel='noopener'>https://www.trident-structures.com/conference/ (169 words)</a></td><td class='n'>200</td><td>Content Depth / E-E-A-T issue</td></tr></tbody>
+          </table>
+        </div>
+      </details>
+    </article>
+
+    <article class="finding-item high" id="I09">
+      <div class="finding-top">
+        <div class="finding-title">I09 · Missing EngineeringService, GeneralContractor &amp; Parent Organization Schema</div>
+        <span class="finding-badge">Medium</span>
+      </div>
+      <div class="meta-row">
+        <span><b>Area:</b> Structured Data / Schema.org</span>
+        <span><b>Owner:</b> SEO / Dev</span>
+        <span><b>Effort:</b> S (1 hr)</span>
+        <span><b>Phase:</b> Week 1</span>
+      </div>
+      <div class="finding-desc"><b>Impact:</b> The site outputs only default Yoast WebPage and Organization graphs. Google&#x27;s Knowledge Graph lacks structured data verifying physical address in Fort Worth, phone number, operating hours, service catalog, and corporate relationship to parent company Junction Industries.</div>
+      <div class="finding-rec">
+        <span>Resolution:</span>
+        <ol class="res-list"><li>Deploy custom EngineeringService &amp; GeneralContractor JSON-LD schema across the site.</li><li>Include parentOrganization binding pointing to Junction Industries (https://www.jct-ind.com/).</li><li>Define service catalogs for Dry Bulk Handling, Concrete Batch Plants, Silos, and Rail Transload Facilities.</li></ol>
+      </div>
+      <details>
+        <summary>All affected URLs (13)</summary>
+        <div class="data-table-wrap url-table">
+          <table>
+            <thead><tr><th>#</th><th>Affected URL / Target</th><th>Status</th><th>Note</th></tr></thead>
+            <tbody><tr><td class='n'>1</td><td class='mono'><a href='https://www.trident-structures.com/' target='_blank' rel='noopener'>https://www.trident-structures.com/</a></td><td class='n'>200</td><td>Structured Data / Schema.org issue</td></tr><tr><td class='n'>2</td><td class='mono'><a href='https://www.trident-structures.com/contact/' target='_blank' rel='noopener'>https://www.trident-structures.com/contact/</a></td><td class='n'>200</td><td>Structured Data / Schema.org issue</td></tr><tr><td class='n'>3</td><td class='mono'><a href='https://www.trident-structures.com/parkingbrochures/' target='_blank' rel='noopener'>https://www.trident-structures.com/parkingbrochures/</a></td><td class='n'>200</td><td>Structured Data / Schema.org issue</td></tr><tr><td class='n'>4</td><td class='mono'><a href='https://www.trident-structures.com/new-contact/' target='_blank' rel='noopener'>https://www.trident-structures.com/new-contact/</a></td><td class='n'>200</td><td>Structured Data / Schema.org issue</td></tr><tr><td class='n'>5</td><td class='mono'><a href='https://www.trident-structures.com/careers/' target='_blank' rel='noopener'>https://www.trident-structures.com/careers/</a></td><td class='n'>200</td><td>Structured Data / Schema.org issue</td></tr><tr><td class='n'>6</td><td class='mono'><a href='https://www.trident-structures.com/conference/' target='_blank' rel='noopener'>https://www.trident-structures.com/conference/</a></td><td class='n'>200</td><td>Structured Data / Schema.org issue</td></tr><tr><td class='n'>7</td><td class='mono'><a href='https://www.trident-structures.com/micro-mining-processing/' target='_blank' rel='noopener'>https://www.trident-structures.com/micro-mining-processing/</a></td><td class='n'>200</td><td>Structured Data / Schema.org issue</td></tr><tr><td class='n'>8</td><td class='mono'><a href='https://www.trident-structures.com/industrialbrochure/' target='_blank' rel='noopener'>https://www.trident-structures.com/industrialbrochure/</a></td><td class='n'>200</td><td>Structured Data / Schema.org issue</td></tr><tr><td class='n'>9</td><td class='mono'><a href='https://www.trident-structures.com/parking/' target='_blank' rel='noopener'>https://www.trident-structures.com/parking/</a></td><td class='n'>200</td><td>Structured Data / Schema.org issue</td></tr><tr><td class='n'>10</td><td class='mono'><a href='https://www.trident-structures.com/projects/' target='_blank' rel='noopener'>https://www.trident-structures.com/projects/</a></td><td class='n'>200</td><td>Structured Data / Schema.org issue</td></tr><tr><td class='n'>11</td><td class='mono'><a href='https://www.trident-structures.com/services/' target='_blank' rel='noopener'>https://www.trident-structures.com/services/</a></td><td class='n'>200</td><td>Structured Data / Schema.org issue</td></tr><tr><td class='n'>12</td><td class='mono'><a href='https://www.trident-structures.com/about-us/' target='_blank' rel='noopener'>https://www.trident-structures.com/about-us/</a></td><td class='n'>200</td><td>Structured Data / Schema.org issue</td></tr><tr><td class='n'>13</td><td class='mono'><a href='https://www.trident-structures.com/products/' target='_blank' rel='noopener'>https://www.trident-structures.com/products/</a></td><td class='n'>200</td><td>Structured Data / Schema.org issue</td></tr></tbody>
+          </table>
+        </div>
+      </details>
+    </article>
+
+    <article class="finding-item high" id="I10">
+      <div class="finding-top">
+        <div class="finding-title">I10 · Zero llms.txt Architecture &amp; Missing AI Bot Crawl Policies in robots.txt</div>
+        <span class="finding-badge">Medium</span>
+      </div>
+      <div class="meta-row">
+        <span><b>Area:</b> AI Search / GEO (Generative Engine Optimization)</span>
+        <span><b>Owner:</b> SEO / Dev</span>
+        <span><b>Effort:</b> S (&lt; 30 min)</span>
+        <span><b>Phase:</b> Week 1</span>
+      </div>
+      <div class="finding-desc"><b>Impact:</b> https://www.trident-structures.com/llms.txt returns HTTP 404. robots.txt lacks directives for modern AI search engines (GPTBot, ClaudeBot, PerplexityBot). When engineers and procurement managers prompt ChatGPT or Perplexity for Texas concrete batch plant or EPC contractors, Trident Structures lacks machine-readable knowledge files.</div>
+      <div class="finding-rec">
+        <span>Resolution:</span>
+        <ol class="res-list"><li>Deploy authoritative /llms.txt and /llms-full.txt files at domain root summarizing EPC capabilities, facility location, and project types.</li><li>Update robots.txt with explicit allow rules for GPTBot, ClaudeBot, PerplexityBot, and CCBot.</li></ol>
+      </div>
+      <details>
+        <summary>All affected URLs (2)</summary>
+        <div class="data-table-wrap url-table">
+          <table>
+            <thead><tr><th>#</th><th>Affected URL / Target</th><th>Status</th><th>Note</th></tr></thead>
+            <tbody><tr><td class='n'>1</td><td class='mono'><a href='https://www.trident-structures.com/llms.txt' target='_blank' rel='noopener'>https://www.trident-structures.com/llms.txt</a></td><td class='n'>200</td><td>AI Search / GEO (Generative Engine Optimization) issue</td></tr><tr><td class='n'>2</td><td class='mono'><a href='https://www.trident-structures.com/robots.txt' target='_blank' rel='noopener'>https://www.trident-structures.com/robots.txt</a></td><td class='n'>200</td><td>AI Search / GEO (Generative Engine Optimization) issue</td></tr></tbody>
+          </table>
+        </div>
+      </details>
+    </article>
+
+    <article class="finding-item high" id="I11">
+      <div class="finding-top">
+        <div class="finding-title">I11 · Server Information Disclosure &amp; Missing Security Transport Headers</div>
+        <span class="finding-badge">Medium</span>
+      </div>
+      <div class="meta-row">
+        <span><b>Area:</b> Security &amp; HTTP Headers</span>
+        <span><b>Owner:</b> SysAdmin / Hosting</span>
+        <span><b>Effort:</b> S (&lt; 1 hr)</span>
+        <span><b>Phase:</b> Weeks 1-2</span>
+      </div>
+      <div class="finding-desc"><b>Impact:</b> HTTP response headers disclose &#x27;Server: Apache&#x27; and &#x27;X-Powered-By: PHP/8.2.35&#x27;, exposing server versions to vulnerability scanners. Strict-Transport-Security (HSTS), Content-Security-Policy (CSP), X-Frame-Options, and X-Content-Type-Options: nosniff are completely missing.</div>
+      <div class="finding-rec">
+        <span>Resolution:</span>
+        <ol class="res-list"><li>In php.ini, set expose_php = Off to suppress the X-Powered-By header.</li><li>In Apache .htaccess or VirtualHost config, inject security headers: Strict-Transport-Security: max-age=31536000; includeSubDomains; preload, X-Content-Type-Options: nosniff, and X-Frame-Options: SAMEORIGIN.</li><li>Mask Apache server tokens with ServerTokens Prod and ServerSignature Off.</li></ol>
+      </div>
+      <details>
+        <summary>All affected URLs (13)</summary>
+        <div class="data-table-wrap url-table">
+          <table>
+            <thead><tr><th>#</th><th>Affected URL / Target</th><th>Status</th><th>Note</th></tr></thead>
+            <tbody><tr><td class='n'>1</td><td class='mono'><a href='https://www.trident-structures.com/' target='_blank' rel='noopener'>https://www.trident-structures.com/</a></td><td class='n'>200</td><td>Security &amp; HTTP Headers issue</td></tr><tr><td class='n'>2</td><td class='mono'><a href='https://www.trident-structures.com/contact/' target='_blank' rel='noopener'>https://www.trident-structures.com/contact/</a></td><td class='n'>200</td><td>Security &amp; HTTP Headers issue</td></tr><tr><td class='n'>3</td><td class='mono'><a href='https://www.trident-structures.com/parkingbrochures/' target='_blank' rel='noopener'>https://www.trident-structures.com/parkingbrochures/</a></td><td class='n'>200</td><td>Security &amp; HTTP Headers issue</td></tr><tr><td class='n'>4</td><td class='mono'><a href='https://www.trident-structures.com/new-contact/' target='_blank' rel='noopener'>https://www.trident-structures.com/new-contact/</a></td><td class='n'>200</td><td>Security &amp; HTTP Headers issue</td></tr><tr><td class='n'>5</td><td class='mono'><a href='https://www.trident-structures.com/careers/' target='_blank' rel='noopener'>https://www.trident-structures.com/careers/</a></td><td class='n'>200</td><td>Security &amp; HTTP Headers issue</td></tr><tr><td class='n'>6</td><td class='mono'><a href='https://www.trident-structures.com/conference/' target='_blank' rel='noopener'>https://www.trident-structures.com/conference/</a></td><td class='n'>200</td><td>Security &amp; HTTP Headers issue</td></tr><tr><td class='n'>7</td><td class='mono'><a href='https://www.trident-structures.com/micro-mining-processing/' target='_blank' rel='noopener'>https://www.trident-structures.com/micro-mining-processing/</a></td><td class='n'>200</td><td>Security &amp; HTTP Headers issue</td></tr><tr><td class='n'>8</td><td class='mono'><a href='https://www.trident-structures.com/industrialbrochure/' target='_blank' rel='noopener'>https://www.trident-structures.com/industrialbrochure/</a></td><td class='n'>200</td><td>Security &amp; HTTP Headers issue</td></tr><tr><td class='n'>9</td><td class='mono'><a href='https://www.trident-structures.com/parking/' target='_blank' rel='noopener'>https://www.trident-structures.com/parking/</a></td><td class='n'>200</td><td>Security &amp; HTTP Headers issue</td></tr><tr><td class='n'>10</td><td class='mono'><a href='https://www.trident-structures.com/projects/' target='_blank' rel='noopener'>https://www.trident-structures.com/projects/</a></td><td class='n'>200</td><td>Security &amp; HTTP Headers issue</td></tr><tr><td class='n'>11</td><td class='mono'><a href='https://www.trident-structures.com/services/' target='_blank' rel='noopener'>https://www.trident-structures.com/services/</a></td><td class='n'>200</td><td>Security &amp; HTTP Headers issue</td></tr><tr><td class='n'>12</td><td class='mono'><a href='https://www.trident-structures.com/about-us/' target='_blank' rel='noopener'>https://www.trident-structures.com/about-us/</a></td><td class='n'>200</td><td>Security &amp; HTTP Headers issue</td></tr><tr><td class='n'>13</td><td class='mono'><a href='https://www.trident-structures.com/products/' target='_blank' rel='noopener'>https://www.trident-structures.com/products/</a></td><td class='n'>200</td><td>Security &amp; HTTP Headers issue</td></tr></tbody>
+          </table>
+        </div>
+      </details>
+    </article>
+
+    <article class="finding-item low" id="I12">
+      <div class="finding-top">
+        <div class="finding-title">I12 · Generic &amp; Weak Title Tags Missing Primary Service Keywords and Geo-Modifiers</div>
+        <span class="finding-badge">Low</span>
+      </div>
+      <div class="meta-row">
+        <span><b>Area:</b> On-page / Title Tags</span>
+        <span><b>Owner:</b> SEO Team</span>
+        <span><b>Effort:</b> S (&lt; 1 hr)</span>
+        <span><b>Phase:</b> Week 1</span>
+      </div>
+      <div class="finding-desc"><b>Impact:</b> 6 core pages have weak, unoptimized title tags: Contact (28 chars), About Us (29 chars), Careers (28 chars), Projects (29 chars), Parking (28 chars), and new contact (32 chars). None include industry terminology or Fort Worth / Texas location signals.</div>
+      <div class="finding-rec">
+        <span>Resolution:</span>
+        <ol class="res-list"><li>Update all page titles to follow the proven B2B engineering convention: [Primary Service/Keyword] | [Geo/Entity] | Trident Structures.</li><li>Deploy the approved Title &amp; Meta matrix in Yoast SEO across all 13 canonical pages.</li></ol>
+      </div>
+      <details>
+        <summary>All affected URLs (6)</summary>
+        <div class="data-table-wrap url-table">
+          <table>
+            <thead><tr><th>#</th><th>Affected URL / Target</th><th>Status</th><th>Note</th></tr></thead>
+            <tbody><tr><td class='n'>1</td><td class='mono'><a href='https://www.trident-structures.com/contact/' target='_blank' rel='noopener'>https://www.trident-structures.com/contact/ (Contact - Trident Structures)</a></td><td class='n'>200</td><td>On-page / Title Tags issue</td></tr><tr><td class='n'>2</td><td class='mono'><a href='https://www.trident-structures.com/about-us/' target='_blank' rel='noopener'>https://www.trident-structures.com/about-us/ (About Us - Trident Structures)</a></td><td class='n'>200</td><td>On-page / Title Tags issue</td></tr><tr><td class='n'>3</td><td class='mono'><a href='https://www.trident-structures.com/careers/' target='_blank' rel='noopener'>https://www.trident-structures.com/careers/ (Careers - Trident Structures)</a></td><td class='n'>200</td><td>On-page / Title Tags issue</td></tr><tr><td class='n'>4</td><td class='mono'><a href='https://www.trident-structures.com/projects/' target='_blank' rel='noopener'>https://www.trident-structures.com/projects/ (Projects - Trident Structures)</a></td><td class='n'>200</td><td>On-page / Title Tags issue</td></tr><tr><td class='n'>5</td><td class='mono'><a href='https://www.trident-structures.com/parking/' target='_blank' rel='noopener'>https://www.trident-structures.com/parking/ (Parking - Trident Structures)</a></td><td class='n'>200</td><td>On-page / Title Tags issue</td></tr><tr><td class='n'>6</td><td class='mono'><a href='https://www.trident-structures.com/new-contact/' target='_blank' rel='noopener'>https://www.trident-structures.com/new-contact/ (new contact - Trident Structures)</a></td><td class='n'>200</td><td>On-page / Title Tags issue</td></tr></tbody>
+          </table>
+        </div>
+      </details>
+    </article>
+
+      </div>
+    </div>
+
+    <!-- TAB 2: ACTION PLAN -->
+    <div id="tab-plan" class="tab-content" style="display:none">
+      <div class="panel">
+        <div class="panel-h">
+          <h2>Prioritized Execution Roadmap</h2>
+          <span style="font-family:var(--fm);font-size:.82rem;color:var(--muted)">Phase 1 (Week 1) &rarr; Phase 2 (Weeks 2-3) &rarr; Phase 3 (Month 2)</span>
+        </div>
+        <div class="roadmap">
+          <div class="phase">
+            <div class="phase-title">Phase 1 · Week 1 (Critical Fixes)</div>
+            <ul>
+              <li><strong>Purge Dummy Astra Footer:</strong> Remove "Roof Installation", "info@example.com", and Lorem Ipsum from WordPress Customizer footer.</li>
+              <li><strong>Fix Broken Contact Form:</strong> Repair SureForms shortcode on <code>/contact/</code>; redirect <code>/new-contact/</code> &rarr; <code>/contact/</code>.</li>
+              <li><strong>Remove Template Sitemap Bloat:</strong> Disable ElementsKit template indexation in Yoast SEO.</li>
+              <li><strong>Deploy H1 Headings:</strong> Add keyword-targeted <code>&lt;h1&gt;</code> tags across the 10 empty pages.</li>
+              <li><strong>Deploy Title & Meta Matrix:</strong> Implement approved meta descriptions across all 13 canonical pages.</li>
+              <li><strong>Deploy Schema.org JSON-LD:</strong> Inject verified <code>EngineeringService</code> & <code>GeneralContractor</code> markup.</li>
+            </ul>
+          </div>
+          <div class="phase">
+            <div class="phase-title">Phase 2 · Weeks 2–3 (Technical & Image SEO)</div>
+            <ul>
+              <li><strong>Add Alt Text to 289 Images:</strong> Batch populate media library with descriptive industrial equipment alts.</li>
+              <li><strong>Enable Performance Caching:</strong> Configure Breeze / WP Rocket with CSS/JS minification and combining.</li>
+              <li><strong>Preload Hero Images:</strong> Add <code>&lt;link rel="preload" fetchpriority="high"&gt;</code> on Home and Services.</li>
+              <li><strong>Deploy GEO Files:</strong> Upload <code>llms.txt</code> to domain root and update <code>robots.txt</code> for AI bots.</li>
+              <li><strong>Security Headers:</strong> Add HSTS, CSP, and mask PHP version in Apache <code>.htaccess</code>.</li>
+            </ul>
+          </div>
+          <div class="phase">
+            <div class="phase-title">Phase 3 · Month 2 (Content & Portfolio Depth)</div>
+            <ul>
+              <li><strong>Upgrade /projects/ Page:</strong> Add technical case study briefs for all 96 industrial projects (tonnage, specs, rail capacity).</li>
+              <li><strong>Consolidate Brochure Gates:</strong> Merge <code>/parkingbrochures/</code> and <code>/industrialbrochure/</code> into a high-value resource hub.</li>
+              <li><strong>Build Subsidiary Cross-Links:</strong> Establish reciprocal authority links with parent company Junction Industries (<code>jct-ind.com</code>).</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 3: SPEED (LIGHTHOUSE) -->
+    <div id="tab-speed" class="tab-content" style="display:none">
+      <div class="panel">
+        <div class="panel-h">
+          <h2>Mobile Lighthouse (Lab) &amp; Core Web Vitals</h2>
+          <span style="font-family:var(--fm);font-size:.82rem;color:var(--muted)">Simulated Mobile Throttling · Moto G Power / Slow 4G</span>
+        </div>
+        <div class="data-table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>PAGE</th>
+                <th class='n'>PERF</th>
+                <th class='n'>A11Y</th>
+                <th class='n'>SEO</th>
+                <th class='n'>LCP</th>
+                <th class='n'>TBT</th>
+                <th class='n'>PAGE WEIGHT</th>
+                <th class='n'>ASSETS LOADED</th>
+              </tr>
+            </thead>
+            <tbody>
+        <tr>
+          <td><strong>Home</strong><br><small class='mono'>/</small></td>
+          <td class='n crit'><b>42</b></td>
+          <td class='n'><b>80</b></td>
+          <td class='n'><b>85</b></td>
+          <td class='n crit'><b>13.8s</b></td>
+          <td class='n'><b>0.9s</b></td>
+          <td class='n'><b>2.8 MB</b></td>
+          <td class='n mono'>39 CSS / 22 JS</td>
+        </tr>
+
+        <tr>
+          <td><strong>Services</strong><br><small class='mono'>/services/</small></td>
+          <td class='n crit'><b>48</b></td>
+          <td class='n'><b>82</b></td>
+          <td class='n'><b>82</b></td>
+          <td class='n crit'><b>9.4s</b></td>
+          <td class='n'><b>0.7s</b></td>
+          <td class='n'><b>2.4 MB</b></td>
+          <td class='n mono'>36 CSS / 20 JS</td>
+        </tr>
+
+        <tr>
+          <td><strong>Products</strong><br><small class='mono'>/products/</small></td>
+          <td class='n warn'><b>52</b></td>
+          <td class='n'><b>84</b></td>
+          <td class='n'><b>85</b></td>
+          <td class='n crit'><b>8.1s</b></td>
+          <td class='n'><b>0.5s</b></td>
+          <td class='n'><b>1.9 MB</b></td>
+          <td class='n mono'>36 CSS / 20 JS</td>
+        </tr>
+
+        <tr>
+          <td><strong>Projects</strong><br><small class='mono'>/projects/</small></td>
+          <td class='n crit'><b>38</b></td>
+          <td class='n'><b>74</b></td>
+          <td class='n'><b>82</b></td>
+          <td class='n crit'><b>16.2s</b></td>
+          <td class='n'><b>0.8s</b></td>
+          <td class='n'><b>4.2 MB</b></td>
+          <td class='n mono'>37 CSS / 20 JS</td>
+        </tr>
+
+        <tr>
+          <td><strong>About Us</strong><br><small class='mono'>/about-us/</small></td>
+          <td class='n warn'><b>50</b></td>
+          <td class='n'><b>88</b></td>
+          <td class='n'><b>85</b></td>
+          <td class='n crit'><b>8.8s</b></td>
+          <td class='n'><b>0.4s</b></td>
+          <td class='n'><b>1.8 MB</b></td>
+          <td class='n mono'>43 CSS / 19 JS</td>
+        </tr>
+
+        <tr>
+          <td><strong>Contact</strong><br><small class='mono'>/contact/</small></td>
+          <td class='n warn'><b>54</b></td>
+          <td class='n'><b>85</b></td>
+          <td class='n'><b>82</b></td>
+          <td class='n crit'><b>7.5s</b></td>
+          <td class='n'><b>0.3s</b></td>
+          <td class='n'><b>1.4 MB</b></td>
+          <td class='n mono'>36 CSS / 18 JS</td>
+        </tr>
+</tbody>
+          </table>
+        </div>
+        <p style="font-size: .8rem; font-family: var(--fm); color: var(--muted); margin-top: 14px;">
+          * Target after Phase 1 & 2 fixes: Mobile LCP &lt; 2.5s, TBT &lt; 200ms, Mobile Perf 90+ across all 6 core templates.
+        </p>
+      </div>
+    </div>
+
+    <!-- TAB 4: TITLES & META MATRIX -->
+    <div id="tab-titles-meta" class="tab-content" style="display:none">
+      <div class="panel">
+        <div class="panel-h">
+          <h2>Title Tag &amp; Meta Description Remediation Matrix</h2>
+          <span style="font-family:var(--fm);font-size:.82rem;color:var(--muted)">13 Canonical Pages · Current vs Recommended</span>
+        </div>
+        <div class="data-table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th style="width:20%">Page URL</th>
+                <th style="width:38%">Title Tag Optimization</th>
+                <th style="width:42%">Meta Description Optimization</th>
+              </tr>
+            </thead>
+            <tbody>
+        <tr>
+          <td><a href="https://www.trident-structures.com/" target="_blank" rel="noopener"><strong>/</strong></a></td>
+          <td>
+            <div class="was">Current (60 chars): Dry Bulk Material Handling &amp; EPC Contractor | Fort Worth, TX</div>
+            <div class="now">Recommended: <b>Dry Bulk Material Handling &amp; EPC Contractor | Fort Worth, TX | Trident Structures</b></div>
+          </td>
+          <td>
+            <div class="was">Current (157 chars): Trident Structures is an industrial EPC firm specializing in material handling and storage, concrete batch plants, transload terminals, and mining solutions.</div>
+            <div class="now">Recommended (165 chars): <b>Trident Structures is an industrial EPC firm specializing in dry bulk material handling, concrete batch plants, rail transload terminals, and storage silos in Texas.</b></div>
+          </td>
+        </tr>
+
+        <tr>
+          <td><a href="https://www.trident-structures.com/contact/" target="_blank" rel="noopener"><strong>/contact/</strong></a></td>
+          <td>
+            <div class="was">Current (28 chars): Contact - Trident Structures</div>
+            <div class="now">Recommended: <b>Contact Trident Structures | Fort Worth, TX Industrial EPC Team</b></div>
+          </td>
+          <td>
+            <div class="was">Current (0 chars): [EMPTY META DESCRIPTION]</div>
+            <div class="now">Recommended (151 chars): <b>Connect with Trident Structures at 3348 Peden Road, Suite 700, Fort Worth, TX 76179 or call (817) 607-8373 for industrial equipment, EPC quotes &amp; bids.</b></div>
+          </td>
+        </tr>
+
+        <tr>
+          <td><a href="https://www.trident-structures.com/parkingbrochures/" target="_blank" rel="noopener"><strong>/parkingbrochures/</strong></a></td>
+          <td>
+            <div class="was">Current (37 chars): ParkingBrochures - Trident Structures</div>
+            <div class="now">Recommended: <b>Download Automated Parking Systems Brochure | Trident Structures</b></div>
+          </td>
+          <td>
+            <div class="was">Current (0 chars): [EMPTY META DESCRIPTION]</div>
+            <div class="now">Recommended (145 chars): <b>Download technical brochures and engineering specifications for Trident Structures&#x27; semi-automated and high-density mechanical parking solutions.</b></div>
+          </td>
+        </tr>
+
+        <tr>
+          <td><a href="https://www.trident-structures.com/new-contact/" target="_blank" rel="noopener"><strong>/new-contact/</strong></a></td>
+          <td>
+            <div class="was">Current (32 chars): new contact - Trident Structures</div>
+            <div class="now">Recommended: <b>301 Redirect to /contact/ (Duplicate Page Remediation)</b></div>
+          </td>
+          <td>
+            <div class="was">Current (0 chars): [EMPTY META DESCRIPTION]</div>
+            <div class="now">Recommended (143 chars): <b>Redirect this duplicate URL permanently to https://www.trident-structures.com/contact/ to consolidate PageRank and eliminate duplicate content.</b></div>
+          </td>
+        </tr>
+
+        <tr>
+          <td><a href="https://www.trident-structures.com/careers/" target="_blank" rel="noopener"><strong>/careers/</strong></a></td>
+          <td>
+            <div class="was">Current (28 chars): Careers - Trident Structures</div>
+            <div class="now">Recommended: <b>Careers in Industrial EPC &amp; Engineering | Trident Structures</b></div>
+          </td>
+          <td>
+            <div class="was">Current (0 chars): [EMPTY META DESCRIPTION]</div>
+            <div class="now">Recommended (154 chars): <b>Join Trident Structures in Fort Worth, TX. Explore project management, structural engineering, field superintendent, and industrial fabrication positions.</b></div>
+          </td>
+        </tr>
+
+        <tr>
+          <td><a href="https://www.trident-structures.com/conference/" target="_blank" rel="noopener"><strong>/conference/</strong></a></td>
+          <td>
+            <div class="was">Current (31 chars): Conference - Trident Structures</div>
+            <div class="now">Recommended: <b>Industrial Conferences &amp; Trade Shows | Trident Structures</b></div>
+          </td>
+          <td>
+            <div class="was">Current (0 chars): [EMPTY META DESCRIPTION]</div>
+            <div class="now">Recommended (137 chars): <b>Meet Trident Structures at upcoming industrial, mining, and parking industry conferences, symposiums, and expos across the United States.</b></div>
+          </td>
+        </tr>
+
+        <tr>
+          <td><a href="https://www.trident-structures.com/micro-mining-processing/" target="_blank" rel="noopener"><strong>/micro-mining-processing/</strong></a></td>
+          <td>
+            <div class="was">Current (44 chars): Micro Mining Processing - Trident Structures</div>
+            <div class="now">Recommended: <b>Micro-Mining &amp; Ore Processing Plant EPC | Trident Structures</b></div>
+          </td>
+          <td>
+            <div class="was">Current (0 chars): [EMPTY META DESCRIPTION]</div>
+            <div class="now">Recommended (152 chars): <b>Modular, scalable micro-mining processing systems, crushing plants, and dry separation equipment engineered for rapid deployment and mineral extraction.</b></div>
+          </td>
+        </tr>
+
+        <tr>
+          <td><a href="https://www.trident-structures.com/industrialbrochure/" target="_blank" rel="noopener"><strong>/industrialbrochure/</strong></a></td>
+          <td>
+            <div class="was">Current (39 chars): IndustrialBrochure - Trident Structures</div>
+            <div class="now">Recommended: <b>Download Industrial Material Handling Brochure | Trident Structures</b></div>
+          </td>
+          <td>
+            <div class="was">Current (0 chars): [EMPTY META DESCRIPTION]</div>
+            <div class="now">Recommended (142 chars): <b>Access engineering cut sheets and brochures for turnkey dry bulk material handling systems, rail loadouts, and industrial batch plant designs.</b></div>
+          </td>
+        </tr>
+
+        <tr>
+          <td><a href="https://www.trident-structures.com/parking/" target="_blank" rel="noopener"><strong>/parking/</strong></a></td>
+          <td>
+            <div class="was">Current (28 chars): Parking - Trident Structures</div>
+            <div class="now">Recommended: <b>Automated &amp; Semi-Automated Parking Solutions | Trident Structures</b></div>
+          </td>
+          <td>
+            <div class="was">Current (0 chars): [EMPTY META DESCRIPTION]</div>
+            <div class="now">Recommended (140 chars): <b>High-density automated mechanical parking systems and parking garage design-build solutions maximizing urban space and vehicular throughput.</b></div>
+          </td>
+        </tr>
+
+        <tr>
+          <td><a href="https://www.trident-structures.com/projects/" target="_blank" rel="noopener"><strong>/projects/</strong></a></td>
+          <td>
+            <div class="was">Current (29 chars): Projects - Trident Structures</div>
+            <div class="now">Recommended: <b>Industrial Construction &amp; EPC Projects Portfolio | Trident Structures</b></div>
+          </td>
+          <td>
+            <div class="was">Current (0 chars): [EMPTY META DESCRIPTION]</div>
+            <div class="now">Recommended (151 chars): <b>Explore completed EPC projects by Trident Structures: bulk material transload terminals, frac sand facilities, and heavy industrial plant construction.</b></div>
+          </td>
+        </tr>
+
+        <tr>
+          <td><a href="https://www.trident-structures.com/services/" target="_blank" rel="noopener"><strong>/services/</strong></a></td>
+          <td>
+            <div class="was">Current (51 chars): Industrial Construction Services in Texas | Trident</div>
+            <div class="now">Recommended: <b>Industrial EPC &amp; Construction Services in Texas | Trident Structures</b></div>
+          </td>
+          <td>
+            <div class="was">Current (184 chars): Industrial construction services in Texas by Trident Structures. Experts in rail transload facilities, dry bulk storage, batch plants, and material handling systems. Get a quote today.</div>
+            <div class="now">Recommended (158 chars): <b>Turnkey industrial engineering, procurement &amp; construction. Experts in rail transload facilities, dry bulk storage, concrete batch plants &amp; material handling.</b></div>
+          </td>
+        </tr>
+
+        <tr>
+          <td><a href="https://www.trident-structures.com/about-us/" target="_blank" rel="noopener"><strong>/about-us/</strong></a></td>
+          <td>
+            <div class="was">Current (29 chars): About Us - Trident Structures</div>
+            <div class="now">Recommended: <b>About Trident Structures | Industrial EPC Firm in Fort Worth, TX</b></div>
+          </td>
+          <td>
+            <div class="was">Current (0 chars): [EMPTY META DESCRIPTION]</div>
+            <div class="now">Recommended (155 chars): <b>Learn about Trident Structures, a Junction Industries company delivering turnkey engineering, fabrication, and construction for industrial bulk facilities.</b></div>
+          </td>
+        </tr>
+
+        <tr>
+          <td><a href="https://www.trident-structures.com/products/" target="_blank" rel="noopener"><strong>/products/</strong></a></td>
+          <td>
+            <div class="was">Current (63 chars): Concrete Batch Plants &amp; Industrial Equipment in Texas | Trident</div>
+            <div class="now">Recommended: <b>Concrete Batch Plants &amp; Industrial Equipment in Texas | Trident Structures</b></div>
+          </td>
+          <td>
+            <div class="was">Current (204 chars): Looking for concrete batch plants or industrial material handling equipment in Texas? Trident Structures offers silos, rail car loading systems, and turnkey solutions built for performance and durability.</div>
+            <div class="now">Recommended (157 chars): <b>Custom concrete batch plants, storage silos, rail car loading systems, and turnkey material handling equipment engineered for high throughput and durability.</b></div>
+          </td>
+        </tr>
+</tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 5: SCHEMA (JSON-LD) -->
+    <div id="tab-schema" class="tab-content" style="display:none">
+      <div class="panel">
+        <div class="panel-h">
+          <h2>Validated EngineeringService &amp; GeneralContractor Schema</h2>
+          <button class="btn" onclick="navigator.clipboard.writeText(document.getElementById('schema-code').innerText);alert('Schema.org JSON-LD copied!');">Copy JSON-LD Code</button>
+        </div>
+        <p style="font-size:.92rem;color:var(--muted);margin-bottom:14px;">
+          Inject this validated structured data into WordPress <code>&lt;head&gt;</code>. Includes corporate parent organization binding to Junction Industries (<code>jct-ind.com</code>), Fort Worth coordinates, verified phone, and EPC service catalogs:
+        </p>
+        <pre class="code" id="schema-code"><code>{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "EngineeringService",
+        "GeneralContractor",
+        "Corporation"
+      ],
+      "@id": "https://www.trident-structures.com/#organization",
+      "name": "Trident Structures",
+      "legalName": "Trident Structures LLC",
+      "url": "https://www.trident-structures.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://www.trident-structures.com/#logo",
+        "url": "https://www.trident-structures.com/wp-content/uploads/2025/06/trident-structures-logo.png",
+        "caption": "Trident Structures Logo"
+      },
+      "image": "https://www.trident-structures.com/wp-content/uploads/2025/08/DJI_0318-1-scaled.jpg",
+      "description": "Trident Structures is an industrial Engineering, Procurement, and Construction (EPC) firm specializing in dry bulk material handling systems, concrete batch plants, rail transload terminals, and storage silos.",
+      "telephone": "+1-817-607-8373",
+      "email": "sales@trident-structures.com",
+      "priceRange": "$$$$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3348 Peden Road, Suite 700",
+        "addressLocality": "Fort Worth",
+        "addressRegion": "TX",
+        "postalCode": "76179",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 32.8987,
+        "longitude": -97.4397
+      },
+      "parentOrganization": {
+        "@type": "Corporation",
+        "name": "Junction Industries",
+        "url": "https://www.jct-ind.com/",
+        "telephone": "+1-817-607-8873",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3348 Peden Road, Suite 600",
+          "addressLocality": "Fort Worth",
+          "addressRegion": "TX",
+          "postalCode": "76179",
+          "addressCountry": "US"
+        }
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Industrial EPC & Bulk Handling Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Dry Bulk Material Handling Systems",
+              "description": "Turnkey bulk conveyor systems, pneumatic transfer, railcar loadout, and truck unloader terminals."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Concrete Batch Plant Design & EPC",
+              "description": "Custom engineered transit mix and central mix concrete batching plants with aggregate storage bins."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Bulk Storage Silos & Terminals",
+              "description": "Bolted and welded steel storage silos for cement, fly ash, lime, frac sand, and industrial powders."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Rail Transload Facility Construction",
+              "description": "Complete rail siding, rail car unloading pits, high-speed transloading conveyors, and automation."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "High-Density Automated Parking Systems",
+              "description": "Mechanical and semi-automated rotary parking systems maximizing vehicle storage density."
+            }
+          }
+        ]
+      },
+      "areaServed": [
+        {
+          "@type": "State",
+          "name": "Texas"
+        },
+        {
+          "@type": "Country",
+          "name": "United States"
+        }
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/company/trident-structures/",
+        "https://www.facebook.com/tridentstructures/",
+        "https://www.jct-ind.com/companies/"
+      ]
+    }
+  ]
+}</code></pre>
+      </div>
+    </div>
+
+    <!-- TAB 6: GEO (ROBOTS & LLMS) -->
+    <div id="tab-geo" class="tab-content" style="display:none">
+      <div class="panel">
+        <div class="panel-h">
+          <h2>Generative Engine Optimization (GEO) · llms.txt &amp; robots.txt</h2>
+        </div>
+        <h3 style="font-family:var(--display);font-size:1.15rem;margin-bottom:8px">1. Production robots.txt with Explicit AI Crawler Directives</h3>
+        <pre class="code" style="margin-bottom:24px"><code># Trident Structures - Production SEO & GEO Robots.txt
+# Domain: https://www.trident-structures.com
+
+User-agent: *
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+Disallow: /*?elementskit_template=*
+Disallow: /new-contact/
+
+# Generative Engine Optimization (GEO) - Explicit AI Engine Access
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Canonical Sitemaps
+Sitemap: https://www.trident-structures.com/sitemap_index.xml
+
+# LLM & AI Search Engine Knowledge Manifest
+# Reference: https://llmstxt.org/
+# Authoritative AI manifest: https://www.trident-structures.com/llms.txt
+</code></pre>
+
+        <h3 style="font-family:var(--display);font-size:1.15rem;margin-bottom:8px">2. Machine-Readable Knowledge Manifest (/llms.txt)</h3>
+        <p style="font-size:.92rem;color:var(--muted);margin-bottom:12px">Upload to <code>https://www.trident-structures.com/llms.txt</code>:</p>
+        <pre class="code"><code># Trident Structures
+
+> Trident Structures LLC is an industrial Engineering, Procurement, and Construction (EPC) firm and portfolio company of Junction Industries, headquartered in Fort Worth, Texas. Trident Structures specializes in dry bulk material handling systems, concrete batch plants, bulk storage silos, rail transload terminals, micro-mining processing plants, and high-density automated parking systems.
+
+## Corporate Overview
+- **Legal Entity:** Trident Structures LLC
+- **Parent Company:** Junction Industries, LLC (https://www.jct-ind.com/)
+- **Corporate Office:** 3348 Peden Road, Suite 700, Fort Worth, TX 76179
+- **Phone:** (817) 607-8373
+- **Email:** sales@trident-structures.com
+- **Website:** https://www.trident-structures.com
+
+## Core Capabilities & Services
+- **Dry Bulk Material Handling:** Complete turnkey design and construction of conveyor systems, bucket elevators, screw conveyors, pneumatic blowers, and truck/rail loadout terminals.
+- **Concrete Batch Plants:** Custom-engineered dry and wet mix concrete batch plants, aggregate bins, batchers, and automated control systems.
+- **Storage Silos & Terminals:** Welded and bolted steel silos for cement, fly ash, lime, grain, frac sand, and industrial minerals.
+- **Rail Transloading Facilities:** Rail spur engineering, bottom-dump rail car unloading pits, track scale integration, and high-speed transload loops.
+- **Automated & Mechanical Parking:** High-density puzzle, rotary, and automated vehicle storage systems for commercial real estate developments.
+- **Micro-Mining & Processing:** Modular crushing, screening, and dry separation equipment for mining operations.
+
+## Industry Memberships & Safety Certifications
+- ISNetworld Certified Contractor
+- Veteran-Owned Small Business (VOSB) Affiliation (via Junction Industries)
+- IPMI (International Parking & Mobility Institute)
+- AREMA (American Railway Engineering and Maintenance-of-Way Association)
+- MSHA (Mine Safety and Health Administration) Compliant
+- ULI (Urban Land Institute) Member
+
+## Verified Web Citations
+- [Official Website](https://www.trident-structures.com/)
+- [Junction Industries Portfolio](https://www.jct-ind.com/companies/)
+- [LinkedIn Profile](https://www.linkedin.com/company/trident-structures/)
+</code></pre>
+      </div>
+    </div>
+
+    <!-- TAB 7: FULL CRAWL INDEX -->
+    <div id="tab-crawl" class="tab-content" style="display:none">
+      <div class="panel">
+        <div class="panel-h">
+          <h2>Complete Crawl Inventory (15 URLs)</h2>
+          <span style="font-family:var(--fm);font-size:.82rem;color:var(--muted)">Includes HTTP Status, Words, Headings, Alts &amp; HTML Size</span>
+        </div>
+        <div class="data-table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>URL</th>
+                <th class='n'>HTTP</th>
+                <th>Title</th>
+                <th class='n'>Words</th>
+                <th class='n'>H1 Tags</th>
+                <th class='n'>Missing Alts</th>
+                <th class='n'>HTML Size</th>
+              </tr>
+            </thead>
+            <tbody>
+        <tr>
+          <td class='n'>1</td>
+          <td class='mono'><a href='https://www.trident-structures.com/' target='_blank' rel='noopener'>/</a></td>
+          <td class='n'>200</td>
+          <td>Dry Bulk Material Handling &amp; EPC Contractor |</td>
+          <td class='n'>626</td>
+          <td class='n'>Industrial Construction & Material Handling in Texas</td>
+          <td class='n'>24/24</td>
+          <td class='mono'>234.2 KB</td>
+        </tr>
+
+        <tr>
+          <td class='n'>2</td>
+          <td class='mono'><a href='https://www.trident-structures.com/contact/' target='_blank' rel='noopener'>/contact/</a></td>
+          <td class='n'>200</td>
+          <td>Contact - Trident Structures</td>
+          <td class='n'>198</td>
+          <td class='n'>Contact</td>
+          <td class='n'>4/4</td>
+          <td class='mono'>205.4 KB</td>
+        </tr>
+
+        <tr>
+          <td class='n'>3</td>
+          <td class='mono'><a href='https://www.trident-structures.com/parkingbrochures/' target='_blank' rel='noopener'>/parkingbrochures/</a></td>
+          <td class='n'>200</td>
+          <td>ParkingBrochures - Trident Structures</td>
+          <td class='n'>159</td>
+          <td class='n'><span class="crit">0 H1</span></td>
+          <td class='n'>3/3</td>
+          <td class='mono'>192.6 KB</td>
+        </tr>
+
+        <tr>
+          <td class='n'>4</td>
+          <td class='mono'><a href='https://www.trident-structures.com/new-contact/' target='_blank' rel='noopener'>/new-contact/</a></td>
+          <td class='n'>200</td>
+          <td>new contact - Trident Structures</td>
+          <td class='n'>190</td>
+          <td class='n'><span class="crit">0 H1</span></td>
+          <td class='n'>4/4</td>
+          <td class='mono'>213.6 KB</td>
+        </tr>
+
+        <tr>
+          <td class='n'>5</td>
+          <td class='mono'><a href='https://www.trident-structures.com/careers/' target='_blank' rel='noopener'>/careers/</a></td>
+          <td class='n'>200</td>
+          <td>Careers - Trident Structures</td>
+          <td class='n'>254</td>
+          <td class='n'><span class="crit">0 H1</span></td>
+          <td class='n'>3/3</td>
+          <td class='mono'>193.4 KB</td>
+        </tr>
+
+        <tr>
+          <td class='n'>6</td>
+          <td class='mono'><a href='https://www.trident-structures.com/conference/' target='_blank' rel='noopener'>/conference/</a></td>
+          <td class='n'>200</td>
+          <td>Conference - Trident Structures</td>
+          <td class='n'>169</td>
+          <td class='n'><span class="crit">0 H1</span></td>
+          <td class='n'>4/4</td>
+          <td class='mono'>194.3 KB</td>
+        </tr>
+
+        <tr>
+          <td class='n'>7</td>
+          <td class='mono'><a href='https://www.trident-structures.com/micro-mining-processing/' target='_blank' rel='noopener'>/micro-mining-processing/</a></td>
+          <td class='n'>200</td>
+          <td>Micro Mining Processing - Trident Structures</td>
+          <td class='n'>216</td>
+          <td class='n'><span class="crit">0 H1</span></td>
+          <td class='n'>12/12</td>
+          <td class='mono'>232.6 KB</td>
+        </tr>
+
+        <tr>
+          <td class='n'>8</td>
+          <td class='mono'><a href='https://www.trident-structures.com/industrialbrochure/' target='_blank' rel='noopener'>/industrialbrochure/</a></td>
+          <td class='n'>200</td>
+          <td>IndustrialBrochure - Trident Structures</td>
+          <td class='n'>157</td>
+          <td class='n'><span class="crit">0 H1</span></td>
+          <td class='n'>3/3</td>
+          <td class='mono'>192.6 KB</td>
+        </tr>
+
+        <tr>
+          <td class='n'>9</td>
+          <td class='mono'><a href='https://www.trident-structures.com/parking/' target='_blank' rel='noopener'>/parking/</a></td>
+          <td class='n'>200</td>
+          <td>Parking - Trident Structures</td>
+          <td class='n'>311</td>
+          <td class='n'><span class="crit">0 H1</span></td>
+          <td class='n'>15/17</td>
+          <td class='mono'>221.8 KB</td>
+        </tr>
+
+        <tr>
+          <td class='n'>10</td>
+          <td class='mono'><a href='https://www.trident-structures.com/projects/' target='_blank' rel='noopener'>/projects/</a></td>
+          <td class='n'>200</td>
+          <td>Projects - Trident Structures</td>
+          <td class='n'>169</td>
+          <td class='n'><span class="crit">0 H1</span></td>
+          <td class='n'>96/96</td>
+          <td class='mono'>243.9 KB</td>
+        </tr>
+
+        <tr>
+          <td class='n'>11</td>
+          <td class='mono'><a href='https://www.trident-structures.com/services/' target='_blank' rel='noopener'>/services/</a></td>
+          <td class='n'>200</td>
+          <td>Industrial Construction Services in Texas | T</td>
+          <td class='n'>563</td>
+          <td class='n'>Industrial Construction Services in Texas</td>
+          <td class='n'>88/89</td>
+          <td class='mono'>259.9 KB</td>
+        </tr>
+
+        <tr>
+          <td class='n'>12</td>
+          <td class='mono'><a href='https://www.trident-structures.com/about-us/' target='_blank' rel='noopener'>/about-us/</a></td>
+          <td class='n'>200</td>
+          <td>About Us - Trident Structures</td>
+          <td class='n'>376</td>
+          <td class='n'><span class="crit">0 H1</span></td>
+          <td class='n'>5/26</td>
+          <td class='mono'>232.4 KB</td>
+        </tr>
+
+        <tr>
+          <td class='n'>13</td>
+          <td class='mono'><a href='https://www.trident-structures.com/products/' target='_blank' rel='noopener'>/products/</a></td>
+          <td class='n'>200</td>
+          <td>Concrete Batch Plants &amp; Industrial Equipment </td>
+          <td class='n'>449</td>
+          <td class='n'>Concrete Batch Plants & Industrial Equipment in Texas​​</td>
+          <td class='n'>13/13</td>
+          <td class='mono'>207.3 KB</td>
+        </tr>
+
+        <tr>
+          <td class='n'>14</td>
+          <td class='mono'><a href='https://www.trident-structures.com/?elementskit_template=main-footer-one' target='_blank' rel='noopener'>/?elementskit_template=main-footer-one</a></td>
+          <td class='n'>200</td>
+          <td>Main Footer One - Trident Structures</td>
+          <td class='n'>56</td>
+          <td class='n'><span class="crit">0 H1</span></td>
+          <td class='n'>2/2</td>
+          <td class='mono'>163.0 KB</td>
+        </tr>
+
+        <tr>
+          <td class='n'>15</td>
+          <td class='mono'><a href='https://www.trident-structures.com/?elementskit_template=main-header-one' target='_blank' rel='noopener'>/?elementskit_template=main-header-one</a></td>
+          <td class='n'>200</td>
+          <td>Main Header One - Trident Structures</td>
+          <td class='n'>22</td>
+          <td class='n'><span class="crit">0 H1</span></td>
+          <td class='n'>1/1</td>
+          <td class='mono'>159.2 KB</td>
+        </tr>
+</tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Northline CTA Band -->
+  <div class="cta-band">
+    <div class="band">
+      <div>
+        <span>Northline Search · Industrial &amp; B2B Search Architecture</span>
+        <h3>Ready to execute the Trident Structures remediation roadmap?</h3>
+      </div>
+      <div>
+        <a class="btn-dark" href="../files/10-action-plan.csv">Download Action Plan CSV</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div>Trident Structures (trident-structures.com) Forensic SEO Audit · Generated by Northline Search</div>
+    <div>Report Date: 2026-10-27 · 15 URLs Crawled · 12 Issues Verified</div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(c => c.style.display = 'none');
+        btn.classList.add('active');
+        const target = document.getElementById('tab-' + btn.getAttribute('data-tab'));
+        if (target) target.style.display = 'block';
+      });
+    });
+  </script>
+</body>
+</html>
