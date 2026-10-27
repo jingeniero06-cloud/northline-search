@@ -1,0 +1,16 @@
+phase,issue_id,task,priority,owner,effort,url_count
+Week 1 - Stop Attachment Index Bloat & Fix Core On-Page,I01,Redirect or noindex all 288 media attachment URLs in AIOSEO & remove Media from sitemap.xml,High,SEO / WP admin,S (< 15 min),288
+Week 1 - Stop Attachment Index Bloat & Fix Core On-Page,I03,"Set single H1s on Companies, About, Contact, and Join Us; fix H2-before-H1 on Home",High,WP admin / Dev,S (< 45 min),6
+Week 1 - Stop Attachment Index Bloat & Fix Core On-Page,I02,Write metas for the 6 missing real pages & trim 3 truncated commercial metas,High,SEO / content,S (1-2 hrs),297
+Week 1 - Stop Attachment Index Bloat & Fix Core On-Page,I11,Rewrite Homepage title to include 'Junction Industries' & Fort Worth; shorten 72-char post title,Low,Content / SEO,S (< 30 min),32
+Week 1 - Stop Attachment Index Bloat & Fix Core On-Page,I07,Replace 'Industrial Trades Company' Organization schema with Fort Worth NAP & subOrganizations,High,SEO / Dev,S-M,4
+Week 1 - Stop Attachment Index Bloat & Fix Core On-Page,I05,Remove user-scalable=0 / maximum-scale=1 from The7 viewport meta tag,High,Dev / WP admin,S (< 30 min),11
+Week 1 - Stop Attachment Index Bloat & Fix Core On-Page,I06,Collapse http://jct-ind.com 2-hop redirect chain into 1 hop & add HTTP security headers,High,Hosting / Dev,S (< 1 hr),4
+"Weeks 2-3 - Mobile Speed (CWV), Alt Text, Social & GEO",I04,"Enable server page caching (fix max-age=0 / 1984 Expires), preload hero LCP images, and fix CLS (0.36-0.44)",High,Hosting / Front-end,M (1-2 days),6
+"Weeks 2-3 - Mobile Speed (CWV), Alt Text, Social & GEO",I08,Add descriptive company/project alt text to all 89 images on real pages (46 on /companies/),Medium,Content / WP,M (2-3 hrs),9
+"Weeks 2-3 - Mobile Speed (CWV), Alt Text, Social & GEO",I09,Enable Open Graph (og:*) and Twitter Card tags in AIOSEO across all 11 real pages,Medium,SEO / WP admin,S (< 30 min),11
+"Weeks 2-3 - Mobile Speed (CWV), Alt Text, Social & GEO",I10,"Publish clean /llms.txt (remove BOM, media sitemap & /seedprod/sp-cs/) + update /robots.txt AI rules",Medium,SEO / Dev,S (< 30 min),2
+Weeks 4-8 - Subsidiary Hub Architecture & Authority,I12,Launch dedicated spoke pages for operating companies under /companies/,Medium,SEO + Content,L (Weeks 3-6),7
+Weeks 4-8 - Subsidiary Hub Architecture & Authority,I12,"Build capability pillar pages (EPC & Construction, Steel Fabrication, Intralogistics, Technology)",Medium,SEO + Content,L (Weeks 3-6),7
+Weeks 4-8 - Subsidiary Hub Architecture & Authority,I07,Add executive leadership bios + LinkedIn sameAs links on /about-junction-industries/,High,SEO / Dev,S-M,4
+Weeks 4-8 - Subsidiary Hub Architecture & Authority,EXTRA,Re-crawl sitemap in Search Console (confirm indexed pages move from 299 toward 11 + new subsidiary spokes),,,,

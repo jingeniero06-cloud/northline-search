@@ -1,0 +1,98 @@
+issue_id,priority,area,finding,affected_url,phase,owner
+I01,High,E-E-A-T / Trust / Content,Sitewide Dummy 'Roof Installation & Window Repair' Astra Template Footer on Every Page,https://www.trident-structures.com/,Week 1,WP Admin / Content
+I01,High,E-E-A-T / Trust / Content,Sitewide Dummy 'Roof Installation & Window Repair' Astra Template Footer on Every Page,https://www.trident-structures.com/contact/,Week 1,WP Admin / Content
+I01,High,E-E-A-T / Trust / Content,Sitewide Dummy 'Roof Installation & Window Repair' Astra Template Footer on Every Page,https://www.trident-structures.com/parkingbrochures/,Week 1,WP Admin / Content
+I01,High,E-E-A-T / Trust / Content,Sitewide Dummy 'Roof Installation & Window Repair' Astra Template Footer on Every Page,https://www.trident-structures.com/new-contact/,Week 1,WP Admin / Content
+I01,High,E-E-A-T / Trust / Content,Sitewide Dummy 'Roof Installation & Window Repair' Astra Template Footer on Every Page,https://www.trident-structures.com/careers/,Week 1,WP Admin / Content
+I01,High,E-E-A-T / Trust / Content,Sitewide Dummy 'Roof Installation & Window Repair' Astra Template Footer on Every Page,https://www.trident-structures.com/conference/,Week 1,WP Admin / Content
+I01,High,E-E-A-T / Trust / Content,Sitewide Dummy 'Roof Installation & Window Repair' Astra Template Footer on Every Page,https://www.trident-structures.com/micro-mining-processing/,Week 1,WP Admin / Content
+I01,High,E-E-A-T / Trust / Content,Sitewide Dummy 'Roof Installation & Window Repair' Astra Template Footer on Every Page,https://www.trident-structures.com/industrialbrochure/,Week 1,WP Admin / Content
+I01,High,E-E-A-T / Trust / Content,Sitewide Dummy 'Roof Installation & Window Repair' Astra Template Footer on Every Page,https://www.trident-structures.com/parking/,Week 1,WP Admin / Content
+I01,High,E-E-A-T / Trust / Content,Sitewide Dummy 'Roof Installation & Window Repair' Astra Template Footer on Every Page,https://www.trident-structures.com/projects/,Week 1,WP Admin / Content
+I01,High,E-E-A-T / Trust / Content,Sitewide Dummy 'Roof Installation & Window Repair' Astra Template Footer on Every Page,https://www.trident-structures.com/services/,Week 1,WP Admin / Content
+I01,High,E-E-A-T / Trust / Content,Sitewide Dummy 'Roof Installation & Window Repair' Astra Template Footer on Every Page,https://www.trident-structures.com/about-us/,Week 1,WP Admin / Content
+I01,High,E-E-A-T / Trust / Content,Sitewide Dummy 'Roof Installation & Window Repair' Astra Template Footer on Every Page,https://www.trident-structures.com/products/,Week 1,WP Admin / Content
+I02,High,Conversion / UX / Indexing,Broken Contact Form Shortcode on /contact/ and Duplicate /new-contact/ URL,https://www.trident-structures.com/contact/,Week 1,Web Dev / Marketing
+I02,High,Conversion / UX / Indexing,Broken Contact Form Shortcode on /contact/ and Duplicate /new-contact/ URL,https://www.trident-structures.com/new-contact/,Week 1,Web Dev / Marketing
+I03,High,Sitemap / Index Bloat,ElementsKit Header/Footer Template Snippets Published in XML Sitemap Index,https://www.trident-structures.com/?elementskit_template=main-footer-one,Week 1,SEO / WP Admin
+I03,High,Sitemap / Index Bloat,ElementsKit Header/Footer Template Snippets Published in XML Sitemap Index,https://www.trident-structures.com/?elementskit_template=main-header-one,Week 1,SEO / WP Admin
+I04,High,On-page / Headings,10 of 13 Core Commercial Pages Have Zero <h1> Heading Tags,https://www.trident-structures.com/parkingbrochures/,Week 1,Content / Dev
+I04,High,On-page / Headings,10 of 13 Core Commercial Pages Have Zero <h1> Heading Tags,https://www.trident-structures.com/new-contact/,Week 1,Content / Dev
+I04,High,On-page / Headings,10 of 13 Core Commercial Pages Have Zero <h1> Heading Tags,https://www.trident-structures.com/careers/,Week 1,Content / Dev
+I04,High,On-page / Headings,10 of 13 Core Commercial Pages Have Zero <h1> Heading Tags,https://www.trident-structures.com/conference/,Week 1,Content / Dev
+I04,High,On-page / Headings,10 of 13 Core Commercial Pages Have Zero <h1> Heading Tags,https://www.trident-structures.com/micro-mining-processing/,Week 1,Content / Dev
+I04,High,On-page / Headings,10 of 13 Core Commercial Pages Have Zero <h1> Heading Tags,https://www.trident-structures.com/industrialbrochure/,Week 1,Content / Dev
+I04,High,On-page / Headings,10 of 13 Core Commercial Pages Have Zero <h1> Heading Tags,https://www.trident-structures.com/parking/,Week 1,Content / Dev
+I04,High,On-page / Headings,10 of 13 Core Commercial Pages Have Zero <h1> Heading Tags,https://www.trident-structures.com/projects/,Week 1,Content / Dev
+I04,High,On-page / Headings,10 of 13 Core Commercial Pages Have Zero <h1> Heading Tags,https://www.trident-structures.com/about-us/,Week 1,Content / Dev
+I05,High,On-page / Meta Descriptions,10 of 13 Core Pages Missing Meta Descriptions (76.9% Missing) + 2 Truncated Over 160 Chars,https://www.trident-structures.com/contact/,Week 1,SEO / Copywriter
+I05,High,On-page / Meta Descriptions,10 of 13 Core Pages Missing Meta Descriptions (76.9% Missing) + 2 Truncated Over 160 Chars,https://www.trident-structures.com/parkingbrochures/,Week 1,SEO / Copywriter
+I05,High,On-page / Meta Descriptions,10 of 13 Core Pages Missing Meta Descriptions (76.9% Missing) + 2 Truncated Over 160 Chars,https://www.trident-structures.com/new-contact/,Week 1,SEO / Copywriter
+I05,High,On-page / Meta Descriptions,10 of 13 Core Pages Missing Meta Descriptions (76.9% Missing) + 2 Truncated Over 160 Chars,https://www.trident-structures.com/careers/,Week 1,SEO / Copywriter
+I05,High,On-page / Meta Descriptions,10 of 13 Core Pages Missing Meta Descriptions (76.9% Missing) + 2 Truncated Over 160 Chars,https://www.trident-structures.com/conference/,Week 1,SEO / Copywriter
+I05,High,On-page / Meta Descriptions,10 of 13 Core Pages Missing Meta Descriptions (76.9% Missing) + 2 Truncated Over 160 Chars,https://www.trident-structures.com/micro-mining-processing/,Week 1,SEO / Copywriter
+I05,High,On-page / Meta Descriptions,10 of 13 Core Pages Missing Meta Descriptions (76.9% Missing) + 2 Truncated Over 160 Chars,https://www.trident-structures.com/industrialbrochure/,Week 1,SEO / Copywriter
+I05,High,On-page / Meta Descriptions,10 of 13 Core Pages Missing Meta Descriptions (76.9% Missing) + 2 Truncated Over 160 Chars,https://www.trident-structures.com/parking/,Week 1,SEO / Copywriter
+I05,High,On-page / Meta Descriptions,10 of 13 Core Pages Missing Meta Descriptions (76.9% Missing) + 2 Truncated Over 160 Chars,https://www.trident-structures.com/projects/,Week 1,SEO / Copywriter
+I05,High,On-page / Meta Descriptions,10 of 13 Core Pages Missing Meta Descriptions (76.9% Missing) + 2 Truncated Over 160 Chars,https://www.trident-structures.com/services/,Week 1,SEO / Copywriter
+I05,High,On-page / Meta Descriptions,10 of 13 Core Pages Missing Meta Descriptions (76.9% Missing) + 2 Truncated Over 160 Chars,https://www.trident-structures.com/about-us/,Week 1,SEO / Copywriter
+I05,High,On-page / Meta Descriptions,10 of 13 Core Pages Missing Meta Descriptions (76.9% Missing) + 2 Truncated Over 160 Chars,https://www.trident-structures.com/products/,Week 1,SEO / Copywriter
+I06,High,Accessibility / Image SEO,289 of 309 Images Missing Alt Attributes (93.5% Sitewide Missing Alt Rate),https://www.trident-structures.com/ (24 missing of 24),Weeks 1-2,SEO / Content
+I06,High,Accessibility / Image SEO,289 of 309 Images Missing Alt Attributes (93.5% Sitewide Missing Alt Rate),https://www.trident-structures.com/contact/ (4 missing of 4),Weeks 1-2,SEO / Content
+I06,High,Accessibility / Image SEO,289 of 309 Images Missing Alt Attributes (93.5% Sitewide Missing Alt Rate),https://www.trident-structures.com/parkingbrochures/ (3 missing of 3),Weeks 1-2,SEO / Content
+I06,High,Accessibility / Image SEO,289 of 309 Images Missing Alt Attributes (93.5% Sitewide Missing Alt Rate),https://www.trident-structures.com/new-contact/ (4 missing of 4),Weeks 1-2,SEO / Content
+I06,High,Accessibility / Image SEO,289 of 309 Images Missing Alt Attributes (93.5% Sitewide Missing Alt Rate),https://www.trident-structures.com/careers/ (3 missing of 3),Weeks 1-2,SEO / Content
+I06,High,Accessibility / Image SEO,289 of 309 Images Missing Alt Attributes (93.5% Sitewide Missing Alt Rate),https://www.trident-structures.com/conference/ (4 missing of 4),Weeks 1-2,SEO / Content
+I06,High,Accessibility / Image SEO,289 of 309 Images Missing Alt Attributes (93.5% Sitewide Missing Alt Rate),https://www.trident-structures.com/micro-mining-processing/ (12 missing of 12),Weeks 1-2,SEO / Content
+I06,High,Accessibility / Image SEO,289 of 309 Images Missing Alt Attributes (93.5% Sitewide Missing Alt Rate),https://www.trident-structures.com/industrialbrochure/ (3 missing of 3),Weeks 1-2,SEO / Content
+I06,High,Accessibility / Image SEO,289 of 309 Images Missing Alt Attributes (93.5% Sitewide Missing Alt Rate),https://www.trident-structures.com/parking/ (15 missing of 17),Weeks 1-2,SEO / Content
+I06,High,Accessibility / Image SEO,289 of 309 Images Missing Alt Attributes (93.5% Sitewide Missing Alt Rate),https://www.trident-structures.com/projects/ (96 missing of 96),Weeks 1-2,SEO / Content
+I06,High,Accessibility / Image SEO,289 of 309 Images Missing Alt Attributes (93.5% Sitewide Missing Alt Rate),https://www.trident-structures.com/services/ (88 missing of 89),Weeks 1-2,SEO / Content
+I06,High,Accessibility / Image SEO,289 of 309 Images Missing Alt Attributes (93.5% Sitewide Missing Alt Rate),https://www.trident-structures.com/about-us/ (5 missing of 26),Weeks 1-2,SEO / Content
+I06,High,Accessibility / Image SEO,289 of 309 Images Missing Alt Attributes (93.5% Sitewide Missing Alt Rate),https://www.trident-structures.com/products/ (13 missing of 13),Weeks 1-2,SEO / Content
+I06,High,Accessibility / Image SEO,289 of 309 Images Missing Alt Attributes (93.5% Sitewide Missing Alt Rate),https://www.trident-structures.com/?elementskit_template=main-footer-one (2 missing of 2),Weeks 1-2,SEO / Content
+I06,High,Accessibility / Image SEO,289 of 309 Images Missing Alt Attributes (93.5% Sitewide Missing Alt Rate),https://www.trident-structures.com/?elementskit_template=main-header-one (1 missing of 1),Weeks 1-2,SEO / Content
+I07,High,Performance / Core Web Vitals,Mobile Performance (38-54) & LCP (7.5s-16.2s) Failing Across All Core Templates,"https://www.trident-structures.com/ (LCP: 13.8s, Perf: 42, Weight: 2.8 MB)",Weeks 1-2,Hosting / Dev
+I07,High,Performance / Core Web Vitals,Mobile Performance (38-54) & LCP (7.5s-16.2s) Failing Across All Core Templates,"https://www.trident-structures.com/services/ (LCP: 9.4s, Perf: 48, Weight: 2.4 MB)",Weeks 1-2,Hosting / Dev
+I07,High,Performance / Core Web Vitals,Mobile Performance (38-54) & LCP (7.5s-16.2s) Failing Across All Core Templates,"https://www.trident-structures.com/products/ (LCP: 8.1s, Perf: 52, Weight: 1.9 MB)",Weeks 1-2,Hosting / Dev
+I07,High,Performance / Core Web Vitals,Mobile Performance (38-54) & LCP (7.5s-16.2s) Failing Across All Core Templates,"https://www.trident-structures.com/projects/ (LCP: 16.2s, Perf: 38, Weight: 4.2 MB)",Weeks 1-2,Hosting / Dev
+I07,High,Performance / Core Web Vitals,Mobile Performance (38-54) & LCP (7.5s-16.2s) Failing Across All Core Templates,"https://www.trident-structures.com/about-us/ (LCP: 8.8s, Perf: 50, Weight: 1.8 MB)",Weeks 1-2,Hosting / Dev
+I07,High,Performance / Core Web Vitals,Mobile Performance (38-54) & LCP (7.5s-16.2s) Failing Across All Core Templates,"https://www.trident-structures.com/contact/ (LCP: 7.5s, Perf: 54, Weight: 1.4 MB)",Weeks 1-2,Hosting / Dev
+I08,Medium,Content Depth / E-E-A-T,Thin Content on Portfolio & Brochure Download Landing Pages,https://www.trident-structures.com/projects/ (169 words),Month 2,Content Team
+I08,Medium,Content Depth / E-E-A-T,Thin Content on Portfolio & Brochure Download Landing Pages,https://www.trident-structures.com/parkingbrochures/ (159 words),Month 2,Content Team
+I08,Medium,Content Depth / E-E-A-T,Thin Content on Portfolio & Brochure Download Landing Pages,https://www.trident-structures.com/industrialbrochure/ (157 words),Month 2,Content Team
+I08,Medium,Content Depth / E-E-A-T,Thin Content on Portfolio & Brochure Download Landing Pages,https://www.trident-structures.com/conference/ (169 words),Month 2,Content Team
+I09,Medium,Structured Data / Schema.org,"Missing EngineeringService, GeneralContractor & Parent Organization Schema",https://www.trident-structures.com/,Week 1,SEO / Dev
+I09,Medium,Structured Data / Schema.org,"Missing EngineeringService, GeneralContractor & Parent Organization Schema",https://www.trident-structures.com/contact/,Week 1,SEO / Dev
+I09,Medium,Structured Data / Schema.org,"Missing EngineeringService, GeneralContractor & Parent Organization Schema",https://www.trident-structures.com/parkingbrochures/,Week 1,SEO / Dev
+I09,Medium,Structured Data / Schema.org,"Missing EngineeringService, GeneralContractor & Parent Organization Schema",https://www.trident-structures.com/new-contact/,Week 1,SEO / Dev
+I09,Medium,Structured Data / Schema.org,"Missing EngineeringService, GeneralContractor & Parent Organization Schema",https://www.trident-structures.com/careers/,Week 1,SEO / Dev
+I09,Medium,Structured Data / Schema.org,"Missing EngineeringService, GeneralContractor & Parent Organization Schema",https://www.trident-structures.com/conference/,Week 1,SEO / Dev
+I09,Medium,Structured Data / Schema.org,"Missing EngineeringService, GeneralContractor & Parent Organization Schema",https://www.trident-structures.com/micro-mining-processing/,Week 1,SEO / Dev
+I09,Medium,Structured Data / Schema.org,"Missing EngineeringService, GeneralContractor & Parent Organization Schema",https://www.trident-structures.com/industrialbrochure/,Week 1,SEO / Dev
+I09,Medium,Structured Data / Schema.org,"Missing EngineeringService, GeneralContractor & Parent Organization Schema",https://www.trident-structures.com/parking/,Week 1,SEO / Dev
+I09,Medium,Structured Data / Schema.org,"Missing EngineeringService, GeneralContractor & Parent Organization Schema",https://www.trident-structures.com/projects/,Week 1,SEO / Dev
+I09,Medium,Structured Data / Schema.org,"Missing EngineeringService, GeneralContractor & Parent Organization Schema",https://www.trident-structures.com/services/,Week 1,SEO / Dev
+I09,Medium,Structured Data / Schema.org,"Missing EngineeringService, GeneralContractor & Parent Organization Schema",https://www.trident-structures.com/about-us/,Week 1,SEO / Dev
+I09,Medium,Structured Data / Schema.org,"Missing EngineeringService, GeneralContractor & Parent Organization Schema",https://www.trident-structures.com/products/,Week 1,SEO / Dev
+I10,Medium,AI Search / GEO (Generative Engine Optimization),Zero llms.txt Architecture & Missing AI Bot Crawl Policies in robots.txt,https://www.trident-structures.com/llms.txt,Week 1,SEO / Dev
+I10,Medium,AI Search / GEO (Generative Engine Optimization),Zero llms.txt Architecture & Missing AI Bot Crawl Policies in robots.txt,https://www.trident-structures.com/robots.txt,Week 1,SEO / Dev
+I11,Medium,Security & HTTP Headers,Server Information Disclosure & Missing Security Transport Headers,https://www.trident-structures.com/,Weeks 1-2,SysAdmin / Hosting
+I11,Medium,Security & HTTP Headers,Server Information Disclosure & Missing Security Transport Headers,https://www.trident-structures.com/contact/,Weeks 1-2,SysAdmin / Hosting
+I11,Medium,Security & HTTP Headers,Server Information Disclosure & Missing Security Transport Headers,https://www.trident-structures.com/parkingbrochures/,Weeks 1-2,SysAdmin / Hosting
+I11,Medium,Security & HTTP Headers,Server Information Disclosure & Missing Security Transport Headers,https://www.trident-structures.com/new-contact/,Weeks 1-2,SysAdmin / Hosting
+I11,Medium,Security & HTTP Headers,Server Information Disclosure & Missing Security Transport Headers,https://www.trident-structures.com/careers/,Weeks 1-2,SysAdmin / Hosting
+I11,Medium,Security & HTTP Headers,Server Information Disclosure & Missing Security Transport Headers,https://www.trident-structures.com/conference/,Weeks 1-2,SysAdmin / Hosting
+I11,Medium,Security & HTTP Headers,Server Information Disclosure & Missing Security Transport Headers,https://www.trident-structures.com/micro-mining-processing/,Weeks 1-2,SysAdmin / Hosting
+I11,Medium,Security & HTTP Headers,Server Information Disclosure & Missing Security Transport Headers,https://www.trident-structures.com/industrialbrochure/,Weeks 1-2,SysAdmin / Hosting
+I11,Medium,Security & HTTP Headers,Server Information Disclosure & Missing Security Transport Headers,https://www.trident-structures.com/parking/,Weeks 1-2,SysAdmin / Hosting
+I11,Medium,Security & HTTP Headers,Server Information Disclosure & Missing Security Transport Headers,https://www.trident-structures.com/projects/,Weeks 1-2,SysAdmin / Hosting
+I11,Medium,Security & HTTP Headers,Server Information Disclosure & Missing Security Transport Headers,https://www.trident-structures.com/services/,Weeks 1-2,SysAdmin / Hosting
+I11,Medium,Security & HTTP Headers,Server Information Disclosure & Missing Security Transport Headers,https://www.trident-structures.com/about-us/,Weeks 1-2,SysAdmin / Hosting
+I11,Medium,Security & HTTP Headers,Server Information Disclosure & Missing Security Transport Headers,https://www.trident-structures.com/products/,Weeks 1-2,SysAdmin / Hosting
+I12,Low,On-page / Title Tags,Generic & Weak Title Tags Missing Primary Service Keywords and Geo-Modifiers,https://www.trident-structures.com/contact/ (Contact - Trident Structures),Week 1,SEO Team
+I12,Low,On-page / Title Tags,Generic & Weak Title Tags Missing Primary Service Keywords and Geo-Modifiers,https://www.trident-structures.com/about-us/ (About Us - Trident Structures),Week 1,SEO Team
+I12,Low,On-page / Title Tags,Generic & Weak Title Tags Missing Primary Service Keywords and Geo-Modifiers,https://www.trident-structures.com/careers/ (Careers - Trident Structures),Week 1,SEO Team
+I12,Low,On-page / Title Tags,Generic & Weak Title Tags Missing Primary Service Keywords and Geo-Modifiers,https://www.trident-structures.com/projects/ (Projects - Trident Structures),Week 1,SEO Team
+I12,Low,On-page / Title Tags,Generic & Weak Title Tags Missing Primary Service Keywords and Geo-Modifiers,https://www.trident-structures.com/parking/ (Parking - Trident Structures),Week 1,SEO Team
+I12,Low,On-page / Title Tags,Generic & Weak Title Tags Missing Primary Service Keywords and Geo-Modifiers,https://www.trident-structures.com/new-contact/ (new contact - Trident Structures),Week 1,SEO Team

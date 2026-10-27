@@ -1,0 +1,115 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "EngineeringService",
+        "GeneralContractor",
+        "Corporation"
+      ],
+      "@id": "https://www.trident-structures.com/#organization",
+      "name": "Trident Structures",
+      "legalName": "Trident Structures LLC",
+      "url": "https://www.trident-structures.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://www.trident-structures.com/#logo",
+        "url": "https://www.trident-structures.com/wp-content/uploads/2025/06/trident-structures-logo.png",
+        "caption": "Trident Structures Logo"
+      },
+      "image": "https://www.trident-structures.com/wp-content/uploads/2025/08/DJI_0318-1-scaled.jpg",
+      "description": "Trident Structures is an industrial Engineering, Procurement, and Construction (EPC) firm specializing in dry bulk material handling systems, concrete batch plants, rail transload terminals, and storage silos.",
+      "telephone": "+1-817-607-8373",
+      "email": "sales@trident-structures.com",
+      "priceRange": "$$$$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3348 Peden Road, Suite 700",
+        "addressLocality": "Fort Worth",
+        "addressRegion": "TX",
+        "postalCode": "76179",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 32.8987,
+        "longitude": -97.4397
+      },
+      "parentOrganization": {
+        "@type": "Corporation",
+        "name": "Junction Industries",
+        "url": "https://www.jct-ind.com/",
+        "telephone": "+1-817-607-8873",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3348 Peden Road, Suite 600",
+          "addressLocality": "Fort Worth",
+          "addressRegion": "TX",
+          "postalCode": "76179",
+          "addressCountry": "US"
+        }
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Industrial EPC & Bulk Handling Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Dry Bulk Material Handling Systems",
+              "description": "Turnkey bulk conveyor systems, pneumatic transfer, railcar loadout, and truck unloader terminals."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Concrete Batch Plant Design & EPC",
+              "description": "Custom engineered transit mix and central mix concrete batching plants with aggregate storage bins."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Bulk Storage Silos & Terminals",
+              "description": "Bolted and welded steel storage silos for cement, fly ash, lime, frac sand, and industrial powders."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Rail Transload Facility Construction",
+              "description": "Complete rail siding, rail car unloading pits, high-speed transloading conveyors, and automation."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "High-Density Automated Parking Systems",
+              "description": "Mechanical and semi-automated rotary parking systems maximizing vehicle storage density."
+            }
+          }
+        ]
+      },
+      "areaServed": [
+        {
+          "@type": "State",
+          "name": "Texas"
+        },
+        {
+          "@type": "Country",
+          "name": "United States"
+        }
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/company/trident-structures/",
+        "https://www.facebook.com/tridentstructures/",
+        "https://www.jct-ind.com/companies/"
+      ]
+    }
+  ]
+}

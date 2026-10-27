@@ -1,0 +1,13 @@
+id,priority,area,issue_summary,affected_urls_count,phase,effort,owner
+I01,High,E-E-A-T / Trust / Content,Sitewide Dummy 'Roof Installation & Window Repair' Astra Template Footer on Every Page,13,Week 1,S (< 45 min),WP Admin / Content
+I02,High,Conversion / UX / Indexing,Broken Contact Form Shortcode on /contact/ and Duplicate /new-contact/ URL,2,Week 1,S (< 1 hr),Web Dev / Marketing
+I03,High,Sitemap / Index Bloat,ElementsKit Header/Footer Template Snippets Published in XML Sitemap Index,2,Week 1,S (< 15 min),SEO / WP Admin
+I04,High,On-page / Headings,10 of 13 Core Commercial Pages Have Zero <h1> Heading Tags,10,Week 1,S (1-2 hrs),Content / Dev
+I05,High,On-page / Meta Descriptions,10 of 13 Core Pages Missing Meta Descriptions (76.9% Missing) + 2 Truncated Over 160 Chars,12,Week 1,S (1-2 hrs),SEO / Copywriter
+I06,High,Accessibility / Image SEO,289 of 309 Images Missing Alt Attributes (93.5% Sitewide Missing Alt Rate),289,Weeks 1-2,M (3-4 hrs),SEO / Content
+I07,High,Performance / Core Web Vitals,Mobile Performance (38-54) & LCP (7.5s-16.2s) Failing Across All Core Templates,6,Weeks 1-2,M (1-2 days),Hosting / Dev
+I08,Medium,Content Depth / E-E-A-T,Thin Content on Portfolio & Brochure Download Landing Pages,4,Month 2,M (2-3 days),Content Team
+I09,Medium,Structured Data / Schema.org,"Missing EngineeringService, GeneralContractor & Parent Organization Schema",13,Week 1,S (1 hr),SEO / Dev
+I10,Medium,AI Search / GEO (Generative Engine Optimization),Zero llms.txt Architecture & Missing AI Bot Crawl Policies in robots.txt,2,Week 1,S (< 30 min),SEO / Dev
+I11,Medium,Security & HTTP Headers,Server Information Disclosure & Missing Security Transport Headers,13,Weeks 1-2,S (< 1 hr),SysAdmin / Hosting
+I12,Low,On-page / Title Tags,Generic & Weak Title Tags Missing Primary Service Keywords and Geo-Modifiers,6,Week 1,S (< 1 hr),SEO Team

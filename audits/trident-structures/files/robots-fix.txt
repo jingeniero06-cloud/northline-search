@@ -1,0 +1,37 @@
+# Trident Structures - Production SEO & GEO Robots.txt
+# Domain: https://www.trident-structures.com
+
+User-agent: *
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+Disallow: /*?elementskit_template=*
+Disallow: /new-contact/
+
+# Generative Engine Optimization (GEO) - Explicit AI Engine Access
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Canonical Sitemaps
+Sitemap: https://www.trident-structures.com/sitemap_index.xml
+
+# LLM & AI Search Engine Knowledge Manifest
+# Reference: https://llmstxt.org/
+# Authoritative AI manifest: https://www.trident-structures.com/llms.txt
