@@ -719,26 +719,105 @@ footer.jct-footer {
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "@id": "https://www.jct-ind.com/#organization",
-  "name": "Junction Industries",
-  "legalName": "Junction Industries, LLC",
-  "url": "https://www.jct-ind.com/",
-  "description": "Veteran-owned industrial, infrastructure, and heavy civil holding company in Fort Worth, Texas.",
-  "telephone": "+1-817-607-8873",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "3348 Peden Road, Suite 600",
-    "addressLocality": "Fort Worth",
-    "addressRegion": "TX",
-    "postalCode": "76179",
-    "addressCountry": "US"
-  },
-  "subOrganization": [
-    { "@type": "Organization", "name": "Trident Structures", "url": "https://www.trident-structures.com/" },
-    { "@type": "Organization", "name": "Harbor Fab" },
-    { "@type": "Organization", "name": "Advanced Intralogistics" },
-    { "@type": "Organization", "name": "Pier 57" }
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.jct-ind.com/#organization",
+      "name": "Junction Industries",
+      "legalName": "Junction Industries, LLC",
+      "url": "https://www.jct-ind.com/",
+      "logo": "https://junction-industries.pages.dev/assets/junction-logo.png",
+      "description": "Veteran-owned industrial, infrastructure, and heavy civil holding company headquartered in Fort Worth, Texas.",
+      "telephone": "+1-817-607-8873",
+      "email": "contact@jct-ind.com",
+      "award": [
+        "Certified Veteran-Owned Small Business (VOSB)",
+        "C12 Business Leader Member"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3348 Peden Road, Suite 600",
+        "addressLocality": "Fort Worth",
+        "addressRegion": "TX",
+        "postalCode": "76179",
+        "addressCountry": "US"
+      },
+      "areaServed": [
+        { "@type": "State", "name": "Texas" },
+        { "@type": "Country", "name": "United States" }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Industrial EPC & Manufacturing Capabilities",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Turnkey Concrete Batch Plant EPC",
+              "description": "Turnkey engineering, procurement, and construction for ready-mix batch plants and bulk material handling."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Heavy Structural Steel Fabrication",
+              "description": "AISC & AWS D1.1 certified steel fabrication, industrial ductwork, and pressure vessels."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Commercial Foundation Drilling & Heavy Civil",
+              "description": "Deep drilled shaft piers, heavy equipment foundations, and industrial soil stabilization."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "High-Velocity Warehouse Intralogistics",
+              "description": "Automated parcel sorting systems, industrial conveyor engineering, and freight automation."
+            }
+          }
+        ]
+      },
+      "subOrganization": [
+        {
+          "@type": "Organization",
+          "name": "Trident Structures",
+          "url": "https://www.trident-structures.com/",
+          "description": "EPC contractor for concrete batch plants, dry bulk storage silos, and rail transload terminals."
+        },
+        {
+          "@type": "Organization",
+          "name": "Harbor Fab",
+          "description": "Structural steel fabrication and heavy industrial components."
+        },
+        {
+          "@type": "Organization",
+          "name": "Advanced Intralogistics",
+          "description": "Warehouse automation, material handling, and automated sorting systems."
+        },
+        {
+          "@type": "Organization",
+          "name": "Pier 57",
+          "description": "Commercial marine construction, waterfront infrastructure, and floating docks."
+        },
+        {
+          "@type": "Organization",
+          "name": "Grey Oaks Property Management",
+          "description": "Commercial and industrial property asset management."
+        },
+        {
+          "@type": "Organization",
+          "name": "Palo 32 / Halyard Technologies",
+          "description": "Industrial SCADA controls and automation software."
+        }
+      ]
+    }
   ]
 }
 </script>
@@ -978,6 +1057,82 @@ footer.jct-footer {
 
     <div class="civil-img-box">
       <img src="assets/foundation-civil.jpg" alt="Commercial Foundation Drilling and Civil Infrastructure Construction in Texas">
+    </div>
+  </div>
+</section>
+
+
+<!-- Interactive Engineering Estimator Tool (SXO Powered) -->
+<section class="section-wrapper" style="margin-top:20px; margin-bottom:80px;" id="estimator-section">
+  <div style="background:#161616; border:1px solid #333; border-left:4px solid var(--jct-gold); padding:40px;">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:20px; margin-bottom:30px;">
+      <div>
+        <span class="section-pretitle">Interactive Engineering Tool</span>
+        <h2 style="font-family:var(--font-heading); font-size:28px; font-weight:900; letter-spacing:1px; text-transform:uppercase; color:#fff; margin-top:6px;">
+          Industrial Project &amp; Sizing Estimator
+        </h2>
+        <p style="font-size:14px; color:#aaa; margin-top:6px;">
+          Select your facility parameters below to configure preliminary equipment specifications and engineering scope.
+        </p>
+      </div>
+      <div style="background:#0c0804; border:1px solid var(--jct-gold); padding:10px 18px; font-family:var(--font-heading); font-size:11px; letter-spacing:1px; text-transform:uppercase; color:var(--jct-gold);">
+        SXO Engineering Calculator v2.4
+      </div>
+    </div>
+
+    <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:20px; margin-bottom:28px;">
+      <!-- Parameter 1 -->
+      <div style="background:#111; padding:20px; border:1px solid #282828;">
+        <label style="display:block; font-family:var(--font-heading); font-size:11px; font-weight:800; letter-spacing:1px; text-transform:uppercase; color:var(--jct-gold); margin-bottom:10px;">
+          1. Facility &amp; Project Type
+        </label>
+        <select id="est-type" onchange="calculateEstimates()" style="width:100%; background:#222; border:1px solid #444; color:#fff; padding:10px; font-size:13px; font-family:var(--font-heading);">
+          <option value="batch-plant">Concrete Batch Plant (Trident)</option>
+          <option value="structural-steel">Heavy Structural Steel Fabrication (Harbor)</option>
+          <option value="conveyor-sorting">Warehouse Conveyor / Sorting (Intralogistics)</option>
+          <option value="marine-dock">Marine Waterfront Construction (Pier 57)</option>
+        </select>
+      </div>
+
+      <!-- Parameter 2 -->
+      <div style="background:#111; padding:20px; border:1px solid #282828;">
+        <label style="display:block; font-family:var(--font-heading); font-size:11px; font-weight:800; letter-spacing:1px; text-transform:uppercase; color:var(--jct-gold); margin-bottom:10px;">
+          2. Required Capacity / Throughput
+        </label>
+        <select id="est-capacity" onchange="calculateEstimates()" style="width:100%; background:#222; border:1px solid #444; color:#fff; padding:10px; font-size:13px; font-family:var(--font-heading);">
+          <option value="medium">Standard Capacity (120–180 Yds/Hr or 200–500 Tons)</option>
+          <option value="high">High Velocity (200–300 Yds/Hr or 500–1,500 Tons)</option>
+          <option value="enterprise">Heavy Industrial (300+ Yds/Hr or 1,500+ Tons Mega-Site)</option>
+        </select>
+      </div>
+
+      <!-- Parameter 3 -->
+      <div style="background:#111; padding:20px; border:1px solid #282828;">
+        <label style="display:block; font-family:var(--font-heading); font-size:11px; font-weight:800; letter-spacing:1px; text-transform:uppercase; color:var(--jct-gold); margin-bottom:10px;">
+          3. Foundation &amp; Civil Scope
+        </label>
+        <select id="est-civil" onchange="calculateEstimates()" style="width:100%; background:#222; border:1px solid #444; color:#fff; padding:10px; font-size:13px; font-family:var(--font-heading);">
+          <option value="turnkey">Full Turnkey EPC (Drilled Piers + Slab + Silos)</option>
+          <option value="equipment-only">Equipment &amp; Erection Only (Existing Slab)</option>
+          <option value="expansion">Facility Expansion &amp; Retrofit</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Generated Specs Display Box -->
+    <div style="background:#0d0d0d; border:1px solid #333; padding:24px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:20px;">
+      <div>
+        <div style="font-family:var(--font-heading); font-size:11px; text-transform:uppercase; letter-spacing:1.5px; color:#888;">Configured Engineering Specification:</div>
+        <div id="est-output-title" style="font-family:var(--font-heading); font-size:18px; font-weight:800; color:#fff; margin-top:4px;">
+          Turnkey 200–300 Yds/Hr Batch Plant with Deep Foundation Piers
+        </div>
+        <div id="est-output-desc" style="font-size:13px; color:#bbb; margin-top:4px;">
+          Includes 3x 1,200 bbl storage silos, 4-compartment aggregate bins, automated SCADA controls, and Texas civil foundation engineering.
+        </div>
+      </div>
+      <button onclick="applyEstimatesToRFQ()" class="btn-jct" style="white-space:nowrap; padding:12px 24px;">
+        Transfer Specs to RFQ ↓
+      </button>
     </div>
   </div>
 </section>

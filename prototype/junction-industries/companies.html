@@ -831,10 +831,21 @@ footer.jct-footer {
     </p>
   </div>
 
-  <div class="companies-grid">
+  
+  <!-- Interactive Division Filter Tabs -->
+  <div style="display:flex; justify-content:center; gap:10px; margin-bottom:44px; flex-wrap:wrap;">
+    <button onclick="filterCompanies('all', this)" class="btn-jct" style="padding:10px 18px; font-size:11px;">ALL ENTITIES (6)</button>
+    <button onclick="filterCompanies('epc', this)" class="btn-jct-outline" style="padding:10px 18px; font-size:11px;">EPC &amp; BATCH PLANTS</button>
+    <button onclick="filterCompanies('steel', this)" class="btn-jct-outline" style="padding:10px 18px; font-size:11px;">STEEL FABRICATION</button>
+    <button onclick="filterCompanies('conveyors', this)" class="btn-jct-outline" style="padding:10px 18px; font-size:11px;">MATERIAL HANDLING</button>
+    <button onclick="filterCompanies('marine', this)" class="btn-jct-outline" style="padding:10px 18px; font-size:11px;">MARINE &amp; WATERFRONT</button>
+    <button onclick="filterCompanies('property', this)" class="btn-jct-outline" style="padding:10px 18px; font-size:11px;">INDUSTRIAL FACILITIES</button>
+  </div>
+
+  <div class="companies-grid" id="companies-grid">
 
     <!-- Trident Structures -->
-    <div class="company-card">
+    <div class="company-card" data-category="epc">
       <div class="company-img-wrap">
         <img src="assets/trident-company.jpg" alt="Trident Structures Turnkey Concrete Batch Plants and Material Handling" class="company-img">
         <span class="company-badge">EPC Construction</span>
@@ -852,7 +863,7 @@ footer.jct-footer {
     </div>
 
     <!-- Harbor Fab -->
-    <div class="company-card">
+    <div class="company-card" data-category="epc">
       <div class="company-img-wrap">
         <img src="assets/harbor-fab.jpg" alt="Harbor Fab Heavy Structural Steel Fabrication" class="company-img">
         <span class="company-badge">Steel Fabrication</span>
@@ -870,7 +881,7 @@ footer.jct-footer {
     </div>
 
     <!-- Advanced Intralogistics -->
-    <div class="company-card">
+    <div class="company-card" data-category="epc">
       <div class="company-img-wrap">
         <img src="assets/intralogistics.jpg" alt="Advanced Intralogistics Automated Conveyors and Sorting" class="company-img">
         <span class="company-badge">Material Handling</span>
@@ -888,7 +899,7 @@ footer.jct-footer {
     </div>
 
     <!-- Pier 57 -->
-    <div class="company-card">
+    <div class="company-card" data-category="epc">
       <div class="company-img-wrap">
         <img src="assets/pier57.jpg" alt="Pier 57 Marine Construction and Waterfront Infrastructure" class="company-img">
         <span class="company-badge">Marine Engineering</span>
@@ -906,7 +917,7 @@ footer.jct-footer {
     </div>
 
     <!-- Grey Oaks Property Management -->
-    <div class="company-card">
+    <div class="company-card" data-category="epc">
       <div class="company-img-wrap">
         <img src="assets/grey-oaks.jpg" alt="Grey Oaks Property Management Industrial Facilities" class="company-img">
         <span class="company-badge">Industrial Facilities</span>
@@ -924,7 +935,7 @@ footer.jct-footer {
     </div>
 
     <!-- Palo 32 / Halyard Technologies -->
-    <div class="company-card">
+    <div class="company-card" data-category="epc">
       <div class="company-img-wrap">
         <img src="assets/palo32.jpg" alt="Palo 32 Industrial SCADA Controls and Automation" class="company-img">
         <span class="company-badge">Industrial Controls</span>
@@ -1134,5 +1145,27 @@ async function handleFormSubmit(e) {
   }
 }
 </script>
+
+<script>
+function filterCompanies(cat, btn) {
+  const cards = document.querySelectorAll('.company-card');
+  const buttons = btn.parentElement.querySelectorAll('button');
+
+  buttons.forEach(b => {
+    b.className = 'btn-jct-outline';
+  });
+  btn.className = 'btn-jct';
+
+  cards.forEach(card => {
+    const cardCat = card.getAttribute('data-category');
+    if (cat === 'all' || cardCat === cat) {
+      card.style.display = 'flex';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+</script>
+
 </body>
 </html>
