@@ -3,30 +3,46 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
 <title>Junction Industries | 30-Day Master Task Admin Console</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root {
-  --bg-dark: #0a0e17;
-  --bg-surface: #121826;
-  --bg-card: #182234;
-  --bg-card-hover: #1e2c44;
-  --line: #26334d;
-  --line-light: #344466;
-  --text-main: #f0f4fc;
-  --text-muted: #8c9ebc;
-  --primary: #00d2d3;
-  --primary-glow: rgba(0, 210, 211, 0.18);
-  --blue: #3867d6;
-  --blue-light: #4b7bec;
-  --critical: #ff4d4d;
-  --high: #ff9f43;
-  --medium: #feca57;
-  --success: #1dd1a1;
-  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
+  --bg-dark: #161411;
+  --bg-surface: #221f1b;
+  --bg-card: #2c2823;
+  --bg-card-hover: #3a342c;
+  --line: #433d35;
+  --line-light: #6a6156;
+  --text-main: #f4f0ea;
+  --text-muted: #b7aea3;
+  --primary: #d9ac39;
+  --primary-glow: rgba(217, 172, 57, 0.18);
+  --on-primary: #1a1714;
+  --blue: #8c6a22;
+  --critical: #e15b4a;
+  --high: #e0a15a;
+  --medium: #e6c36a;
+  --success: #7d9a62;
+  --font-sans: "Source Sans 3", "Segoe UI", sans-serif;
+  --font-display: "Barlow Condensed", "Arial Narrow", sans-serif;
+  --font-mono: "IBM Plex Mono", Consolas, monospace;
+}
+body[data-customer="trident"] {
+  --bg-dark: #1a1a1a;
+  --bg-surface: #2f2e2e;
+  --bg-card: #3a3939;
+  --bg-card-hover: #484646;
+  --line: #555351;
+  --line-light: #7a7772;
+  --text-main: #f7f6f2;
+  --text-muted: #c8c4ba;
+  --primary: #e9cc3d;
+  --primary-glow: rgba(233, 204, 61, 0.18);
+  --on-primary: #1c1c1c;
+  --blue: #cca13b;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -59,21 +75,24 @@ aside.sidebar {
 .brand-icon {
   width: 40px;
   height: 40px;
-  border-radius: 10px;
-  background: linear-gradient(135deg, var(--blue), var(--primary));
+  border-radius: 0;
+  background: var(--primary);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 800;
-  font-size: 20px;
-  color: #fff;
-  box-shadow: 0 4px 14px var(--primary-glow);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 0.04em;
+  color: var(--on-primary);
 }
 .brand-text h2 {
-  font-size: 15px;
+  font-family: var(--font-display);
+  font-size: 20px;
   font-weight: 700;
-  letter-spacing: -0.3px;
-  color: #fff;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-main);
 }
 .brand-text p {
   font-size: 11px;
@@ -102,7 +121,7 @@ aside.sidebar {
   gap: 10px;
   width: 100%;
   padding: 10px 12px;
-  border-radius: 8px;
+  border-radius: 2px;
   color: var(--text-muted);
   background: transparent;
   border: none;
@@ -119,7 +138,7 @@ aside.sidebar {
 .nav-btn.active {
   background: var(--primary-glow);
   color: var(--primary);
-  border: 1px solid rgba(0,210,211,0.25);
+  border: 1px solid var(--primary);
 }
 .nav-btn svg { width: 18px; height: 18px; fill: currentColor; }
 
@@ -159,15 +178,18 @@ main.workspace {
 header.top-header {
   padding: 16px 28px;
   background: var(--bg-surface);
+  border-top: 3px solid var(--primary);
   border-bottom: 1px solid var(--line);
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .header-title-block h1 {
-  font-size: 20px;
-  font-weight: 800;
-  letter-spacing: -0.4px;
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -178,7 +200,7 @@ header.top-header {
   border-radius: 6px;
   background: var(--primary-glow);
   color: var(--primary);
-  border: 1px solid rgba(0,210,211,0.3);
+  border: 1px solid var(--primary);
   font-family: var(--font-mono);
   font-weight: 600;
 }
@@ -197,7 +219,7 @@ header.top-header {
   background: var(--bg-card);
   border: 1px solid var(--line);
   padding: 6px 14px;
-  border-radius: 8px;
+  border-radius: 2px;
   font-size: 12px;
   display: flex;
   align-items: center;
@@ -233,13 +255,13 @@ header.top-header {
   transition: all 0.15s ease;
 }
 .filter-btn:hover { background: var(--bg-card-hover); color: #fff; }
-.filter-btn.active { background: var(--primary); color: #0a0e17; font-weight: 700; border-color: var(--primary); }
+.filter-btn.active { background: var(--primary); color: var(--on-primary); font-weight: 700; border-color: var(--primary); }
 
 .view-toggles {
   display: flex;
   background: var(--bg-card);
   padding: 3px;
-  border-radius: 8px;
+  border-radius: 2px;
   border: 1px solid var(--line);
 }
 .view-btn {
@@ -274,7 +296,7 @@ header.top-header {
 .kanban-col {
   background: var(--bg-surface);
   border: 1px solid var(--line);
-  border-radius: 12px;
+  border-radius: 2px;
   padding: 14px;
   display: flex;
   flex-direction: column;
@@ -382,7 +404,7 @@ header.top-header {
 .list-table-box {
   background: var(--bg-surface);
   border: 1px solid var(--line);
-  border-radius: 12px;
+  border-radius: 2px;
   overflow: hidden;
 }
 table.task-table {
@@ -419,7 +441,7 @@ table.task-table tr:hover td {
 .operator-card {
   background: var(--bg-surface);
   border: 1px solid var(--line);
-  border-radius: 12px;
+  border-radius: 2px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -521,7 +543,7 @@ table.task-table tr:hover td {
   font-size: 18px;
   width: 32px;
   height: 32px;
-  border-radius: 8px;
+  border-radius: 2px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -538,7 +560,7 @@ table.task-table tr:hover td {
   margin-bottom: 20px;
   background: var(--bg-card);
   padding: 14px;
-  border-radius: 8px;
+  border-radius: 2px;
   border: 1px solid var(--line);
 }
 .d-field span { display: block; font-size: 11px; text-transform: uppercase; color: var(--text-muted); font-weight: 700; }
@@ -570,6 +592,50 @@ table.task-table tr:hover td {
   cursor: pointer;
 }
 
+.report-wrap { max-width: 760px; }
+.report-lead { color: var(--text-muted); margin: 0 0 16px; font-size: 14px; }
+.report-actions { display: flex; gap: 8px; margin-bottom: 14px; }
+.report-block {
+  background: var(--bg-surface);
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  padding: 16px 18px;
+  margin-bottom: 14px;
+}
+.report-block h2 { font-size: 15px; margin-bottom: 8px; }
+.report-block ul { margin: 0; padding-left: 18px; }
+.report-block li { margin: 6px 0; font-size: 14px; }
+.report-empty { color: var(--text-muted); font-size: 14px; }
+
+.customer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 0 12px 14px;
+  margin-bottom: 6px;
+  border-bottom: 1px solid var(--line);
+}
+.customer-btn {
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: 1px solid var(--line);
+  color: var(--text-muted);
+  border-radius: 2px;
+  padding: 8px 10px;
+  cursor: pointer;
+  font-family: var(--font-sans);
+}
+.customer-btn strong { display: block; color: var(--text-main); font-size: 13px; }
+.customer-btn span { display: block; font-size: 11px; margin-top: 2px; }
+.customer-btn.active {
+  background: var(--primary-glow);
+  border-color: var(--primary);
+  color: var(--primary);
+}
+.entity-list { padding: 0 12px; display: flex; flex-direction: column; gap: 6px; margin-top: 4px; }
+.entity-list div { font-size: 12px; color: var(--text-muted); }
+
 .status-select {
   background: var(--bg-card);
   border: 1px solid var(--line-light);
@@ -582,19 +648,22 @@ table.task-table tr:hover td {
 }
 </style>
 </head>
-<body>
+<body data-customer="junction">
 
 <!-- Left Navigation Sidebar -->
 <aside class="sidebar">
   <div class="brand-box">
-    <div class="brand-icon">J</div>
+    <div class="brand-icon">N</div>
     <div class="brand-text">
-      <h2>Junction Ops</h2>
-      <p>30-Day Master Admin</p>
+      <h2>Northline</h2>
+      <p>Site task admin</p>
     </div>
   </div>
 
   <nav class="sidebar-nav">
+    <div class="nav-section-title">Customers</div>
+    <div class="customer-list" id="customer-list"></div>
+
     <div class="nav-section-title">Views</div>
     <button class="nav-btn active" onclick="switchView('board', this)">
       <svg viewBox="0 0 24 24"><path d="M4 4h4v16H4zm6 0h4v10h-4zm6 0h4v16h-4z"/></svg>
@@ -608,15 +677,13 @@ table.task-table tr:hover td {
       <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
       Operators &amp; Skills
     </button>
+    <button class="nav-btn" data-view="report" onclick="switchView('report', this)">
+      <svg viewBox="0 0 24 24"><path d="M6 2h9l5 5v15a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm8 1.5V8h4.5L14 3.5zM8 12h8v1.5H8V12zm0 3.5h8V17H8v-1.5z"/></svg>
+      Client Report
+    </button>
 
-    <div class="nav-section-title">Holding Entities</div>
-    <div style="padding: 0 12px; display: flex; flex-direction: column; gap: 6px; margin-top: 4px;">
-      <div style="font-size: 12px; color: var(--primary); font-weight: 600;">• jct-ind.com (Parent)</div>
-      <div style="font-size: 12px; color: var(--text-muted);">• trident-structures.com</div>
-      <div style="font-size: 12px; color: var(--text-muted);">• Harbor Fab (Steel Fab)</div>
-      <div style="font-size: 12px; color: var(--text-muted);">• Advanced Intralogistics</div>
-      <div style="font-size: 12px; color: var(--text-muted);">• Pier 57 Marine</div>
-    </div>
+    <div class="nav-section-title">Sites</div>
+    <div class="entity-list" id="entity-list"></div>
   </nav>
 
   <div class="user-profile-box">
@@ -632,8 +699,8 @@ table.task-table tr:hover td {
 <main class="workspace">
   <header class="top-header">
     <div class="header-title-block">
-      <h1>30-Day Execution Admin Console <span class="badge-tag">Junction Industries</span></h1>
-      <p>Multi-site operational roadmap: Website Infrastructure, Technical SEO, GEO, and AEO</p>
+      <h1>30-Day Execution Admin Console <span class="badge-tag" id="customer-badge">Junction Industries</span></h1>
+      <p id="customer-sub">Parent site. WordPress, WPBakery, All in One SEO.</p>
     </div>
     <div class="header-actions">
       <div class="stat-pill">Progress: <b id="stat-progress">0%</b></div>
@@ -644,7 +711,7 @@ table.task-table tr:hover td {
 
   <!-- Filter & View Controls -->
   <div class="control-bar">
-    <div class="filters-left">
+    <div class="filters-left" id="pillar-filters">
       <span style="font-size: 12px; color: var(--text-muted); font-weight: 600;">Pillar:</span>
       <button class="filter-btn active" onclick="filterPillar('All', this)">All</button>
       <button class="filter-btn" onclick="filterPillar('Website', this)">Website</button>
@@ -657,6 +724,7 @@ table.task-table tr:hover td {
       <button class="view-btn active" id="btn-view-board" onclick="switchView('board', document.querySelectorAll('.nav-btn')[0])">Board</button>
       <button class="view-btn" id="btn-view-list" onclick="switchView('list', document.querySelectorAll('.nav-btn')[1])">List</button>
       <button class="view-btn" id="btn-view-operators" onclick="switchView('operators', document.querySelectorAll('.nav-btn')[2])">Operators</button>
+      <button class="view-btn" id="btn-view-report" onclick="switchView('report', document.querySelector('[data-view=report]'))">Client report</button>
     </div>
   </div>
 
@@ -725,6 +793,16 @@ table.task-table tr:hover td {
   <div class="view-container" id="view-operators" style="display:none;">
     <div class="operators-grid" id="operators-grid"></div>
   </div>
+
+  <div class="view-container" id="view-report" style="display:none;">
+    <div class="report-wrap">
+      <div class="report-actions">
+        <button class="view-btn" id="copy-report" onclick="copyReport()">Copy report</button>
+      </div>
+      <p class="report-lead" id="report-date"></p>
+      <div id="report-body"></div>
+    </div>
+  </div>
 </main>
 
 <!-- Task Details Drawer Modal -->
@@ -780,14 +858,143 @@ table.task-table tr:hover td {
 const tasks = [{"id": "TASK-01", "title": "Secure WordPress, GSC, GA4, Cloudflare & Hosting Access", "pillar": "Website", "day": "Day 1-2", "week": "Week 1", "status": "todo", "priority": "Critical", "operator": "Systems Administrator", "skills": ["Access Governance", "Security Protocols", "Credential Audit"], "summary": "Obtain administrator access for jct-ind.com and trident-structures.com WordPress dashboards, GSC/GA4, Cloudflare DNS, and cPanel/SFTP.", "steps": ["Request Admin roles for both WP sites", "Verify owner/delegated permissions on Google Search Console", "Verify GA4 property access", "Test SFTP/cPanel connection and Cloudflare DNS management"]}, {"id": "TASK-02", "title": "Automated Database & Full-Site Backup Snapshot", "pillar": "Website", "day": "Day 2", "week": "Week 1", "status": "todo", "priority": "Critical", "operator": "Systems Administrator", "skills": ["Disaster Recovery", "MySQL / MariaDB", "WP-CLI / cPanel"], "summary": "Generate complete database and wp-content backups for both jct-ind.com and trident-structures.com before applying code or configuration changes.", "steps": ["Export raw SQL database dump", "Archive wp-content/uploads, themes, and plugins", "Store off-site backup in secure cloud bucket"]}, {"id": "TASK-03", "title": "Purge 288 Attachment Pages via AIOSEO & Resubmit Sitemap", "pillar": "SEO", "day": "Day 3", "week": "Week 1", "status": "todo", "priority": "Critical", "operator": "Technical SEO Specialist", "skills": ["All in One SEO", "Crawl Budget Optimization", "XML Sitemaps"], "summary": "Eliminate 96.3% index bloat on jct-ind.com by redirecting media attachment URLs to parent pages, shrinking sitemap from 299 to 11 real URLs.", "steps": ["Go to AIOSEO -> Search Appearance -> Media", "Set 'Redirect Attachment URLs' to 'Attachment Parent'", "Clear sitemap cache and verify sitemap.xml contains only 11 canonical URLs", "Submit updated sitemap in Google Search Console"]}, {"id": "TASK-04", "title": "Purge Astra Dummy Roofing & Leak Repair Footer on Trident", "pillar": "Website", "day": "Day 3", "week": "Week 1", "status": "todo", "priority": "Critical", "operator": "Front-End Dev & Content", "skills": ["Elementor / Astra Customizer", "E-E-A-T Optimization", "WordPress CMS"], "summary": "Remove unedited Astra starter-site demo footer text ('Roof Installation', 'Window Repair', Lorem Ipsum) across all 13 canonical pages on trident-structures.com.", "steps": ["Open WordPress Customizer / Elementor Footer Builder", "Delete starter-site demo block and Latin filler text", "Insert verified Fort Worth HQ details: 3348 Peden Road, Suite 700, Fort Worth, TX 76179, (817) 607-8373", "Include official disclaimer: 'A Junction Industries, LLC Company'"]}, {"id": "TASK-05", "title": "Fix Broken Contact Form Shortcode on Trident /contact/", "pillar": "Website", "day": "Day 4", "week": "Week 1", "status": "todo", "priority": "Critical", "operator": "Front-End Dev & CRO", "skills": ["WordPress Forms", "CRO / Lead Capture", "Form Validation"], "summary": "Replace the unrendered raw shortcode [sureforms id='2397'] on trident-structures.com/contact/ with an active, test-verified RFQ submission form.", "steps": ["Inspect SureForms plugin activation and shortcode ID", "Embed active form widget into Elementor layout", "Test test submission and verify notification email delivery to sales@trident-structures.com"]}, {"id": "TASK-06", "title": "301 Permanent Redirect for /new-contact/ -> /contact/", "pillar": "SEO", "day": "Day 4", "week": "Week 1", "status": "todo", "priority": "High", "operator": "Technical SEO Specialist", "skills": ["Canonicalization", "301 Redirect Rules", ".htaccess / Nginx"], "summary": "Consolidate duplicate unlinked URL trident-structures.com/new-contact/ into primary /contact/ endpoint to avoid keyword cannibalization.", "steps": ["Add 301 redirect rule in redirection plugin or .htaccess", "Remove /new-contact/ from page-sitemap.xml", "Test HTTP response code using curl or crawler"]}, {"id": "TASK-07", "title": "Remove ElementsKit Template Snippets from Yoast Sitemap", "pillar": "SEO", "day": "Day 5", "week": "Week 1", "status": "todo", "priority": "High", "operator": "Technical SEO Specialist", "skills": ["Yoast SEO", "Sitemap Filtering", "Index Bloat Prevention"], "summary": "Disable indexing for elementskit_template post type on Trident to prevent thin internal header/footer snippets from leaking into Google's index.", "steps": ["Open Yoast SEO -> Settings -> Post Types -> ElementsKit Templates", "Toggle off 'Show in search results'", "Verify elementskit_template-sitemap.xml is removed from sitemap_index.xml"]}, {"id": "TASK-08", "title": "Deploy Semantic <h1> Headings Across 14 Core Pages", "pillar": "SEO", "day": "Day 5-6", "week": "Week 1", "status": "todo", "priority": "High", "operator": "Technical SEO Specialist", "skills": ["HTML5 Semantics", "WPBakery & Elementor", "On-Page Keyword Hierarchy"], "summary": "Fix heading deficits: upgrade 4 pages on JCT (/companies/, /about/, /contact/, /join/) and 10 pages on Trident with keyword-optimized <h1> tags.", "steps": ["In WPBakery (JCT), change top hero titles from <h2> to <h1>", "In Elementor (Trident), change hero headings from <div>/<h2> to <h1>", "Validate with crawl inspection tool to confirm exactly one <h1> per URL"]}, {"id": "TASK-09", "title": "Implement Commercial Title & Meta Description Matrix", "pillar": "SEO", "day": "Day 6-7", "week": "Week 1", "status": "todo", "priority": "High", "operator": "SEO Copywriter", "skills": ["SERP Optimization", "Commercial Copywriting", "Keyword Placement"], "summary": "Apply high-converting, geo-targeted title tags and 140-155 char meta descriptions across 11 JCT pages and 13 Trident pages to resolve missing/truncated metas.", "steps": ["Input approved titles into AIOSEO (JCT) and Yoast (Trident)", "Insert compelling meta descriptions with phone number and Fort Worth modifiers", "Verify zero titles exceed 60 chars and zero descriptions exceed 160 chars"]}, {"id": "TASK-10", "title": "Remove Viewport Pinch-to-Zoom Lock for WCAG 2.2", "pillar": "Website", "day": "Day 7", "week": "Week 1", "status": "todo", "priority": "Medium", "operator": "Front-End Dev", "skills": ["Mobile UX", "WCAG 2.2 AA Compliance", "Theme Header Editing"], "summary": "Remove user-scalable=0 and maximum-scale=1 from meta viewport on jct-ind.com to restore mobile zoom accessibility and boost Lighthouse score.", "steps": ["Locate viewport tag in child theme header.php or theme settings", "Update to: <meta name='viewport' content='width=device-width, initial-scale=1'>", "Re-run Mobile Lighthouse audit to confirm accessibility pass"]}, {"id": "TASK-11", "title": "Resolve Cache-Control: no-cache & Deploy WP Edge Caching", "pillar": "Website", "day": "Day 8-9", "week": "Week 2", "status": "todo", "priority": "Critical", "operator": "Systems Administrator", "skills": ["HTTP Caching Headers", "WP Rocket / LiteSpeed", "TTFB Optimization"], "summary": "Eliminate severe server TTFB latency (1.63s-2.45s) on jct-ind.com by replacing no-cache headers with 30-day static browser and HTML edge caching.", "steps": ["Configure caching plugin with page caching, Gzip/Brotli, and cache preloading", "Update .htaccess or web server config with proper Cache-Control headers", "Verify TTFB drops under 200ms using curl -I"]}, {"id": "TASK-12", "title": "Cloudflare CDN Rules & Static Asset Compression", "pillar": "Website", "day": "Day 9-10", "week": "Week 2", "status": "todo", "priority": "High", "operator": "Systems Administrator", "skills": ["Cloudflare Page Rules", "Asset Minification", "Edge Network Tuning"], "summary": "Route jct-ind.com and trident-structures.com through Cloudflare proxy with Brotli compression, JS/CSS minification, and Early Hints.", "steps": ["Enable Cloudflare caching rules for wp-content/uploads/ (*.jpg, *.png, *.webp, *.css, *.js)", "Turn on Auto Minify and Brotli in Cloudflare Speed tab", "Configure SSL/TLS to Full (Strict)"]}, {"id": "TASK-13", "title": "Eliminate 2-Hop Root Domain HTTP Redirect Chain", "pillar": "SEO", "day": "Day 10", "week": "Week 2", "status": "todo", "priority": "High", "operator": "Systems Administrator", "skills": ["Apache / Nginx Redirects", "Canonical HTTP Enforcement", "Latency Reduction"], "summary": "Force bare HTTP requests (http://jct-ind.com) directly to https://www.jct-ind.com in a single 301 hop, eliminating a 900ms redirect penalty.", "steps": ["Update top of .htaccess with direct rewrite rule", "Verify with curl -I http://jct-ind.com returns single 301 to https://www.jct-ind.com/", "Test HTTPS certificate verification"]}, {"id": "TASK-14", "title": "Populate Missing Alt Attributes on jct-ind.com (46 Logos)", "pillar": "SEO", "day": "Day 11-12", "week": "Week 2", "status": "todo", "priority": "High", "operator": "Technical SEO Specialist", "skills": ["Image Alt Tagging", "Entity Branding", "Media Library Management"], "summary": "Inject descriptive, brand-aligned alt attributes across all 76 unlabelled images on JCT, especially the 46 partner logos on /companies/.", "steps": ["Open Media Library in WordPress", "Assign brand alt descriptions: 'Harbor Fab - Industrial Steel Fabrication Subsidiary'", "Audit page DOM to verify 100% of images have non-empty alt tags"]}, {"id": "TASK-15", "title": "Bulk Optimize 289 Missing Alt Attributes on Trident", "pillar": "SEO", "day": "Day 12-13", "week": "Week 2", "status": "todo", "priority": "High", "operator": "Technical SEO Specialist", "skills": ["Industrial Image SEO", "Bulk Media Editing", "Keyword Context"], "summary": "Remediate 93.5% missing image alt deficit on trident-structures.com, adding industrial EPC keywords to all 96 portfolio images on /projects/.", "steps": ["Export images from crawl_results.json", "Map contextual alt text (e.g., 'Turnkey Concrete Batch Plant Silo Installation')", "Execute bulk update via WP-CLI or Media Library"]}, {"id": "TASK-16", "title": "Configure Open Graph & LinkedIn Social Meta Tags Sitewide", "pillar": "Website", "day": "Day 14", "week": "Week 2", "status": "todo", "priority": "Medium", "operator": "Front-End Dev", "skills": ["Open Graph Protocol", "Social Preview Cards", "Brand Assets"], "summary": "Deploy og:title, og:description, og:image, and Twitter card tags across all pages so shared links display polished corporate branding.", "steps": ["Upload 1200x630px branded social sharing image", "Configure default OG tags in AIOSEO / Yoast", "Test URL shares using LinkedIn Post Inspector"]}, {"id": "TASK-17", "title": "Engineer Multi-Entity Organization & subOrganization Schema", "pillar": "AEO", "day": "Day 15-16", "week": "Week 3", "status": "todo", "priority": "Critical", "operator": "Structured Data Engineer", "skills": ["JSON-LD Schema.org", "Knowledge Graph Construction", "Entity Disambiguation"], "summary": "Build and inject unified Organization graph linking Junction Industries as parent entity to Trident Structures, Harbor Fab, Advanced Intralogistics, and Pier 57.", "steps": ["Draft custom JSON-LD schema with PostalAddress, telephone, and subOrganization array", "Inject into <head> via functions.php or header snippet plugin", "Validate with Schema.org Validator and Google Rich Results Test (0 errors)"]}, {"id": "TASK-18", "title": "Deploy EngineeringService & GeneralContractor Schema on Trident", "pillar": "AEO", "day": "Day 16-17", "week": "Week 3", "status": "todo", "priority": "High", "operator": "Structured Data Engineer", "skills": ["Industrial Schema Types", "Service Area Markup", "Entity Anchoring"], "summary": "Implement schema-fix.json on trident-structures.com defining EPC contractor capabilities, bulk material handling, and concrete batch plant services.", "steps": ["Inject schema-fix.json into Trident WordPress <head>", "Link parentOrganization to https://www.jct-ind.com/#organization", "Test rich snippet qualification in Google Rich Results Test"]}, {"id": "TASK-19", "title": "Build & Deploy Formatted /llms.txt on Both Domains", "pillar": "GEO", "day": "Day 17-18", "week": "Week 3", "status": "todo", "priority": "High", "operator": "AI Search Strategist", "skills": ["llms.txt Protocol", "Markdown Structuring", "Generative Search Optimization"], "summary": "Deploy clean, standardized llms.txt manifests to https://www.jct-ind.com/llms.txt and trident-structures.com/llms.txt to inform LLMs and AI crawlers.", "steps": ["Ensure line 1 starts with # Organization Name without BOM", "Include summary blockquote, core capabilities, leadership, and canonical URL index", "Upload to web root and verify 200 OK status"]}, {"id": "TASK-20", "title": "Modernize robots.txt with Explicit AI Crawler Directives", "pillar": "GEO", "day": "Day 18-19", "week": "Week 3", "status": "todo", "priority": "High", "operator": "Technical SEO Specialist", "skills": ["Robots.txt Protocol", "AI Crawler Directives", "Crawl Path Control"], "summary": "Allow and organize AI crawlers (GPTBot, PerplexityBot, ClaudeBot, Google-Extended) while blocking template scrapers and internal admin paths.", "steps": ["Update robots.txt with user-agent rules for modern AI search bots", "Disallow /seedprod/ and /elementskit_template/ paths", "Verify sitemap index directive points to clean sitemap.xml"]}, {"id": "TASK-21", "title": "Direct-Answer FAQ Structuring & Entity Anchoring", "pillar": "AEO", "day": "Day 19-20", "week": "Week 3", "status": "todo", "priority": "Medium", "operator": "AEO Content Strategist", "skills": ["FAQPage Schema", "Direct Answer Copywriting", "AI Overview Targeting"], "summary": "Craft concise Q&A blocks on core service pages answering industrial procurement queries to win citations in Google AI Overviews and ChatGPT Search.", "steps": ["Write direct 40-60 word answers for key queries (e.g. concrete batch plant lead times, transload terminal requirements)", "Pair on-page text with FAQPage JSON-LD schema", "Validate with Google Search Console rich results tester"]}, {"id": "TASK-22", "title": "Deploy HTTP Security Transport Headers in .htaccess", "pillar": "Website", "day": "Day 21", "week": "Week 3", "status": "todo", "priority": "Medium", "operator": "Systems Administrator", "skills": ["Security Headers", "HSTS", "Information Disclosure Prevention"], "summary": "Implement HSTS, X-Content-Type-Options: nosniff, and X-Frame-Options: SAMEORIGIN to prevent clickjacking and pass enterprise security audits.", "steps": ["Add Strict-Transport-Security: max-age=31536000; includeSubDomains", "Add X-Content-Type-Options: nosniff and X-Frame-Options: SAMEORIGIN", "Disable X-Powered-By in PHP and test via securityheaders.com"]}, {"id": "TASK-23", "title": "Design & Publish Dedicated Subsidiary Landing Pages", "pillar": "Website", "day": "Day 22-24", "week": "Week 4", "status": "todo", "priority": "High", "operator": "Web Dev & Copywriter", "skills": ["Elementor / WPBakery", "B2B Service Pages", "Conversion Optimization"], "summary": "Build high-converting dedicated showcase pages under /companies/ for Harbor Fab, Advanced Intralogistics, and Pier 57 to fix current 404 links.", "steps": ["Create custom landing page layouts with corporate branding", "Detail facility specs, past projects, equipment rosters, and RFQ forms", "Link seamlessly from homepage and /companies/ grid"]}, {"id": "TASK-24", "title": "Transform Trident /projects/ into Technical EPC Case Studies", "pillar": "SEO", "day": "Day 25-26", "week": "Week 4", "status": "todo", "priority": "High", "operator": "Industrial B2B Copywriter", "skills": ["Technical Writing", "Case Study Formatting", "E-E-A-T Proof Assets"], "summary": "Expand the 96 raw project gallery images into documented EPC case studies specifying storage volume, throughput, and scope of work.", "steps": ["Group photos into 6-8 flagship industrial installations", "Write technical project briefs (Location, Facility Type, Specs, Scope)", "Add client proof testimonials and lead inquiry CTAs"]}, {"id": "TASK-25", "title": "Clean Up WordPress Category Hierarchy (/category/news/)", "pillar": "SEO", "day": "Day 27", "week": "Week 4", "status": "todo", "priority": "Medium", "operator": "Technical SEO Specialist", "skills": ["WordPress Taxonomy", "301 Redirect Engineering", "Information Architecture"], "summary": "Move News category parent from Uncategorized to None, establishing clean /category/news/ URLs and setting up 301 redirects for legacy paths.", "steps": ["Edit 'News' category in WordPress Posts -> Categories", "Set parent to 'None' and save", "Create 301 redirect from /category/uncategorized/news/ to /category/news/"]}, {"id": "TASK-26", "title": "Optimize & Verify Google Business Profile (Fort Worth HQ)", "pillar": "SEO", "day": "Day 28", "week": "Week 4", "status": "todo", "priority": "Medium", "operator": "Local SEO Specialist", "skills": ["Google Business Profile", "NAP Consistency", "Local Citations"], "summary": "Claim or optimize Fort Worth HQ Google Business Profile with exact NAP data (3348 Peden Road, Suite 600) matching on-page schema.", "steps": ["Confirm primary category 'Holding company' or 'Corporate office'", "Update business hours, description, and high-res exterior/interior photos", "Ensure website button links to https://www.jct-ind.com/"]}, {"id": "TASK-27", "title": "Set Up Automated Weekly Python Crawl & Health Check Script", "pillar": "Website", "day": "Day 29", "week": "Week 4", "status": "todo", "priority": "High", "operator": "Systems Administrator", "skills": ["Python Scripting", "Automated Crawlers", "Cron / Task Scheduler"], "summary": "Deploy Python crawl script on a weekly schedule to inspect HTTP response codes, Core Web Vitals, and broken forms across the portfolio.", "steps": ["Configure crawler_audit.py to scan both domains weekly", "Set up email/Slack notification on HTTP errors or missing H1s", "Log crawl records into history archive"]}, {"id": "TASK-28", "title": "Build Executive Looker Studio Analytics & Keyword Tracker", "pillar": "AEO", "day": "Day 30", "week": "Week 4", "status": "todo", "priority": "High", "operator": "BI / SEO Analyst", "skills": ["Looker Studio", "GA4 & GSC Integration", "Executive Dashboards"], "summary": "Connect GA4, GSC, and ranking monitors into a live, interactive Looker Studio dashboard for Tristyn and executive leadership.", "steps": ["Connect GSC and GA4 data sources for jct-ind.com and trident-structures.com", "Build KPI scorecards for Organic Clicks, Impressions, and Form Leads", "Share viewer link with Tristyn and executive stakeholders"]}, {"id": "TASK-29", "title": "Month 1 Deliverable Hand-off & 30-Day Executive ROI Report", "pillar": "Website", "day": "Day 30", "week": "Week 4", "status": "todo", "priority": "Critical", "operator": "Lead Operations Manager", "skills": ["Executive Communication", "ROI Presentation", "Sprint Planning"], "summary": "Deliver comprehensive 30-day recap presentation showing before/after health scores, resolved technical debt, and Sprint 2 priorities.", "steps": ["Run post-fix site crawl to verify health score jump from 52 -> 90+ on JCT and 48 -> 92+ on Trident", "Prepare 1-page executive summary PDF", "Schedule Month 2 alignment call with Tristyn"]}];
 const operators = [{"role": "Lead Systems & Web Infrastructure Administrator", "focus": "Hosting, Cloudflare Edge, Security, Automation, & Caching", "tools": ["Cloudflare (DNS, WAF, Workers)", "cPanel / VPS / SSH", "WP-CLI / MySQL", "Python / PowerShell Automation", "WP Rocket / LiteSpeed"], "capabilities": ["Full disaster recovery, database management, and zero-downtime backups", "Edge caching rules to lower TTFB from 2.4s to <150ms", "Single-hop canonical 301 rewrite engineering", "Automated weekly crawl and anomaly detection scripts"]}, {"role": "Technical SEO & Indexation Specialist", "focus": "Crawl Budget, XML Sitemaps, Canonicalization, & Heading Architecture", "tools": ["Google Search Console", "All in One SEO / Yoast", "Custom Python Site Crawlers", "Semrush / Ahrefs", "Screaming Frog"], "capabilities": ["Purging 288 attachment URLs and template bloat from Google's index", "Restoring semantic <h1>-<h3> heading hierarchies across commercial pages", "Optimizing crawl paths and resolving redirect loops", "Bulk image alt attribute remediation across industrial portfolios"]}, {"role": "AEO & Structured Data Engineer (Answer Engine Optimization)", "focus": "Multi-Entity Knowledge Graph Schema, Rich Results, & Direct Answer UX", "tools": ["Schema.org JSON-LD", "Google Rich Results Test", "Schema Markup Generator", "JSON Schema Validators"], "capabilities": ["Engineering multi-entity Organization graphs connecting holding company to subsidiaries", "Deploying EngineeringService & GeneralContractor schemas", "Structuring FAQPage markup for Google AI Overviews and answer boxes"]}, {"role": "GEO & AI Search Strategist (Generative Engine Optimization)", "focus": "llms.txt Architecture, AI Scraper Governance, & LLM Visibility", "tools": ["llms.txt Specification", "Robots.txt Parser", "ChatGPT / Perplexity / Claude Search Monitors"], "capabilities": ["Drafting machine-readable llms.txt files that define capabilities and corporate history", "Configuring robots.txt to grant structured access to AI crawlers", "Tracking brand citations and answers in generative search engines"]}, {"role": "Industrial B2B Content & Conversion Specialist", "focus": "Commercial Meta Copy, EPC Case Studies, & Lead Form Recovery", "tools": ["WordPress Block/Elementor Editor", "SureForms / Gravity Forms", "Looker Studio / GA4"], "capabilities": ["Purging misleading dummy starter-site copy and restoring corporate E-E-A-T", "Repairing broken shortcodes and configuring multi-recipient RFQ notifications", "Transforming raw image galleries into technical, spec-driven engineering case studies"]}];
 
-let activePillar = 'All';
+const TRIDENT_TASKS = new Set(["TASK-04", "TASK-05", "TASK-06", "TASK-07", "TASK-15", "TASK-18", "TASK-24"]);
+const BOTH_TASKS = new Set(["TASK-01", "TASK-02", "TASK-08", "TASK-09", "TASK-12", "TASK-16", "TASK-19", "TASK-20", "TASK-21", "TASK-27", "TASK-28", "TASK-29"]);
+tasks.forEach(t => {
+  t.customer = TRIDENT_TASKS.has(t.id) ? "trident" : BOTH_TASKS.has(t.id) ? "both" : "junction";
+});
+
+const customers = [
+  {
+    id: "junction",
+    name: "Junction Industries",
+    site: "jct-ind.com",
+    reportFor: "Nathalie Calayag",
+    host: "TechnicalRx",
+    blurb: "Parent site. WordPress, WPBakery, All in One SEO.",
+    entities: ["jct-ind.com (Parent)", "Harbor Fab", "Advanced Intralogistics", "Pier 57"]
+  },
+  {
+    id: "trident",
+    name: "Trident Structures",
+    site: "trident-structures.com",
+    reportFor: "Nathalie Calayag",
+    host: "GoDaddy",
+    blurb: "Operating company. WordPress, Elementor, Yoast.",
+    entities: ["trident-structures.com"]
+  }
+];
+
+const clientLines = [
+  { id: "TASK-09", customer: "junction", wait: "client", open: "Homepage title. Proposed line: Junction Industries | Industrial, EPC & Technology Holding Company. This stays off the site until you say yes.", done: "Homepage title and the page descriptions are updated." },
+  { id: "TASK-17", customer: "junction", wait: "client", open: "Legal name for the company listing. The live site still says Industrial Trades Company. The address on the contact page is 3348 Peden Road Suite 600, Fort Worth, TX 76179, and the phone is (817) 607-8873.", done: "Company listing now uses the confirmed legal name, Fort Worth address, and phone." },
+  { id: "TASK-11", customer: "junction", wait: "host", open: "Page caching for jct-ind.com. Pages currently tell the browser not to cache them, which is why the homepage is slow on a phone.", done: "Page caching is on for jct-ind.com." },
+  { id: "TASK-13", customer: "junction", wait: "host", open: "http://jct-ind.com takes two redirects and about 2.3 seconds before it reaches the live site. It needs to become one hop to https://www.jct-ind.com.", done: "http://jct-ind.com now redirects to the live site in one hop." },
+  { id: "TASK-22", customer: "junction", wait: "host", open: "Standard browser security headers on the server.", done: "Security headers are in place." },
+  { id: "TASK-03", customer: "junction", done: "Image pages are no longer in the jct-ind.com sitemap. It is down from 299 URLs to the 11 real pages." },
+  { id: "TASK-10", customer: "junction", done: "Pinch-to-zoom works again on jct-ind.com." },
+  { id: "TASK-14", customer: "junction", done: "Company logos and photos on jct-ind.com have descriptions." },
+  { id: "TASK-04", customer: "trident", wait: "client", open: "Footer and contact facts. The live footer still shows a roofing demo and info@example.com, and the contact page still shows a San Francisco address. Please confirm the real links, phone, and email. The Junction street address will not be copied here unless you confirm it belongs on this site.", done: "The footer now uses the approved company details. The roofing demo is gone." },
+  { id: "TASK-05", customer: "trident", done: "The contact form submits." },
+  { id: "TASK-07", customer: "trident", done: "Header and footer templates are out of Google." },
+  { id: "TASK-08", customer: "both", done: "Each core page now has one main heading." },
+  { id: "TASK-16", customer: "both", done: "Links shared to LinkedIn now show a title, summary, and image." },
+  { id: "TASK-19", customer: "both", done: "A clean summary file for AI search is published." },
+  { id: "TASK-20", customer: "both", done: "AI search crawlers are allowed in robots.txt." }
+];
+
+let activePillar = "All";
+let activeCustomerId = "junction";
 let currentTaskId = null;
+let reportText = "";
+const CUSTOMER_KEY = "admin-active-customer-v1";
+
+function currentCustomer() {
+  return customers.find(c => c.id === activeCustomerId) || customers[0];
+}
+
+function statusKey() {
+  return "admin-task-status-" + activeCustomerId;
+}
+
+function visibleTasks() {
+  return tasks.filter(t => t.customer === activeCustomerId || t.customer === "both");
+}
+
+function loadStatus() {
+  let saved = {};
+  try { saved = JSON.parse(localStorage.getItem(statusKey()) || "{}"); } catch (err) { saved = {}; }
+  tasks.forEach(t => {
+    const value = saved[t.id];
+    t.status = (value === "todo" || value === "inprogress" || value === "completed") ? value : "todo";
+  });
+}
+
+function saveStatus() {
+  const saved = {};
+  visibleTasks().forEach(t => { saved[t.id] = t.status; });
+  localStorage.setItem(statusKey(), JSON.stringify(saved));
+}
+
+function renderCustomers() {
+  const list = document.getElementById("customer-list");
+  list.innerHTML = customers.map(c => `
+    <button type="button" class="customer-btn${c.id === activeCustomerId ? " active" : ""}" onclick="selectCustomer('${c.id}')">
+      <strong>${esc(c.name)}</strong>
+      <span>${esc(c.site)}</span>
+    </button>
+  `).join("");
+}
+
+function renderEntities() {
+  const customer = currentCustomer();
+  document.getElementById("entity-list").innerHTML = customer.entities
+    .map(name => "<div>• " + esc(name) + "</div>")
+    .join("");
+}
+
+function updateChrome() {
+  const customer = currentCustomer();
+  document.body.dataset.customer = customer.id;
+  document.getElementById("customer-badge").textContent = customer.name;
+  document.getElementById("customer-sub").textContent = customer.blurb;
+  document.title = customer.name + " | 30-Day Task Admin";
+}
+
+function selectCustomer(id) {
+  if (!customers.some(c => c.id === id) || id === activeCustomerId) return;
+  saveStatus();
+  activeCustomerId = id;
+  localStorage.setItem(CUSTOMER_KEY, id);
+  activePillar = "All";
+  document.querySelectorAll(".filter-btn").forEach((btn, index) => btn.classList.toggle("active", index === 0));
+  loadStatus();
+  closeModal();
+  renderCustomers();
+  renderEntities();
+  updateChrome();
+  renderBoard();
+  renderList();
+  renderReport();
+  updateStats();
+}
+
+function esc(value) {
+  return String(value).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
 
 // Initialize app
 function init() {
+  const savedCustomer = localStorage.getItem(CUSTOMER_KEY);
+  if (customers.some(c => c.id === savedCustomer)) activeCustomerId = savedCustomer;
+  loadStatus();
+  renderCustomers();
+  renderEntities();
+  updateChrome();
   renderBoard();
   renderList();
   renderOperators();
+  renderReport();
   updateStats();
 }
 
@@ -800,9 +1007,12 @@ function filterPillar(pillar, btn) {
 }
 
 function switchView(viewName, navBtn) {
-  document.getElementById('view-board').style.display = viewName === 'board' ? 'block' : 'none';
-  document.getElementById('view-list').style.display = viewName === 'list' ? 'block' : 'none';
-  document.getElementById('view-operators').style.display = viewName === 'operators' ? 'block' : 'none';
+  ['board', 'list', 'operators', 'report'].forEach(name => {
+    const el = document.getElementById('view-' + name);
+    if (el) el.style.display = viewName === name ? 'block' : 'none';
+  });
+  const filters = document.getElementById('pillar-filters');
+  if (filters) filters.style.display = viewName === 'report' ? 'none' : 'flex';
 
   document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
   if (navBtn) navBtn.classList.add('active');
@@ -810,10 +1020,11 @@ function switchView(viewName, navBtn) {
   document.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active'));
   const toggleBtn = document.getElementById('btn-view-' + viewName);
   if (toggleBtn) toggleBtn.classList.add('active');
+  if (viewName === 'report') renderReport();
 }
 
 function renderBoard() {
-  const filtered = activePillar === 'All' ? tasks : tasks.filter(t => t.pillar === activePillar);
+  const filtered = activePillar === 'All' ? visibleTasks() : visibleTasks().filter(t => t.pillar === activePillar);
   const weeks = ['Week 1', 'Week 2', 'Week 3', 'Week 4'];
 
   weeks.forEach((w, idx) => {
@@ -828,10 +1039,10 @@ function renderBoard() {
     colEl.innerHTML = weekTasks.map(t => `
       <div class="task-card" onclick="openModal('${t.id}')">
         <div class="task-top">
-          <span class="task-id">${t.id} · ${t.day}</span>
-          <span class="pill-priority pri-${t.priority}">${t.priority}</span>
+          <span class="task-id">${esc(t.id)} · ${esc(t.day)}</span>
+          <span class="pill-priority pri-${t.priority}">${esc(t.priority)}</span>
         </div>
-        <div class="task-title">${t.title}</div>
+        <div class="task-title">${esc(t.title)}</div>
         <div class="task-meta">
           <span class="pillar-tag pil-${t.pillar}">● ${t.pillar}</span>
           <span>${t.status === 'completed' ? '✅ Done' : t.status === 'inprogress' ? '⏳ In Progress' : '⚪ To Do'}</span>
@@ -842,17 +1053,17 @@ function renderBoard() {
 }
 
 function renderList() {
-  const filtered = activePillar === 'All' ? tasks : tasks.filter(t => t.pillar === activePillar);
+  const filtered = activePillar === 'All' ? visibleTasks() : visibleTasks().filter(t => t.pillar === activePillar);
   const tbody = document.getElementById('list-tbody');
 
   tbody.innerHTML = filtered.map(t => `
     <tr onclick="openModal('${t.id}')">
       <td style="font-family:var(--font-mono); font-weight:600; color:var(--primary);">${t.id}</td>
-      <td style="font-weight:600; color:#fff;">${t.title}</td>
+      <td style="font-weight:600; color:#fff;">${esc(t.title)}</td>
       <td><span class="pillar-tag pil-${t.pillar}">● ${t.pillar}</span></td>
       <td><span class="pill-priority pri-${t.priority}">${t.priority}</span></td>
       <td style="color:var(--text-muted); font-size:12px;">${t.week} (${t.day})</td>
-      <td style="font-size:12px; color:var(--text-main);">${t.operator}</td>
+      <td style="font-size:12px; color:var(--text-main);">${esc(t.operator)}</td>
       <td>
         <span style="font-size:12px; font-weight:600; color:${t.status === 'completed' ? 'var(--success)' : t.status === 'inprogress' ? 'var(--high)' : 'var(--text-muted)'}">
           ${t.status === 'completed' ? 'Completed' : t.status === 'inprogress' ? 'In Progress' : 'To Do'}
@@ -869,32 +1080,90 @@ function renderOperators() {
       <div class="operator-card-header">
         <div class="op-avatar">0${i + 1}</div>
         <div class="op-title-block">
-          <h3>${op.role}</h3>
-          <p>${op.focus}</p>
+          <h3>${esc(op.role)}</h3>
+          <p>${esc(op.focus)}</p>
         </div>
       </div>
 
       <div>
         <div class="op-section-title">Core Tooling Stack</div>
         <div class="op-tools-pills">
-          ${op.tools.map(tool => `<span class="op-tool-pill">${tool}</span>`).join('')}
+          ${op.tools.map(tool => `<span class="op-tool-pill">${esc(tool)}</span>`).join('')}
         </div>
       </div>
 
       <div class="op-caps">
         <div class="op-section-title">Key Capabilities &amp; Deliverables</div>
         <ul>
-          ${op.capabilities.map(cap => `<li>${cap}</li>`).join('')}
+          ${op.capabilities.map(cap => `<li>${esc(cap)}</li>`).join('')}
         </ul>
       </div>
     </div>
   `).join('');
 }
 
+function renderReport() {
+  const customer = currentCustomer();
+  const done = [];
+  const waitingClient = [];
+  const host = [];
+  clientLines.forEach(line => {
+    if (line.customer !== "both" && line.customer !== customer.id) return;
+    const task = tasks.find(item => item.id === line.id);
+    const status = task ? task.status : "todo";
+    if (status === "completed" && line.done) done.push(line.done);
+    else if (status !== "completed" && line.wait === "client") waitingClient.push(line.open);
+    else if (status !== "completed" && line.wait === "host") host.push(line.open);
+  });
+
+  const block = (title, items, empty) => {
+    const body = items.length
+      ? "<ul>" + items.map(item => "<li>" + esc(item) + "</li>").join("") + "</ul>"
+      : "<p class=\"report-empty\">" + esc(empty) + "</p>";
+    return "<section class=\"report-block\"><h2>" + esc(title) + "</h2>" + body + "</section>";
+  };
+
+  const stamp = new Date().toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
+  const clientTitle = "Waiting on " + customer.name;
+  const hostTitle = "Waiting on " + customer.host;
+  document.getElementById("report-date").textContent = "For " + customer.reportFor + " · " + customer.name + " · " + stamp + ". Mark a task completed on this customer's board and it moves into Done.";
+  document.getElementById("copy-report").textContent = "Copy for " + customer.reportFor.split(" ")[0];
+  document.getElementById("report-body").innerHTML =
+    block("Done", done, "Nothing has gone live yet.") +
+    block(clientTitle, waitingClient, "Nothing is waiting on you.") +
+    block(hostTitle, host, "Nothing is with the host.");
+
+  const linesOf = (title, items, empty) => [title, ...(items.length ? items.map(item => "- " + item) : ["- " + empty])];
+  reportText = [
+    customer.name + " website update",
+    "For " + customer.reportFor + " · " + stamp,
+    "",
+    ...linesOf("Done", done, "Nothing has gone live yet."),
+    "",
+    ...linesOf(clientTitle, waitingClient, "Nothing is waiting on you."),
+    "",
+    ...linesOf(hostTitle, host, "Nothing is with the host.")
+  ].join("\n");
+}
+
+function copyReport() {
+  const button = document.getElementById("copy-report");
+  const finish = (label) => {
+    button.textContent = label;
+    setTimeout(() => { button.textContent = "Copy for " + currentCustomer().reportFor.split(" ")[0]; }, 1200);
+  };
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(reportText).then(() => finish("Copied")).catch(() => finish("Copy failed"));
+  } else {
+    finish("Copy failed");
+  }
+}
+
 function updateStats() {
-  const total = tasks.length;
-  const completed = tasks.filter(t => t.status === 'completed').length;
-  const critical = tasks.filter(t => t.priority === 'Critical').length;
+  const scope = visibleTasks();
+  const total = scope.length;
+  const completed = scope.filter(t => t.status === 'completed').length;
+  const critical = scope.filter(t => t.priority === 'Critical').length;
   const pct = Math.round((completed / total) * 100);
 
   document.getElementById('stat-total').innerText = total;
@@ -923,7 +1192,7 @@ function openModal(taskId) {
   checkEl.innerHTML = t.steps.map((st, i) => `
     <li>
       <input type="checkbox" id="chk-${i}">
-      <label for="chk-${i}">${st}</label>
+      <label for="chk-${i}">${esc(st)}</label>
     </li>
   `).join('');
 
@@ -946,8 +1215,10 @@ function updateTaskStatusFromModal() {
   const t = tasks.find(item => item.id === currentTaskId);
   if (t) {
     t.status = select.value;
+    saveStatus();
     renderBoard();
     renderList();
+    renderReport();
     updateStats();
   }
 }
