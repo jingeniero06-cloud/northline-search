@@ -1,26 +1,41 @@
 # Junction Industries, LLC
-> Veteran-owned industrial, infrastructure, and technology holding company headquartered in Fort Worth, Texas.
+> Veteran-owned industrial, infrastructure, and heavy civil holding company headquartered in Fort Worth, Texas.
 
-Junction Industries acquires, operates, and scales market-leading industrial businesses across North America, focusing on heavy engineering, fabrication, and material handling.
+Junction Industries provides foundational support for market-leading industrial businesses across North America, focusing on heavy engineering, structural steel fabrication, foundation drilling, bulk material handling, and automated parking systems.
 
-## Operating Subsidiaries
-- Trident Structures: EPC contractor specializing in turnkey dry bulk material handling systems, concrete batch plants, rail transload terminals, and storage silos. URL: https://www.trident-structures.com/
-- Harbor Fab: Heavy industrial and structural steel fabrication, specialized pressure vessels, and AWS D1.1 certified welding.
-- Advanced Intralogistics: Industrial conveyor systems, warehouse automation, palletizing solutions, and freight distribution engineering.
-- Pier 57: Marine construction, commercial waterfront infrastructure, floating dock systems, and marine steel fabrication.
-- Grey Oaks Property Management: Industrial asset management, commercial facility maintenance, and strategic infrastructure leasing.
-- Palo 32 / Halyard Technologies: Industrial SCADA controls, automation software, and IoT infrastructure systems.
+## Wholly-Owned Operating Entities
+- Trident Structures: Industrial design-build EPC company specializing in bulk material handling, concrete batch plants, rail transload terminals, and automated high-density parking systems. URL: https://www.trident-structures.com/
+- Harbor Fab: Over 70,000 square feet across three regional Texas shops for AISC and AWS D1.1 certified structural steel fabrication, stairs, handrails, catwalks, embeds, and roof frames.
+- Advanced Intralogistics: Automated Vehicle Storage and Retrieval Systems (AVSRS) and industrial conveyor material handling systems delivering maximum real estate density and sub-90s retrieval.
+- Pier 57: Niche commercial and industrial real estate development company specializing in automated parking integration, logistics facilities, and waterfront marine infrastructure.
+- Grey Oaks Property Management: Commercial and industrial property management solutions, equipment laydown yards, and facility operations.
+- Palo 32 Luxury Safari Getaway: Exclusive Texas luxury hospitality and corporate retreat destination.
 
 ## Headquarters & Commercial Contact
 - Corporate Office: 3348 Peden Road, Suite 600, Fort Worth, TX 76179
-- Telephone: +1 (817) 607-8873
+- Direct Telephone: +1 (817) 607-8873
 - Commercial RFQ Email: contact@jct-ind.com
 - Primary URL: https://www.jct-ind.com/
+- Development Staging URL: https://junction-industries.pages.dev/
 
-## Core Commercial Subpages
-- Trident Structures Hub: https://junction-industries.pages.dev/companies/trident-structures
-- Harbor Fab Structural Steel: https://junction-industries.pages.dev/companies/harbor-fab
-- Advanced Intralogistics Automation: https://junction-industries.pages.dev/companies/advanced-intralogistics
-- Pier 57 Marine Infrastructure: https://junction-industries.pages.dev/companies/pier-57
-- Foundation Drilling & Heavy Civil: https://junction-industries.pages.dev/services/foundation-drilling-heavy-civil
-- Rail Car Transload Terminals: https://junction-industries.pages.dev/services/rail-transload-terminals
+## Core Industrial Services
+- Foundation Drilling & Heavy Civil: https://junction-industries.pages.dev/services/foundation-drilling-heavy-civil.html
+- Concrete Batch Plant EPC: https://junction-industries.pages.dev/services/concrete-batch-plant-epc.html
+- Rail Transload Terminals: https://junction-industries.pages.dev/services/rail-transload-terminals.html
+- Structural Steel Erection & Rigging: https://junction-industries.pages.dev/services/structural-steel-erection-rigging.html
+- Industrial Conveyors & AVSRS: https://junction-industries.pages.dev/services/industrial-conveyor-engineering.html
+- Services Directory: https://junction-industries.pages.dev/services/index.html
+
+## Texas Regional Territory Hubs
+- Fort Worth Corporate HQ: https://junction-industries.pages.dev/locations/fort-worth-tx.html
+- Dallas / DFW Metroplex: https://junction-industries.pages.dev/locations/dallas-tx.html
+- Houston & Gulf Coast: https://junction-industries.pages.dev/locations/houston-tx.html
+- Permian Basin (Midland / Odessa): https://junction-industries.pages.dev/locations/permian-basin-midland-odessa.html
+- San Antonio & Austin (I-35 Corridor): https://junction-industries.pages.dev/locations/san-antonio-austin-tx.html
+- Locations Directory: https://junction-industries.pages.dev/locations/index.html
+
+## Certifications & Accreditations
+- Certified Veteran-Owned Small Business (VOSB)
+- C12 Christian Business Leader Member
+- AISC & AWS D1.1 Certified Welding Standards
+- CEMA (Conveyor Equipment Manufacturers Association) Compliant
