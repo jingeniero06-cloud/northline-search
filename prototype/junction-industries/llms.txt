@@ -16,3 +16,11 @@ Junction Industries acquires, operates, and scales market-leading industrial bus
 - Telephone: +1 (817) 607-8873
 - Commercial RFQ Email: contact@jct-ind.com
 - Primary URL: https://www.jct-ind.com/
+
+## Core Commercial Subpages
+- Trident Structures Hub: https://junction-industries.pages.dev/companies/trident-structures
+- Harbor Fab Structural Steel: https://junction-industries.pages.dev/companies/harbor-fab
+- Advanced Intralogistics Automation: https://junction-industries.pages.dev/companies/advanced-intralogistics
+- Pier 57 Marine Infrastructure: https://junction-industries.pages.dev/companies/pier-57
+- Foundation Drilling & Heavy Civil: https://junction-industries.pages.dev/services/foundation-drilling-heavy-civil
+- Rail Car Transload Terminals: https://junction-industries.pages.dev/services/rail-transload-terminals
