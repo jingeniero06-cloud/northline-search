@@ -44,6 +44,37 @@ body[data-customer="trident"] {
   --on-primary: #1c1c1c;
   --blue: #cca13b;
 }
+body[data-mode="light"] {
+  --bg-dark: #efece6;
+  --bg-surface: #f7f4ef;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f3efe8;
+  --line: #ddd6cc;
+  --line-light: #b7aea3;
+  --text-main: #221f1b;
+  --text-muted: #6b635b;
+  --primary: #8c6a22;
+  --primary-glow: rgba(140, 106, 34, 0.12);
+  --on-primary: #fff;
+  --critical: #a33b32;
+  --high: #8c5a1a;
+  --medium: #7a6420;
+  --success: #2f6b45;
+}
+body[data-customer="trident"][data-mode="light"] {
+  --bg-dark: #f3f2ee;
+  --bg-surface: #fafaf7;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f4f3ee;
+  --line: #e2e0d8;
+  --line-light: #b9b6ae;
+  --text-main: #2f2e2e;
+  --text-muted: #5e5c57;
+  --primary: #8a7010;
+  --primary-glow: rgba(138, 112, 16, 0.12);
+  --on-primary: #fff;
+  --blue: #8a7010;
+}
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -133,7 +164,7 @@ aside.sidebar {
 }
 .nav-btn:hover {
   background: var(--bg-card);
-  color: #fff;
+  color: var(--text-main);
 }
 .nav-btn.active {
   background: var(--primary-glow);
@@ -163,7 +194,7 @@ aside.sidebar {
   font-size: 13px;
   color: var(--primary);
 }
-.user-info h4 { font-size: 13px; font-weight: 700; color: #fff; }
+.user-info h4 { font-size: 13px; font-weight: 700; color: var(--text-main); }
 .user-info p { font-size: 11px; color: var(--text-muted); }
 
 /* Main Content */
@@ -254,7 +285,7 @@ header.top-header {
   cursor: pointer;
   transition: all 0.15s ease;
 }
-.filter-btn:hover { background: var(--bg-card-hover); color: #fff; }
+.filter-btn:hover { background: var(--bg-card-hover); color: var(--text-main); }
 .filter-btn.active { background: var(--primary); color: var(--on-primary); font-weight: 700; border-color: var(--primary); }
 
 .view-toggles {
@@ -278,6 +309,11 @@ header.top-header {
   gap: 6px;
 }
 .view-btn.active { background: var(--bg-surface); color: var(--primary); }
+#mode-toggle {
+  border: 1px solid var(--line);
+  background: var(--bg-card);
+  color: var(--text-main);
+}
 
 /* Scrollable View Containers */
 .view-container {
@@ -462,10 +498,9 @@ table.task-table tr:hover td {
   justify-content: center;
   font-size: 18px;
   font-weight: 800;
-  color: #fff;
-  flex-shrink: 0;
+  color: var(--on-primary);
 }
-.op-title-block h3 { font-size: 15px; font-weight: 700; color: #fff; }
+.op-title-block h3 { font-size: 15px; font-weight: 700; color: var(--text-main); }
 .op-title-block p { font-size: 12px; color: var(--primary); font-weight: 600; margin-top: 2px; }
 .op-section-title {
   font-size: 11px;
@@ -549,10 +584,10 @@ table.task-table tr:hover td {
   align-items: center;
   justify-content: center;
 }
-.close-drawer:hover { color: #fff; background: var(--bg-card-hover); }
+.close-drawer:hover { color: var(--text-main); background: var(--bg-card-hover); }
 .drawer-header { margin-bottom: 20px; }
 .drawer-id { font-family: var(--font-mono); font-size: 12px; color: var(--primary); font-weight: 600; margin-bottom: 4px; }
-.drawer-title { font-size: 18px; font-weight: 700; color: #fff; }
+.drawer-title { font-size: 18px; font-weight: 700; color: var(--text-main); }
 .drawer-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -564,7 +599,7 @@ table.task-table tr:hover td {
   border: 1px solid var(--line);
 }
 .d-field span { display: block; font-size: 11px; text-transform: uppercase; color: var(--text-muted); font-weight: 700; }
-.d-field b { font-size: 13px; color: #fff; font-weight: 600; }
+.d-field b { font-size: 13px; color: var(--text-main); font-weight: 600; }
 
 .drawer-section { margin-bottom: 18px; }
 .drawer-section h4 { font-size: 12px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 8px; font-weight: 700; letter-spacing: 0.5px; }
@@ -639,7 +674,7 @@ table.task-table tr:hover td {
 .status-select {
   background: var(--bg-card);
   border: 1px solid var(--line-light);
-  color: #fff;
+  color: var(--text-main);
   padding: 6px 10px;
   border-radius: 6px;
   font-size: 12px;
@@ -648,7 +683,7 @@ table.task-table tr:hover td {
 }
 </style>
 </head>
-<body data-customer="junction">
+<body data-customer="junction" data-mode="dark">
 
 <!-- Left Navigation Sidebar -->
 <aside class="sidebar">
@@ -703,6 +738,7 @@ table.task-table tr:hover td {
       <p id="customer-sub">Parent site. WordPress, WPBakery, All in One SEO.</p>
     </div>
     <div class="header-actions">
+      <button type="button" class="view-btn" id="mode-toggle" onclick="toggleMode()">Light</button>
       <div class="stat-pill">Progress: <b id="stat-progress">0%</b></div>
       <div class="stat-pill">Total Tasks: <b id="stat-total">29</b></div>
       <div class="stat-pill">Critical: <b style="color:var(--critical)" id="stat-critical">6</b></div>
@@ -953,6 +989,20 @@ function renderEntities() {
     .join("");
 }
 
+const MODE_KEY = "admin-color-mode-v1";
+
+function applyMode(mode) {
+  const next = mode === "light" ? "light" : "dark";
+  document.body.dataset.mode = next;
+  const button = document.getElementById("mode-toggle");
+  if (button) button.textContent = next === "light" ? "Dark" : "Light";
+  localStorage.setItem(MODE_KEY, next);
+}
+
+function toggleMode() {
+  applyMode(document.body.dataset.mode === "light" ? "dark" : "light");
+}
+
 function updateChrome() {
   const customer = currentCustomer();
   document.body.dataset.customer = customer.id;
@@ -987,6 +1037,7 @@ function esc(value) {
 function init() {
   const savedCustomer = localStorage.getItem(CUSTOMER_KEY);
   if (customers.some(c => c.id === savedCustomer)) activeCustomerId = savedCustomer;
+  applyMode(localStorage.getItem(MODE_KEY) || "dark");
   loadStatus();
   renderCustomers();
   renderEntities();
@@ -1059,7 +1110,7 @@ function renderList() {
   tbody.innerHTML = filtered.map(t => `
     <tr onclick="openModal('${t.id}')">
       <td style="font-family:var(--font-mono); font-weight:600; color:var(--primary);">${t.id}</td>
-      <td style="font-weight:600; color:#fff;">${esc(t.title)}</td>
+      <td style="font-weight:600; color:var(--text-main);">${esc(t.title)}</td>
       <td><span class="pillar-tag pil-${t.pillar}">● ${t.pillar}</span></td>
       <td><span class="pill-priority pri-${t.priority}">${t.priority}</span></td>
       <td style="color:var(--text-muted); font-size:12px;">${t.week} (${t.day})</td>
