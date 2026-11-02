@@ -1,0 +1,18 @@
+# Junction Industries, LLC
+> Veteran-owned industrial, infrastructure, and technology holding company headquartered in Fort Worth, Texas.
+
+Junction Industries acquires, operates, and scales market-leading industrial businesses across North America, focusing on heavy engineering, fabrication, and material handling.
+
+## Operating Subsidiaries
+- Trident Structures: EPC contractor specializing in turnkey dry bulk material handling systems, concrete batch plants, rail transload terminals, and storage silos. URL: https://www.trident-structures.com/
+- Harbor Fab: Heavy industrial and structural steel fabrication, specialized pressure vessels, and AWS D1.1 certified welding.
+- Advanced Intralogistics: Industrial conveyor systems, warehouse automation, palletizing solutions, and freight distribution engineering.
+- Pier 57: Marine construction, commercial waterfront infrastructure, floating dock systems, and marine steel fabrication.
+- Grey Oaks Property Management: Industrial asset management, commercial facility maintenance, and strategic infrastructure leasing.
+- Palo 32 / Halyard Technologies: Industrial SCADA controls, automation software, and IoT infrastructure systems.
+
+## Headquarters & Commercial Contact
+- Corporate Office: 3348 Peden Road, Suite 600, Fort Worth, TX 76179
+- Telephone: +1 (817) 607-8873
+- Commercial RFQ Email: contact@jct-ind.com
+- Primary URL: https://www.jct-ind.com/

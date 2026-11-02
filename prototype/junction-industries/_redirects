@@ -1,0 +1,4 @@
+# Canonical & Legacy Redirects
+/new-contact/* /contact.html 301
+/category/uncategorized/* /news.html 301
+/feed/ / 301

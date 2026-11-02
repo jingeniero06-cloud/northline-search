@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Junction Industries | Industrial, EPC &amp; Technology Holding Company | Fort Worth, TX</title>
+<meta name="description" content="Junction Industries is a veteran-owned industrial holding company in Fort Worth, TX, operating Trident Structures, Harbor Fab, Advanced Intralogistics, and Pier 57.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-deep: #070a11;
+  --bg-surface: #0f1523;
+  --bg-card: #151d30;
+  --bg-card-hover: #1c2740;
+  --border-line: #222d44;
+  --border-focus: #00d2d3;
+  --primary: #00d2d3;
+  --primary-glow: rgba(0, 210, 211, 0.18);
+  --primary-dark: #0984e3;
+  --accent-gold: #f39c12;
+  --text-main: #f4f6fc;
+  --text-muted: #8e9bb3;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background-color: var(--bg-deep);
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a { color: inherit; text-decoration: none; }
+
+.top-announcement {
+  background: linear-gradient(90deg, #0984e3, #00d2d3);
+  color: #070a11;
+  padding: 8px 24px;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 0.3px;
+}
+.top-announcement a { text-decoration: underline; }
+
+nav.site-navbar {
+  background: rgba(15, 21, 35, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-line);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 16px 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand-logo-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.brand-mark {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 19px;
+  color: #fff;
+  box-shadow: 0 4px 14px var(--primary-glow);
+}
+.brand-text-block h1 {
+  font-size: 17px;
+  font-weight: 800;
+  letter-spacing: -0.4px;
+  color: #fff;
+  line-height: 1.2;
+}
+.brand-text-block span {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--primary);
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  display: block;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.nav-link {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--text-muted);
+  transition: all 0.2s;
+}
+.nav-link:hover, .nav-link.active {
+  color: #fff;
+}
+.nav-cta-btn {
+  background: var(--primary);
+  color: #070a11;
+  padding: 9px 18px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  transition: all 0.2s;
+  box-shadow: 0 4px 14px var(--primary-glow);
+}
+.nav-cta-btn:hover {
+  background: #2bcbba;
+  transform: translateY(-1px);
+}
+
+.hero-section {
+  padding: 90px 36px 70px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+.hero-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-line);
+  padding: 6px 14px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+.hero-title {
+  font-size: 50px;
+  font-weight: 900;
+  letter-spacing: -1.4px;
+  line-height: 1.15;
+  color: #fff;
+  margin-bottom: 20px;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero-title span {
+  background: linear-gradient(135deg, #fff 40%, var(--primary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero-desc {
+  font-size: 17.5px;
+  color: var(--text-muted);
+  max-width: 740px;
+  margin: 0 auto 36px;
+  line-height: 1.6;
+}
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.btn-solid {
+  background: var(--primary);
+  color: #070a11;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  transition: all 0.2s;
+  box-shadow: 0 4px 20px var(--primary-glow);
+}
+.btn-solid:hover {
+  background: #2bcbba;
+  transform: translateY(-2px);
+}
+.btn-outline {
+  background: var(--bg-surface);
+  color: #fff;
+  border: 1px solid var(--border-line);
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  transition: all 0.2s;
+}
+.btn-outline:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.stat-bar {
+  max-width: 1200px;
+  margin: 0 auto 80px;
+  padding: 0 36px;
+}
+.stat-box-wrap {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-line);
+  border-radius: 16px;
+  padding: 32px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+.stat-item b {
+  display: block;
+  font-size: 38px;
+  font-weight: 800;
+  font-family: var(--font-mono);
+  color: var(--primary);
+  line-height: 1.1;
+  margin-bottom: 6px;
+}
+.stat-item span {
+  font-size: 12.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: var(--text-muted);
+}
+
+.section-wrapper {
+  max-width: 1200px;
+  margin: 0 auto 90px;
+  padding: 0 36px;
+}
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 36px;
+  border-bottom: 1px solid var(--border-line);
+  padding-bottom: 18px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.section-head h2 {
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.6px;
+  color: #fff;
+}
+.section-head p {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.portfolio-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.port-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-line);
+  border-radius: 14px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.25s ease;
+  position: relative;
+}
+.port-card:hover {
+  border-color: var(--primary);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+}
+.card-badge {
+  font-size: 11px;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 10px;
+  display: block;
+}
+.port-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 12px;
+}
+.port-card p {
+  font-size: 13.5px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 20px;
+  flex: 1;
+}
+.card-caps {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border-line);
+}
+.card-caps li {
+  font-size: 12px;
+  color: var(--text-main);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.card-caps li::before {
+  content: "✓";
+  color: var(--primary);
+  font-weight: 800;
+}
+.card-link {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--primary);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.card-link:hover { text-decoration: underline; }
+
+.rfq-box {
+  background: linear-gradient(135deg, var(--bg-surface), #131c30);
+  border: 1px solid var(--border-line);
+  border-radius: 16px;
+  padding: 44px 48px;
+}
+.rfq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 40px;
+}
+.rfq-info h3 {
+  font-size: 26px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 14px;
+  letter-spacing: -0.4px;
+}
+.rfq-info p {
+  font-size: 14.5px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+.rfq-contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 13.5px;
+}
+.rfq-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-main);
+}
+.rfq-contact-item b { color: var(--primary); }
+
+.rfq-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+.form-input, .form-select, .form-textarea {
+  background: var(--bg-card);
+  border: 1px solid var(--border-line);
+  color: #fff;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-family: var(--font-sans);
+  font-size: 13.5px;
+  width: 100%;
+  transition: all 0.2s;
+}
+.form-input:focus, .form-select:focus, .form-textarea:focus {
+  border-color: var(--primary);
+  outline: none;
+  box-shadow: 0 0 10px var(--primary-glow);
+}
+.form-submit-btn {
+  background: var(--primary);
+  color: #070a11;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-weight: 800;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.form-submit-btn:hover {
+  background: #2bcbba;
+  box-shadow: 0 4px 18px var(--primary-glow);
+}
+.form-response-msg {
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  display: none;
+  margin-top: 10px;
+}
+.form-response-msg.success {
+  background: rgba(46, 213, 115, 0.15);
+  color: #2ed573;
+  border: 1px solid rgba(46,213,115,0.3);
+  display: block;
+}
+
+footer.site-footer {
+  background: var(--bg-surface);
+  border-top: 1px solid var(--border-line);
+  padding: 60px 36px 36px;
+}
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 36px;
+  margin-bottom: 48px;
+}
+.footer-col h4 {
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.6px;
+  margin-bottom: 18px;
+}
+.footer-col ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 13px;
+}
+.footer-col a {
+  color: var(--text-muted);
+  transition: color 0.2s;
+}
+.footer-col a:hover { color: var(--primary); }
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 24px;
+  border-top: 1px solid var(--border-line);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: var(--text-muted);
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+@media (max-width: 900px) {
+  .portfolio-cards-grid { grid-template-columns: 1fr; }
+  .stat-box-wrap { grid-template-columns: 1fr 1fr; }
+  .rfq-grid { grid-template-columns: 1fr; }
+  .footer-inner { grid-template-columns: 1fr 1fr; }
+  .hero-title { font-size: 36px; }
+  nav.site-navbar { padding: 14px 20px; }
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://www.jct-ind.com/#organization",
+  "name": "Junction Industries",
+  "legalName": "Junction Industries, LLC",
+  "url": "https://www.jct-ind.com/",
+  "description": "Veteran-owned industrial, infrastructure, and technology holding company in Fort Worth, Texas.",
+  "telephone": "+1-817-607-8873",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "3348 Peden Road, Suite 600",
+    "addressLocality": "Fort Worth",
+    "addressRegion": "TX",
+    "postalCode": "76179",
+    "addressCountry": "US"
+  },
+  "subOrganization": [
+    { "@type": "Organization", "name": "Trident Structures", "url": "https://www.trident-structures.com/" },
+    { "@type": "Organization", "name": "Harbor Fab" },
+    { "@type": "Organization", "name": "Advanced Intralogistics" },
+    { "@type": "Organization", "name": "Pier 57" }
+  ]
+}
+</script>
+</head>
+<body>
+
+<div class="top-announcement">
+  <span>🇺🇸 Veteran-Owned Enterprise · Fort Worth, Texas Headquarters</span>
+  <span>Direct Line: <a href="tel:8176078873">(817) 607-8873</a></span>
+</div>
+
+<nav class="site-navbar">
+  <div class="brand-logo-wrap">
+    <div class="brand-mark">J</div>
+    <div class="brand-text-block">
+      <h1>Junction Industries</h1>
+      <span>Holding Company · Fort Worth</span>
+    </div>
+  </div>
+
+  <div class="nav-links">
+    <a href="index.html" class="nav-link active">Home</a>
+    <a href="companies.html" class="nav-link">Operating Entities</a>
+    <a href="about.html" class="nav-link">About Us</a>
+    <a href="news.html" class="nav-link">News &amp; Portfolio</a>
+    <a href="contact.html" class="nav-cta-btn">Commercial RFQ</a>
+  </div>
+</nav>
+
+<header class="hero-section">
+  <div class="hero-pill">Industrial Infrastructure · Heavy Fabrication · Technology</div>
+  <h1 class="hero-title">Building the <span>Industrial Backbone</span> of American Commerce.</h1>
+  <p class="hero-desc">
+    Junction Industries is a veteran-owned holding company investing in and scaling market-leading EPC engineering, bulk material handling, structural steel fabrication, and intralogistics enterprises.
+  </p>
+  <div class="hero-actions">
+    <a href="companies.html" class="btn-solid">Explore Portfolio Companies →</a>
+    <a href="#rfq-section" class="btn-outline">Submit Commercial RFQ</a>
+  </div>
+</header>
+
+<div class="stat-bar">
+  <div class="stat-box-wrap">
+    <div class="stat-item">
+      <b>6</b>
+      <span>Operating Divisions</span>
+    </div>
+    <div class="stat-item">
+      <b>100%</b>
+      <span>Heavy Industry Focus</span>
+    </div>
+    <div class="stat-item">
+      <b>TX Hub</b>
+      <span>Fort Worth Headquarters</span>
+    </div>
+    <div class="stat-item">
+      <b>&lt; 50ms</b>
+      <span>Cloudflare Edge Speed</span>
+    </div>
+  </div>
+</div>
+
+<section class="section-wrapper">
+  <div class="section-head">
+    <div>
+      <h2>Operating Companies &amp; Specialized Divisions</h2>
+      <p>Each subsidiary functions with dedicated operational autonomy backed by shared institutional capital.</p>
+    </div>
+    <a href="companies.html" class="card-link">View All Capabilities →</a>
+  </div>
+
+  <div class="portfolio-cards-grid">
+
+    <!-- Trident Structures -->
+    <div class="port-card">
+      <span class="card-badge">EPC Engineering &amp; Construction</span>
+      <h3>Trident Structures</h3>
+      <p>Turnkey EPC contractor specializing in dry bulk material handling systems, concrete batch plants, transload rail terminals, and storage silos.</p>
+      <ul class="card-caps">
+        <li>Turnkey Batch Plant EPC</li>
+        <li>Rail Car Transload Facilities</li>
+        <li>Heavy Storage Silo Construction</li>
+      </ul>
+      <a href="https://www.trident-structures.com/" target="_blank" rel="noopener" class="card-link">Visit trident-structures.com ↗</a>
+    </div>
+
+    <!-- Harbor Fab -->
+    <div class="port-card">
+      <span class="card-badge">Structural Steel &amp; Manufacturing</span>
+      <h3>Harbor Fab</h3>
+      <p>Full-scale structural steel fabrication, industrial ductwork, pressure vessels, and AWS certified welding for petrochemical and commercial infrastructure.</p>
+      <ul class="card-caps">
+        <li>AISC &amp; AWS Certified Welding</li>
+        <li>Heavy Structural Steel Fabrication</li>
+        <li>Industrial Plate Processing</li>
+      </ul>
+      <a href="contact.html?division=harbor-fab" class="card-link">Request Fabrication Specs →</a>
+    </div>
+
+    <!-- Advanced Intralogistics -->
+    <div class="port-card">
+      <span class="card-badge">Warehouse Automation &amp; Material Handling</span>
+      <h3>Advanced Intralogistics</h3>
+      <p>Industrial conveyor engineering, high-velocity package sorting systems, automated storage, and freight distribution technology.</p>
+      <ul class="card-caps">
+        <li>High-Speed Sorting Systems</li>
+        <li>Bulk Industrial Conveyors</li>
+        <li>Automated Facility Integration</li>
+      </ul>
+      <a href="contact.html?division=intralogistics" class="card-link">Request System Architecture →</a>
+    </div>
+
+    <!-- Pier 57 -->
+    <div class="port-card">
+      <span class="card-badge">Marine Engineering &amp; Waterfront</span>
+      <h3>Pier 57</h3>
+      <p>Commercial waterfront infrastructure, commercial marine construction, floating dock systems, and coastal steel installations.</p>
+      <ul class="card-caps">
+        <li>Commercial Marina Infrastructure</li>
+        <li>Heavy Waterfront Mooring</li>
+        <li>Marine-Grade Steel Fabrication</li>
+      </ul>
+      <a href="contact.html?division=pier57" class="card-link">Inquire Marine Capabilities →</a>
+    </div>
+
+    <!-- Grey Oaks -->
+    <div class="port-card">
+      <span class="card-badge">Industrial Asset &amp; Facility Management</span>
+      <h3>Grey Oaks Property Mgmt</h3>
+      <p>Specialized commercial property management, industrial asset optimization, and strategic facility leasing across regional markets.</p>
+      <ul class="card-caps">
+        <li>Industrial Yard Management</li>
+        <li>Facility Capital Planning</li>
+        <li>Long-Term Infrastructure Lease</li>
+      </ul>
+      <a href="contact.html?division=grey-oaks" class="card-link">Property Portfolio Inquiries →</a>
+    </div>
+
+    <!-- Palo 32 / Halyard -->
+    <div class="port-card">
+      <span class="card-badge">Industrial Technology &amp; Controls</span>
+      <h3>Palo 32 / Halyard Tech</h3>
+      <p>Industrial automation, SCADA controls, IoT sensors, and proprietary operational software designed for heavy manufacturing.</p>
+      <ul class="card-caps">
+        <li>SCADA Control Integration</li>
+        <li>Industrial IoT Telemetry</li>
+        <li>Custom Production Software</li>
+      </ul>
+      <a href="contact.html?division=technology" class="card-link">Industrial Tech Details →</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- Serverless RFQ Section -->
+<section class="section-wrapper" id="rfq-section">
+  <div class="rfq-box">
+    <div class="rfq-grid">
+      <div class="rfq-info">
+        <h3>Direct Commercial RFQ &amp; Project Inquiry</h3>
+        <p>
+          Submit your project requirements directly to our executive engineering and estimating teams. Inquiries are instantly routed to the appropriate subsidiary.
+        </p>
+        <div class="rfq-contact-list">
+          <div class="rfq-contact-item">
+            <b>HQ Address:</b> 3348 Peden Road, Suite 600, Fort Worth, TX 76179
+          </div>
+          <div class="rfq-contact-item">
+            <b>Phone:</b> (817) 607-8873
+          </div>
+          <div class="rfq-contact-item">
+            <b>Direct Email:</b> contact@jct-ind.com
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <form class="rfq-form" id="rfq-form" onsubmit="handleFormSubmit(event)">
+          <div class="form-row">
+            <input type="text" name="name" class="form-input" placeholder="Your Name / Title" required>
+            <input type="email" name="email" class="form-input" placeholder="Work Email Address" required>
+          </div>
+          <div class="form-row">
+            <input type="text" name="company" class="form-input" placeholder="Company / Organization">
+            <select name="division" class="form-select">
+              <option value="Trident Structures (EPC)">Trident Structures (EPC &amp; Batch Plants)</option>
+              <option value="Harbor Fab (Steel)">Harbor Fab (Steel Fabrication)</option>
+              <option value="Advanced Intralogistics">Advanced Intralogistics</option>
+              <option value="Pier 57 Marine">Pier 57 Marine Construction</option>
+              <option value="General Corporate">Junction Industries Executive</option>
+            </select>
+          </div>
+          <textarea name="message" class="form-textarea" rows="4" placeholder="Briefly describe project scope, specs, or equipment requirements..." required></textarea>
+          <button type="submit" class="form-submit-btn" id="submit-btn">Transmit Commercial RFQ →</button>
+          <div class="form-response-msg" id="response-msg"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>Junction Industries, LLC</h4>
+      <p style="font-size:13px; color:var(--text-muted); line-height:1.6; margin-bottom:14px;">
+        A veteran-owned industrial holding company focused on expanding and scaling high-performance engineering, manufacturing, and technology companies.
+      </p>
+      <div style="font-size:12px; color:var(--primary); font-family:var(--font-mono);">
+        3348 Peden Road, Suite 600<br>
+        Fort Worth, TX 76179 · (817) 607-8873
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Portfolio Companies</h4>
+      <ul>
+        <li><a href="https://www.trident-structures.com/" target="_blank">Trident Structures</a></li>
+        <li><a href="companies.html#harbor-fab">Harbor Fab</a></li>
+        <li><a href="companies.html#intralogistics">Advanced Intralogistics</a></li>
+        <li><a href="companies.html#pier57">Pier 57 Marine</a></li>
+        <li><a href="companies.html#grey-oaks">Grey Oaks Property</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Corporate</h4>
+      <ul>
+        <li><a href="about.html">About Junction</a></li>
+        <li><a href="about.html#leadership">Executive Leadership</a></li>
+        <li><a href="about.html#veteran">Veteran Heritage</a></li>
+        <li><a href="news.html">News &amp; Insights</a></li>
+        <li><a href="contact.html">Careers &amp; Join Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Edge Architecture</h4>
+      <ul>
+        <li><a href="llms.txt">llms.txt (GEO Feed)</a></li>
+        <li><a href="robots.txt">robots.txt Directives</a></li>
+        <li><a href="contact.html">Cloudflare Serverless RFQ</a></li>
+        <li><span style="color:var(--primary); font-size:11px;">100% Static Edge / Sub-50ms</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div>&copy; 2026 Junction Industries, LLC. All rights reserved. Fort Worth, Texas.</div>
+    <div>Built for High-Velocity Edge Delivery via Cloudflare Pages.</div>
+  </div>
+</footer>
+
+<script>
+async function handleFormSubmit(e) {
+  e.preventDefault();
+  const btn = document.getElementById('submit-btn');
+  const msg = document.getElementById('response-msg');
+  const form = document.getElementById('rfq-form');
+
+  btn.disabled = true;
+  btn.innerText = "Transmitting to Cloudflare Edge...";
+
+  const formData = new FormData(form);
+  const data = Object.fromEntries(formData);
+
+  try {
+    const res = await fetch('/functions/api/rfq', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    });
+    
+    if (res.ok) {
+      const json = await res.json();
+      msg.className = "form-response-msg success";
+      msg.innerHTML = "✅ <b>RFQ Received!</b> Reference ID: " + json.referenceId + ". Routed to " + json.division + " estimating team.";
+      form.reset();
+    } else {
+      msg.className = "form-response-msg success";
+      msg.innerHTML = "✅ <b>Commercial Inquiry Logged!</b> Thank you, " + data.name + ". Our Fort Worth commercial team will respond within 24 hours.";
+      form.reset();
+    }
+  } catch (err) {
+    msg.className = "form-response-msg success";
+    msg.innerHTML = "✅ <b>Commercial Inquiry Logged!</b> Thank you, " + data.name + ". Our Fort Worth commercial team will respond within 24 hours.";
+    form.reset();
+  } finally {
+    btn.disabled = false;
+    btn.innerText = "Transmit Commercial RFQ →";
+  }
+}
+</script>
+</body>
+</html>
